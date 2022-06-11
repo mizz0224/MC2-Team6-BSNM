@@ -8,15 +8,15 @@
 import Foundation
 
 struct Feedback {
-    let name: String
-    let date: String
-    let image: String
+    let name: String?
+    let date: String?
+    let image: String?
     let pins: [Pin?]
 }
 
 struct Pin {
     let x: Double
     let y: Double
-    let title: String
-    let description: String
+    let title: String?
+    let description: String?
 }

@@ -8,15 +8,13 @@
 import SwiftUI
 
 struct FeedbackBottomView: View {
-    @State var isTouchedAddFeedbackButton: Bool = false
+    @Binding var isTouchedAddFeedbackButton: Bool
     
     var body: some View {
+        if !isTouchedAddFeedbackButton {
             BeforeAddFeedbackBottomView(isTouchedAddFeedbackButton: $isTouchedAddFeedbackButton)
-    }
-}
-
-struct FeedbackBottomView_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedbackBottomView()
+        } else {
+            AfterAddFeedbackBottomView()
+        }
     }
 }
