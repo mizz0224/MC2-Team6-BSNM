@@ -21,6 +21,9 @@
 		55113C412854E53B00B2AE5D /* TestCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C402854E53B00B2AE5D /* TestCameraView.swift */; };
 		55113C442854FE3A00B2AE5D /* BeforeAddFeedbackText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C432854FE3A00B2AE5D /* BeforeAddFeedbackText.swift */; };
 		55113C462854FE9500B2AE5D /* BeforeAddFeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C452854FE9500B2AE5D /* BeforeAddFeedbackBottomView.swift */; };
+		55113C492855004E00B2AE5D /* AfterAddFeedbackText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C482855004E00B2AE5D /* AfterAddFeedbackText.swift */; };
+		55113C4B285501E600B2AE5D /* DivisionLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C4A285501E600B2AE5D /* DivisionLine.swift */; };
+		55113C4D2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C4C2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		55113C402854E53B00B2AE5D /* TestCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCameraView.swift; sourceTree = "<group>"; };
 		55113C432854FE3A00B2AE5D /* BeforeAddFeedbackText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeAddFeedbackText.swift; sourceTree = "<group>"; };
 		55113C452854FE9500B2AE5D /* BeforeAddFeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeAddFeedbackBottomView.swift; sourceTree = "<group>"; };
+		55113C482855004E00B2AE5D /* AfterAddFeedbackText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterAddFeedbackText.swift; sourceTree = "<group>"; };
+		55113C4A285501E600B2AE5D /* DivisionLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionLine.swift; sourceTree = "<group>"; };
+		55113C4C2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterAddFeedbackBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				55113C3E2854E35900B2AE5D /* AddFeedbackView.swift */,
 				55113C382854C03000B2AE5D /* FeedbackImage.swift */,
 				55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */,
+				55113C4C2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift */,
+				55113C482855004E00B2AE5D /* AfterAddFeedbackText.swift */,
+				55113C4A285501E600B2AE5D /* DivisionLine.swift */,
 				55113C472854FFD100B2AE5D /* BeforeAddFeedbackBottom */,
 			);
 			path = AddFeedback;
@@ -187,11 +196,14 @@
 				55113C19285325B400B2AE5D /* Persistence.swift in Sources */,
 				55113C462854FE9500B2AE5D /* BeforeAddFeedbackBottomView.swift in Sources */,
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,
+				55113C4B285501E600B2AE5D /* DivisionLine.swift in Sources */,
 				55113C3728538E2B00B2AE5D /* Entity.swift in Sources */,
+				55113C4D2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift in Sources */,
 				55113C3F2854E35900B2AE5D /* AddFeedbackView.swift in Sources */,
 				55113C442854FE3A00B2AE5D /* BeforeAddFeedbackText.swift in Sources */,
 				55113C3D2854C49300B2AE5D /* AddFeedbackButton.swift in Sources */,
 				55113C392854C03000B2AE5D /* FeedbackImage.swift in Sources */,
+				55113C492855004E00B2AE5D /* AfterAddFeedbackText.swift in Sources */,
 				55113C3B2854C18500B2AE5D /* FeedbackBottomView.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
 				55113C412854E53B00B2AE5D /* TestCameraView.swift in Sources */,
