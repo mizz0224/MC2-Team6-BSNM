@@ -15,6 +15,7 @@
 		55113C1C285325B400B2AE5D /* Req.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55113C1A285325B400B2AE5D /* Req.xcdatamodeld */; };
 		55113C3728538E2B00B2AE5D /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C3628538E2B00B2AE5D /* Entity.swift */; };
 		55113C392854C03000B2AE5D /* FeedbackImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C382854C03000B2AE5D /* FeedbackImage.swift */; };
+		55113C3B2854C18500B2AE5D /* FeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		55113C1B285325B400B2AE5D /* Req.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Req.xcdatamodel; sourceTree = "<group>"; };
 		55113C3628538E2B00B2AE5D /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		55113C382854C03000B2AE5D /* FeedbackImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackImage.swift; sourceTree = "<group>"; };
+		55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				55113C13285325B400B2AE5D /* Assets.xcassets */,
 				55113C18285325B400B2AE5D /* Persistence.swift */,
 				55113C382854C03000B2AE5D /* FeedbackImage.swift */,
+				55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */,
 				55113C3628538E2B00B2AE5D /* Entity.swift */,
 				55113C1A285325B400B2AE5D /* Req.xcdatamodeld */,
 				55113C15285325B400B2AE5D /* Preview Content */,
@@ -154,6 +157,7 @@
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,
 				55113C3728538E2B00B2AE5D /* Entity.swift in Sources */,
 				55113C392854C03000B2AE5D /* FeedbackImage.swift in Sources */,
+				55113C3B2854C18500B2AE5D /* FeedbackBottomView.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
