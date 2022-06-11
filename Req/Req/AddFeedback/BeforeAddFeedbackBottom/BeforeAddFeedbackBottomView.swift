@@ -14,6 +14,8 @@ struct BeforeAddFeedbackBottomView: View {
             Spacer()
                 .frame(height: 30.0)
             AddFeedbackButton()
+            Spacer()
+                .frame(height: 60.0)
         }
     }
 }
