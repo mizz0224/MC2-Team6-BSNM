@@ -9,13 +9,16 @@ import SwiftUI
 
 struct AddFeedbackView: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             FeedbackImage()
             
             Spacer()
                 .frame(height: 34.0)
             
             FeedbackBottomView()
+            
+            Spacer()
+                .frame(height: 60.0)
         }
     }
 }
