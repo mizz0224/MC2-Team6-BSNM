@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct AddFeedbackButton: View {
+    @Binding var isTouchedAddFeedbackButton: Bool
+    
     var body: some View {
         Button {
-            
+            touchAddFeedbackButton()
         } label: {
             RoundedRectangle(cornerRadius: 50.0)
                 .frame(width: 150.0, height: 46.0, alignment: .center)
@@ -22,12 +24,11 @@ struct AddFeedbackButton: View {
                         .foregroundColor(.white)
                 )
         }
-
     }
 }
 
-struct AddFeedbackButton_Previews: PreviewProvider {
-    static var previews: some View {
-        AddFeedbackButton()
+extension AddFeedbackButton {
+    func touchAddFeedbackButton() {
+        isTouchedAddFeedbackButton = true
     }
 }

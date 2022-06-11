@@ -104,9 +104,7 @@
 				55113C3E2854E35900B2AE5D /* AddFeedbackView.swift */,
 				55113C382854C03000B2AE5D /* FeedbackImage.swift */,
 				55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */,
-				55113C4C2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift */,
-				55113C482855004E00B2AE5D /* AfterAddFeedbackText.swift */,
-				55113C4A285501E600B2AE5D /* DivisionLine.swift */,
+				55113C4E285506AA00B2AE5D /* AfterAddFeedbackButton */,
 				55113C472854FFD100B2AE5D /* BeforeAddFeedbackBottom */,
 			);
 			path = AddFeedback;
@@ -120,6 +118,16 @@
 				55113C3C2854C49300B2AE5D /* AddFeedbackButton.swift */,
 			);
 			path = BeforeAddFeedbackBottom;
+			sourceTree = "<group>";
+		};
+		55113C4E285506AA00B2AE5D /* AfterAddFeedbackButton */ = {
+			isa = PBXGroup;
+			children = (
+				55113C4A285501E600B2AE5D /* DivisionLine.swift */,
+				55113C4C2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift */,
+				55113C482855004E00B2AE5D /* AfterAddFeedbackText.swift */,
+			);
+			path = AfterAddFeedbackButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

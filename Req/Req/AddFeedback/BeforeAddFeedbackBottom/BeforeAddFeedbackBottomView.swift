@@ -8,20 +8,18 @@
 import SwiftUI
 
 struct BeforeAddFeedbackBottomView: View {
+    @Binding var isTouchedAddFeedbackButton: Bool
+    
     var body: some View {
         VStack {
+            Spacer()
+                .frame(height: 34.0)
             BeforeAddFeedbackText()
             Spacer()
                 .frame(height: 30.0)
-            AddFeedbackButton()
+            AddFeedbackButton(isTouchedAddFeedbackButton: $isTouchedAddFeedbackButton)
             Spacer()
                 .frame(height: 60.0)
         }
-    }
-}
-
-struct BeforeAddFeedbackBottomView_Previews: PreviewProvider {
-    static var previews: some View {
-        BeforeAddFeedbackBottomView()
     }
 }

@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct FeedbackBottomView: View {
+    @State var isTouchedAddFeedbackButton: Bool = false
+    
     var body: some View {
-        VStack {
-            BeforeAddFeedbackBottomView()
-        }
+            BeforeAddFeedbackBottomView(isTouchedAddFeedbackButton: $isTouchedAddFeedbackButton)
     }
 }
 

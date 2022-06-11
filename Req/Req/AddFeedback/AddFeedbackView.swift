@@ -11,8 +11,6 @@ struct AddFeedbackView: View {
     var body: some View {
         VStack(spacing: 0) {
             FeedbackImage()
-            Spacer()
-                .frame(height: 34.0)
             FeedbackBottomView()
         }
     }
