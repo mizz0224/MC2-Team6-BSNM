@@ -13,8 +13,9 @@ struct ReqApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            //ContentView()
+              //  .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            DetailView(imageName: "picture1", feedbackDate: Date.now, feedbackUserName: "커리", id: UUID.init())
         }
     }
 }
