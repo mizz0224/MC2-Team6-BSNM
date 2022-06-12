@@ -25,6 +25,7 @@
 		55113C4B285501E600B2AE5D /* DivisionLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C4A285501E600B2AE5D /* DivisionLine.swift */; };
 		55113C4D2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C4C2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift */; };
 		55113C5028550A8F00B2AE5D /* PinImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C4F28550A8F00B2AE5D /* PinImage.swift */; };
+		55113C522855B19700B2AE5D /* FeedbackTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C512855B19700B2AE5D /* FeedbackTitleTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		55113C4A285501E600B2AE5D /* DivisionLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionLine.swift; sourceTree = "<group>"; };
 		55113C4C2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterAddFeedbackBottomView.swift; sourceTree = "<group>"; };
 		55113C4F28550A8F00B2AE5D /* PinImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinImage.swift; sourceTree = "<group>"; };
+		55113C512855B19700B2AE5D /* FeedbackTitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTitleTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				55113C382854C03000B2AE5D /* FeedbackImage.swift */,
 				55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */,
 				55113C4F28550A8F00B2AE5D /* PinImage.swift */,
+				55113C512855B19700B2AE5D /* FeedbackTitleTextField.swift */,
 				55113C4E285506AA00B2AE5D /* AfterAddFeedbackButton */,
 				55113C472854FFD100B2AE5D /* BeforeAddFeedbackBottom */,
 			);
@@ -218,6 +221,7 @@
 				55113C492855004E00B2AE5D /* AfterAddFeedbackText.swift in Sources */,
 				55113C3B2854C18500B2AE5D /* FeedbackBottomView.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
+				55113C522855B19700B2AE5D /* FeedbackTitleTextField.swift in Sources */,
 				55113C412854E53B00B2AE5D /* TestCameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
