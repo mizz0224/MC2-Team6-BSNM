@@ -13,13 +13,13 @@ struct BeforeAddFeedbackBottomView: View {
     var body: some View {
         VStack {
             Spacer()
-                .frame(height: 34.0)
+                .frame(height: 32.0)
             BeforeAddFeedbackText()
             Spacer()
-                .frame(height: 30.0)
+                .frame(height: 51.0)
             AddFeedbackButton(changeFeedbackBottomView: $changeFeedbackBottomView)
             Spacer()
-                .frame(height: 60.0)
+                .frame(height: 53.0)
         }
     }
 }

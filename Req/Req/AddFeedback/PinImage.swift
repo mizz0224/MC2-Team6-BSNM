@@ -14,8 +14,8 @@ struct PinImage: View {
     var body: some View {
         Image(systemName: "text.bubble.fill")
             .resizable()
-            .foregroundColor(.cyan)
-            .frame(width: 44.0, height: 44.0)
+            .foregroundColor(.gray)
+            .frame(width: 32.0, height: 32.0)
             .position(x: x, y: y)
     }
 }

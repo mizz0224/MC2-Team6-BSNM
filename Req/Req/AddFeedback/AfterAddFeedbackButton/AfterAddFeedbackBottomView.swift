@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AfterAddFeedbackBottomView: View {
-    let space: CGFloat = 28.0
+    let space: CGFloat = 27.0
     
     var body: some View {
         VStack {
@@ -19,7 +19,7 @@ struct AfterAddFeedbackBottomView: View {
                 .frame(height: space)
             DivisionLine()
             Spacer()
-                .frame(height: 134.0)
+                .frame(height: 150.0)
         }
     }
 }

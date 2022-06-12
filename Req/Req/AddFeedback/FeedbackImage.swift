@@ -24,6 +24,7 @@ struct FeedbackImage: View {
                     tapBackground { location in
                         appendPinLocation(location: location)
                         plusId()
+                        changeFeedbackBottomView = .writeFeedback
                     }
                         .disabled(allowToTouchImage(changeFeedbackBottomView))
                 ) // image

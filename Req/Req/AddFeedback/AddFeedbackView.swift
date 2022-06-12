@@ -17,6 +17,7 @@ struct AddFeedbackView: View {
         VStack(spacing: 0) {
             FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins)
             FeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description)
+                .frame(height: 224.0)
         }
     }
 }

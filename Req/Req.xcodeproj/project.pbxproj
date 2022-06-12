@@ -110,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				55113C3E2854E35900B2AE5D /* AddFeedbackView.swift */,
-				55113C382854C03000B2AE5D /* FeedbackImage.swift */,
 				55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */,
+				55113C382854C03000B2AE5D /* FeedbackImage.swift */,
 				55113C4F28550A8F00B2AE5D /* PinImage.swift */,
 				55113C4A285501E600B2AE5D /* DivisionLine.swift */,
 				55113C472854FFD100B2AE5D /* BeforeAddFeedbackBottom */,

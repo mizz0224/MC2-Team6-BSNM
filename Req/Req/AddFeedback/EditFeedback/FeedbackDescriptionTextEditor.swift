@@ -13,14 +13,20 @@ struct FeedbackDescriptionTextEditor: View {
     
     var body: some View {
         ZStack {
-            if self.description.isEmpty {
+            if description == "" {
                 TextEditor(text: $placeholderText)
                     .font(.system(size: 14.0))
                     .foregroundColor(.gray)
+                    .disableAutocorrection(true)
+                    .frame(width: 358.0, height: 130.0, alignment: .topLeading)
                     .disabled(true)
             }
             TextEditor(text: $description)
                 .font(.system(size: 14.0))
+                .disableAutocorrection(true)
+                .frame(width: 358.0, height: 130.0, alignment: .topLeading)
+                .opacity(description == "" ? 0.25 : 1)
         }
+        // 출처 : https://sweetdev.tistory.com/728
     }
 }

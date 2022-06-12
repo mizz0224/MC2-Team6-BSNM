@@ -12,7 +12,9 @@ struct EditFeedbackBottomView: View {
     @Binding var description: String
     
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(alignment: .leading ,spacing: 0) {
+            Spacer()
+                .frame(height: 24.0)
             FeedbackTitleTextField(title: $title)
             Spacer()
                 .frame(height: 20.0)
