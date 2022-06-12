@@ -11,10 +11,11 @@ struct AddFeedbackView: View {
     @State private var changeFeedbackBottomView: FeedbackType = .addFeedback
     @State private var title: String = ""
     @State private var description: String = ""
+    @State private var pins: [Pin] = []
     
     var body: some View {
         VStack(spacing: 0) {
-            FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView)
+            FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins)
             FeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description)
         }
     }

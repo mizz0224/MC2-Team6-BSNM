@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct PinImage: View {
+    let x: CGFloat
+    let y: CGFloat
     
     var body: some View {
         Image(systemName: "text.bubble.fill")
             .resizable()
             .foregroundColor(.cyan)
             .frame(width: 44.0, height: 44.0)
+            .position(x: x, y: y)
     }
 }

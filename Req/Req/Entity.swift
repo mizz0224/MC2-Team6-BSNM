@@ -14,7 +14,8 @@ struct Feedback {
     let pins: [Pin?]
 }
 
-struct Pin {
+struct Pin: Hashable {
+    let id: Int
     let x: Double
     let y: Double
     let title: String?

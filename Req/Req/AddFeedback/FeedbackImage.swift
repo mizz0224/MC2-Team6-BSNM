@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct FeedbackImage: View {
+    @State private var idCount: Int = 0
+    
     @Binding var changeFeedbackBottomView: FeedbackType
+    @Binding var pins: [Pin]
     
     let image: Image = Image("TestImage")
-    var x: CGFloat = 0.0
-    var y: CGFloat = 0.0
     
     var body: some View {
         ZStack {
@@ -21,11 +22,19 @@ struct FeedbackImage: View {
                 .frame(width: 390.0, height: 520.0)
                 .overlay(
                     tapBackground { location in
-                        print("(x: \(location.x), y: \(location.y))")
+                        appendPinLocation(location: location)
+                        plusId()
                     }
                         .disabled(allowToTouchImage(changeFeedbackBottomView))
-                )
-        }
+                ) // image
+            
+            if !pins.isEmpty {
+                ForEach(pins, id: \.id) { pin in
+                    PinImage(x: pin.x, y: pin.y)
+                }
+            }
+            
+        } // ZStack
         .frame(width: 390.0, height: 520.0)
     }
 }
@@ -35,7 +44,7 @@ struct FeedbackImage: View {
 struct tapBackground: UIViewRepresentable {
     
     var tappedCallback: ((CGPoint) -> Void)
-
+    
     func makeUIView(context: UIViewRepresentableContext<tapBackground>) -> UIView {
         let view = UIView(frame: .zero)
         let gesture = UITapGestureRecognizer(target: context.coordinator,
@@ -45,7 +54,7 @@ struct tapBackground: UIViewRepresentable {
         
         return view
     }
-
+    
     class Coordinator: NSObject {
         var tappedCallback: ((CGPoint) -> Void)
         
@@ -58,14 +67,14 @@ struct tapBackground: UIViewRepresentable {
             self.tappedCallback(point)
         }
     }
-
+    
     func makeCoordinator() -> tapBackground.Coordinator {
         
         return Coordinator(tappedCallback:self.tappedCallback)
     }
-
+    
     func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<tapBackground>) { }
-
+    
 }
 //출처 : https://stackoverflow.com/questions/56513942/how-to-detect-a-tap-gesture-location-in-swiftui
 
@@ -80,5 +89,15 @@ extension FeedbackImage {
         default:
             return true
         }
+    }
+    
+    // Pin마다 id값을 구분하기 위한 함수
+    func plusId() {
+        idCount += 1
+    }
+    
+    // 터치한 location 데이터를 Pin에 입력한 후 pins 배열에 넣기 위한 함수
+    func appendPinLocation(location: CGPoint) {
+        pins.append(Pin(id: idCount, x: location.x, y: location.y, title: nil, description: nil))
     }
 }
