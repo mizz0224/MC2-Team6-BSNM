@@ -14,7 +14,7 @@ struct AddFeedbackView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            FeedbackImage()
+            FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView)
             FeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description)
         }
     }

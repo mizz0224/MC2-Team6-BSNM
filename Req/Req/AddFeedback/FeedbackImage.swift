@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FeedbackImage: View {
+    @Binding var changeFeedbackBottomView: FeedbackType
+    
     let image: Image = Image("TestImage")
     var x: CGFloat = 0.0
     var y: CGFloat = 0.0
@@ -21,17 +23,13 @@ struct FeedbackImage: View {
                     tapBackground { location in
                         print("(x: \(location.x), y: \(location.y))")
                     }
+                        .disabled(allowToTouchImage(changeFeedbackBottomView))
                 )
         }
         .frame(width: 390.0, height: 520.0)
     }
 }
 
-struct FeedbackImage_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedbackImage()
-    }
-}
 
 // FeedbackImage의 touch point Coordinates를 얻기 위한 background View
 struct tapBackground: UIViewRepresentable {
@@ -68,4 +66,19 @@ struct tapBackground: UIViewRepresentable {
 
     func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<tapBackground>) { }
 
+}
+//출처 : https://stackoverflow.com/questions/56513942/how-to-detect-a-tap-gesture-location-in-swiftui
+
+
+extension FeedbackImage {
+    
+    // FeedbackView의 FeedbackType에 따라 FeedbackImage의 터치가능 상태를 변경하는 함수
+    func allowToTouchImage(_ feedbackType: FeedbackType) -> Bool {
+        switch feedbackType {
+        case .touchPin:
+            return false
+        default:
+            return true
+        }
+    }
 }
