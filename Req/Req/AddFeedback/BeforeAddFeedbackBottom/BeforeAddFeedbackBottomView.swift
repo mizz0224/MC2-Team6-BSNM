@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BeforeAddFeedbackBottomView: View {
-    @Binding var isTouchedAddFeedbackButton: Bool
+    @Binding var changeFeedbackBottomView: FeedbackType
     
     var body: some View {
         VStack {
@@ -17,7 +17,7 @@ struct BeforeAddFeedbackBottomView: View {
             BeforeAddFeedbackText()
             Spacer()
                 .frame(height: 30.0)
-            AddFeedbackButton(isTouchedAddFeedbackButton: $isTouchedAddFeedbackButton)
+            AddFeedbackButton(changeFeedbackBottomView: $changeFeedbackBottomView)
             Spacer()
                 .frame(height: 60.0)
         }

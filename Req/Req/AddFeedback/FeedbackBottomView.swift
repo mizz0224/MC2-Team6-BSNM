@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct FeedbackBottomView: View {
-    @Binding var isTouchedAddFeedbackButton: Bool
+    @Binding var changeFeedbackBottomView: FeedbackType
+    @Binding var title: String
+    @Binding var description: String
     
     var body: some View {
-        if !isTouchedAddFeedbackButton {
-            BeforeAddFeedbackBottomView(isTouchedAddFeedbackButton: $isTouchedAddFeedbackButton)
-        } else {
+        switch changeFeedbackBottomView {
+        case .addFeedback:
+            BeforeAddFeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView)
+        case .touchPin:
             AfterAddFeedbackBottomView()
+        case .writeFeedback:
+            EditFeedbackBottomView(title: $title, description: $description)
         }
     }
 }

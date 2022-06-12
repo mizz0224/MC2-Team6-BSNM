@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddFeedbackButton: View {
-    @Binding var isTouchedAddFeedbackButton: Bool
+    @Binding var changeFeedbackBottomView: FeedbackType
     
     var body: some View {
         Button {
@@ -28,7 +28,8 @@ struct AddFeedbackButton: View {
 }
 
 extension AddFeedbackButton {
+    
     func touchAddFeedbackButton() {
-        isTouchedAddFeedbackButton = true
+        changeFeedbackBottomView = .touchPin
     }
 }

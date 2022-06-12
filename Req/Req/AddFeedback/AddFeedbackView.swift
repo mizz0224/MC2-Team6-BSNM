@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct AddFeedbackView: View {
-    @State private var isTouchedAddFeedbackButton: Bool = false
+    @State private var changeFeedbackBottomView: FeedbackType = .addFeedback
+    @State private var title: String = ""
+    @State private var description: String = ""
     
     var body: some View {
         VStack(spacing: 0) {
             FeedbackImage()
-            FeedbackBottomView(isTouchedAddFeedbackButton: $isTouchedAddFeedbackButton)
+            FeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description)
         }
     }
 }
@@ -22,4 +24,10 @@ struct AddFeedbackView_Previews: PreviewProvider {
     static var previews: some View {
         AddFeedbackView()
     }
+}
+
+enum FeedbackType {
+    case addFeedback
+    case touchPin
+    case writeFeedback
 }
