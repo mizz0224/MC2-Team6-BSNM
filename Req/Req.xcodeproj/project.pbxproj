@@ -143,9 +143,9 @@
 		55113C572855CD2200B2AE5D /* EditFeedback */ = {
 			isa = PBXGroup;
 			children = (
+				55113C552855CBCE00B2AE5D /* EditFeedbackBottomView.swift */,
 				55113C512855B19700B2AE5D /* FeedbackTitleTextField.swift */,
 				55113C532855C93600B2AE5D /* FeedbackDescriptionTextEditor.swift */,
-				55113C552855CBCE00B2AE5D /* EditFeedbackBottomView.swift */,
 			);
 			path = EditFeedback;
 			sourceTree = "<group>";
