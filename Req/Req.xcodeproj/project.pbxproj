@@ -26,6 +26,7 @@
 		55113C4D2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C4C2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift */; };
 		55113C5028550A8F00B2AE5D /* PinImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C4F28550A8F00B2AE5D /* PinImage.swift */; };
 		55113C522855B19700B2AE5D /* FeedbackTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C512855B19700B2AE5D /* FeedbackTitleTextField.swift */; };
+		55113C542855C93600B2AE5D /* FeedbackDescriptionTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C532855C93600B2AE5D /* FeedbackDescriptionTextEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		55113C4C2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterAddFeedbackBottomView.swift; sourceTree = "<group>"; };
 		55113C4F28550A8F00B2AE5D /* PinImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinImage.swift; sourceTree = "<group>"; };
 		55113C512855B19700B2AE5D /* FeedbackTitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTitleTextField.swift; sourceTree = "<group>"; };
+		55113C532855C93600B2AE5D /* FeedbackDescriptionTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackDescriptionTextEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */,
 				55113C4F28550A8F00B2AE5D /* PinImage.swift */,
 				55113C512855B19700B2AE5D /* FeedbackTitleTextField.swift */,
+				55113C532855C93600B2AE5D /* FeedbackDescriptionTextEditor.swift */,
 				55113C4E285506AA00B2AE5D /* AfterAddFeedbackButton */,
 				55113C472854FFD100B2AE5D /* BeforeAddFeedbackBottom */,
 			);
@@ -213,6 +216,7 @@
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,
 				55113C4B285501E600B2AE5D /* DivisionLine.swift in Sources */,
 				55113C3728538E2B00B2AE5D /* Entity.swift in Sources */,
+				55113C542855C93600B2AE5D /* FeedbackDescriptionTextEditor.swift in Sources */,
 				55113C4D2855022E00B2AE5D /* AfterAddFeedbackBottomView.swift in Sources */,
 				55113C3F2854E35900B2AE5D /* AddFeedbackView.swift in Sources */,
 				55113C442854FE3A00B2AE5D /* BeforeAddFeedbackText.swift in Sources */,
