@@ -16,7 +16,7 @@ struct AddFeedbackView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount)
+            FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount)
             FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount)
             FeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description)
                 .frame(height: 224.0)

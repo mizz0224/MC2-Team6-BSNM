@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FeedbackNavigationBar: View {
     @Binding var changeFeedbackBottomView: FeedbackType
+    @Binding var title: String
+    @Binding var description: String
     @Binding var pins: [Pin]
     @Binding var idCount: Int
     
@@ -21,7 +23,7 @@ struct FeedbackNavigationBar: View {
             case .addFeedback:
                 AddFeedbackNavigationItem(pins: $pins)
             default:
-                WriteFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount)
+                WriteFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount)
             }
         }
     }

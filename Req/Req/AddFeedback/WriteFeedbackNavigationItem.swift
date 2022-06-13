@@ -9,11 +9,18 @@ import SwiftUI
 
 struct WriteFeedbackNavigationItem: View {
     @Binding var changeFeedbackBottomView: FeedbackType
+    @Binding var title: String
+    @Binding var description: String
     @Binding var pins: [Pin]
     @Binding var idCount: Int
     
+    private var isWritten: Bool {
+        if title != "" && description != "" { return true }
+        else { return false }
+    }
+    
     var body: some View {
-        HStack() {
+        HStack {
             Spacer()
                 .frame(width: 16.0)
             
@@ -32,12 +39,14 @@ struct WriteFeedbackNavigationItem: View {
             } label: {
                 Text("확인")
                     .font(.system(size: 18.0, weight: .semibold))
-                    .foregroundColor(.black)
+                    .foregroundColor(isWritten ? .black : .gray)
             }
+            .disabled(!isWritten)
             
             Spacer()
                 .frame(width: 16.0)
-        }
+            
+        } // HStack
         .frame(width: 390.0, height: 51.0)
     }
 }
