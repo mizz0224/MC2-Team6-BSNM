@@ -37,4 +37,5 @@ enum FeedbackType {
     case addFeedback
     case touchPin
     case writeFeedback
+    case adjustFeedback
 }

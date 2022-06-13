@@ -13,7 +13,7 @@ struct AddFeedbackNavigationItem: View {
     @Binding var pins: [Pin]
     
     var body: some View {
-        HStack() {
+        HStack {
             Spacer()
                 .frame(width: 16.0)
             

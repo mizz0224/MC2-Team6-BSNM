@@ -22,6 +22,8 @@ struct FeedbackNavigationBar: View {
             switch changeFeedbackBottomView {
             case .addFeedback:
                 AddFeedbackNavigationItem(pins: $pins)
+            case .adjustFeedback:
+                AdjustFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView)
             default:
                 WriteFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount)
             }
