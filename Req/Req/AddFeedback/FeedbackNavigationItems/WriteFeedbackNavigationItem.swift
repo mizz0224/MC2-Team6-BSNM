@@ -26,12 +26,12 @@ struct WriteFeedbackNavigationItem: View {
                 .frame(width: 16.0)
             
             Button {
-                if changeFeedbackBottomView == .writeFeedback {
+                switch changeFeedbackBottomView {
+                case .touchPin, .writeFeedback:
                     cancelWrtieFeedback()
-                } else if changeFeedbackBottomView == .afterAdjustFeedback {
+                default:
                     cancelAdjustFeedback()
                 }
-                //TODO: touchPin 상태에서 취소버튼을누를 시 작동하도록 구현
             } label: {
                 Text("취소")
                     .font(.system(size: 18.0, weight: .semibold))
@@ -73,11 +73,14 @@ extension WriteFeedbackNavigationItem {
     // 피드백 작성 취소버튼
     func cancelWrtieFeedback() {
         // 추가버튼 누른 직후 다시 취소할 경우 동작 안하도록 구현
-        if idCount != 0 {
+        if changeFeedbackBottomView == .writeFeedback {
             // Pin에 부여한 id에 맞게 취소할 시 배열에서 삭제하기 위함
             let nowId = idCount - 1
             pins.remove(at: nowId)
             idCount = nowId
+            
+            title = ""
+            description = ""
         }
         
         changeFeedbackBottomView = .addFeedback
