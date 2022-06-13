@@ -78,6 +78,9 @@ extension WriteFeedbackNavigationItem {
         pins[nowId].title = title
         pins[nowId].description = description
         
+        title = ""
+        description = ""
+        
         changeFeedbackBottomView = .addFeedback
     }
 }
