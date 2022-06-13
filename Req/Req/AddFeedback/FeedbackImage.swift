@@ -67,7 +67,7 @@ struct tapBackground: UIViewRepresentable {
             self.tappedCallback = tappedCallback
         }
         
-        @objc func tapped(gesture:UITapGestureRecognizer) {
+        @objc func tapped(gesture: UITapGestureRecognizer) {
             let point = gesture.location(in: gesture.view)
             self.tappedCallback(point)
         }
