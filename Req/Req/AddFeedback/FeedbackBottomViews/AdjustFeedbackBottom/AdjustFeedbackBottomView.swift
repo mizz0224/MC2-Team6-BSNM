@@ -24,22 +24,14 @@ struct AdjustFeedbackBottomView: View {
         VStack(alignment: .leading ,spacing: 0) {
             Spacer()
                 .frame(height: 24.0)
-            
-            Text(title)
-                .font(.system(size: 24.0, weight: .bold))
-                .frame(width: 358.0, height: 24.0, alignment: .topLeading)
-            
+            AdjustFeedbackTitle(title: title)
             Spacer()
                 .frame(height: 20.0)
-            
             DivisionLine()
-            
             Spacer()
                 .frame(height: 20.0)
-            
-            Text(description)
-                .font(.system(size: 14.0))
-                .frame(width: 358.0, height: 130.0, alignment: .topLeading)
+            AdjustFeedbackDescription(description: description)
+                .frame(maxHeight: 130.0)
         }
     }
 }
