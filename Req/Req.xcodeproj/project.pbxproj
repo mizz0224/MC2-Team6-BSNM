@@ -32,6 +32,7 @@
 		55113C5B285713AC00B2AE5D /* AddFeedbackNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C5A285713AC00B2AE5D /* AddFeedbackNavigationItem.swift */; };
 		55113C5D2857268A00B2AE5D /* WriteFeedbackNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C5C2857268A00B2AE5D /* WriteFeedbackNavigationItem.swift */; };
 		55113C5F28574D0B00B2AE5D /* AdjustFeedbackNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C5E28574D0B00B2AE5D /* AdjustFeedbackNavigationItem.swift */; };
+		55113C63285755B900B2AE5D /* AdjustFeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C62285755B900B2AE5D /* AdjustFeedbackBottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		55113C5A285713AC00B2AE5D /* AddFeedbackNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackNavigationItem.swift; sourceTree = "<group>"; };
 		55113C5C2857268A00B2AE5D /* WriteFeedbackNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteFeedbackNavigationItem.swift; sourceTree = "<group>"; };
 		55113C5E28574D0B00B2AE5D /* AdjustFeedbackNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackNavigationItem.swift; sourceTree = "<group>"; };
+		55113C62285755B900B2AE5D /* AdjustFeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				55113C472854FFD100B2AE5D /* BeforeAddFeedbackBottom */,
 				55113C4E285506AA00B2AE5D /* AfterAddFeedbackBottom */,
 				55113C572855CD2200B2AE5D /* EditFeedbackBottom */,
+				55113C62285755B900B2AE5D /* AdjustFeedbackBottomView.swift */,
 			);
 			path = FeedbackBottomViews;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				55113C3D2854C49300B2AE5D /* AddFeedbackButton.swift in Sources */,
 				55113C5F28574D0B00B2AE5D /* AdjustFeedbackNavigationItem.swift in Sources */,
 				55113C392854C03000B2AE5D /* FeedbackImage.swift in Sources */,
+				55113C63285755B900B2AE5D /* AdjustFeedbackBottomView.swift in Sources */,
 				55113C492855004E00B2AE5D /* AfterAddFeedbackText.swift in Sources */,
 				55113C3B2854C18500B2AE5D /* FeedbackBottomView.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
