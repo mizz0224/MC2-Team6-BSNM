@@ -35,7 +35,7 @@ struct WriteFeedbackNavigationItem: View {
             Spacer()
             
             switch changeFeedbackBottomView {
-            case .writeFeedback:
+            case .writeFeedback, .afterAdjustFeedback:
                 Button {
                     completeWrtingFeedback()
                 } label: {
@@ -82,5 +82,13 @@ extension WriteFeedbackNavigationItem {
         description = ""
         
         changeFeedbackBottomView = .addFeedback
+    }
+    
+    func cancelAdjustFeedback() {
+        
+    }
+    
+    func completeAdjustFeedback() {
+        
     }
 }

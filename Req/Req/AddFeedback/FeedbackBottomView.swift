@@ -19,11 +19,11 @@ struct FeedbackBottomView: View {
             BeforeAddFeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView)
         case .touchPin:
             AfterAddFeedbackBottomView()
-        case .writeFeedback:
-            EditFeedbackBottomView(title: $title, description: $description)
-        case .adjustFeedback:
+        case .beforeAdjustFeedback:
             //TODO: BeforeAdjustFeedbackBottomView 구현
             AdjustFeedbackBottomView(currentPin: $currentPin)
+        default:
+            EditFeedbackBottomView(title: $title, description: $description)
         }
     }
 }

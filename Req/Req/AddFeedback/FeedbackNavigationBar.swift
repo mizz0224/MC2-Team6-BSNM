@@ -13,6 +13,7 @@ struct FeedbackNavigationBar: View {
     @Binding var description: String
     @Binding var pins: [Pin]
     @Binding var idCount: Int
+    @Binding var currentPin: Pin
     
     var body: some View {
         VStack(spacing: 0) {
@@ -22,8 +23,8 @@ struct FeedbackNavigationBar: View {
             switch changeFeedbackBottomView {
             case .addFeedback:
                 AddFeedbackNavigationItem(pins: $pins)
-            case .adjustFeedback:
-                AdjustFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView)
+            case .beforeAdjustFeedback:
+                AdjustFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
             default:
                 WriteFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount)
             }

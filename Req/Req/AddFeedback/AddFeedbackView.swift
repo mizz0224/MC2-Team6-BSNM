@@ -17,7 +17,7 @@ struct AddFeedbackView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount)
+            FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin)
             FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin)
             FeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
                 .frame(height: 224.0)
@@ -38,5 +38,6 @@ enum FeedbackType {
     case addFeedback
     case touchPin
     case writeFeedback
-    case adjustFeedback
+    case beforeAdjustFeedback
+    case afterAdjustFeedback
 }

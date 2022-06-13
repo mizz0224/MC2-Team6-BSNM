@@ -9,6 +9,9 @@ import SwiftUI
 
 struct AdjustFeedbackNavigationItem: View {
     @Binding var changeFeedbackBottomView: FeedbackType
+    @Binding var title: String
+    @Binding var description: String
+    @Binding var currentPin: Pin
     
     var body: some View {
         HStack {
@@ -26,7 +29,7 @@ struct AdjustFeedbackNavigationItem: View {
             Spacer()
             
             Button {
-                
+                adjustInformation()
             } label: {
                 Text("수정")
                     .font(.system(size: 18.0, weight: .semibold))
@@ -51,4 +54,15 @@ struct AdjustFeedbackNavigationItem: View {
         .frame(width: 390.0, height: 51.0)
 
     }
+}
+
+extension AdjustFeedbackNavigationItem {
+    
+    func adjustInformation() {
+        changeFeedbackBottomView = .afterAdjustFeedback
+        
+        if let pinTitle = currentPin.title { title = pinTitle } else { title = "title을 불러오지 못했습니다."}
+        if let pinDescription = currentPin.description { description = pinDescription } else { description = "description을 불러오지 못했습니다."}
+    }
+    
 }

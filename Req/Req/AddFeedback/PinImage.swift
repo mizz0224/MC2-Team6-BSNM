@@ -28,7 +28,7 @@ struct PinImage: View {
             .frame(width: 32.0, height: 32.0)
             .position(x: pin.x, y: pin.y)
             .onTapGesture {
-                changeFeedbackBottomView = .adjustFeedback
+                changeFeedbackBottomView = .beforeAdjustFeedback
                 currentPin = pin
             }
             .disabled(!isAbleTouched)
