@@ -15,11 +15,14 @@ struct AddFeedbackView: View {
     
     var body: some View {
         VStack(spacing: 0) {
+            FeedbackNavigationBar()
             FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins)
             FeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description)
                 .frame(height: 224.0)
         }
+        .ignoresSafeArea()
         .navigationBarHidden(true)
+        
     }
 }
 

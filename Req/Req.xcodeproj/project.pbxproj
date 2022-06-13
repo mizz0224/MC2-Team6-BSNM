@@ -28,6 +28,7 @@
 		55113C522855B19700B2AE5D /* FeedbackTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C512855B19700B2AE5D /* FeedbackTitleTextField.swift */; };
 		55113C542855C93600B2AE5D /* FeedbackDescriptionTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C532855C93600B2AE5D /* FeedbackDescriptionTextEditor.swift */; };
 		55113C562855CBCE00B2AE5D /* EditFeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C552855CBCE00B2AE5D /* EditFeedbackBottomView.swift */; };
+		55113C592857054800B2AE5D /* FeedbackNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C582857054800B2AE5D /* FeedbackNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		55113C512855B19700B2AE5D /* FeedbackTitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTitleTextField.swift; sourceTree = "<group>"; };
 		55113C532855C93600B2AE5D /* FeedbackDescriptionTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackDescriptionTextEditor.swift; sourceTree = "<group>"; };
 		55113C552855CBCE00B2AE5D /* EditFeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFeedbackBottomView.swift; sourceTree = "<group>"; };
+		55113C582857054800B2AE5D /* FeedbackNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				55113C3E2854E35900B2AE5D /* AddFeedbackView.swift */,
 				55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */,
 				55113C382854C03000B2AE5D /* FeedbackImage.swift */,
+				55113C582857054800B2AE5D /* FeedbackNavigationBar.swift */,
 				55113C4F28550A8F00B2AE5D /* PinImage.swift */,
 				55113C4A285501E600B2AE5D /* DivisionLine.swift */,
 				55113C472854FFD100B2AE5D /* BeforeAddFeedbackBottom */,
@@ -224,6 +227,7 @@
 				55113C19285325B400B2AE5D /* Persistence.swift in Sources */,
 				55113C462854FE9500B2AE5D /* BeforeAddFeedbackBottomView.swift in Sources */,
 				55113C5028550A8F00B2AE5D /* PinImage.swift in Sources */,
+				55113C592857054800B2AE5D /* FeedbackNavigationBar.swift in Sources */,
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,
 				55113C4B285501E600B2AE5D /* DivisionLine.swift in Sources */,
 				55113C3728538E2B00B2AE5D /* Entity.swift in Sources */,

@@ -16,7 +16,6 @@ struct TestCameraView: View {
             } label: {
                 Text("피드백하기")
             }
-
         }
     }
 }
