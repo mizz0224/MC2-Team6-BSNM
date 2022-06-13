@@ -6,25 +6,31 @@
 //
 
 import SwiftUI
+
 struct TopMenuView : View {
-    let MenuFont : Font = Font.system(size:20)
+    let MenuFont : Font = Font.system(size:20).bold()
     var body : some View {
-        HStack {
-            Button(action:{}) {
-                Image(systemName : "chevron.backward").font(MenuFont)
-                    .padding(EdgeInsets(top : 0, leading : 6, bottom : 0, trailing :  0)).foregroundColor(Color.black)
-                
+        VStack(alignment: .center, spacing: 0){
+            HStack(spacing:0) {
+                Button(action:{}) {
+                    Image(systemName : "chevron.backward")
+                        .font(MenuFont)
+                        .frame(height: 24)
+                        .foregroundColor(Color.black)
+                        .padding(EdgeInsets(top :10, leading : 16, bottom :18, trailing : 0))
+                }
+                Spacer()
+                Button(action:{}) {
+                    Image(systemName : "trash.fill")
+                        .font(MenuFont)
+                        .frame(height: 24)
+                        .foregroundColor(Color.black)
+                        .padding(EdgeInsets(top : 10, leading : 0, bottom : 18, trailing : 16))
+                    
+                }
             }
-            
-            Spacer()
-            
-            Button(action:{}) {
-                Image(systemName : "trash.fill").font(MenuFont)
-                    .padding(EdgeInsets(top : 0, leading : 0, bottom : 0, trailing : 17.5)).foregroundColor(Color.black)
-            }
-            
-        }.frame(height:53)
-    }//DetailView
+        }.frame(height: 52)
+    }//TopMenuView
     struct TopMenuView_Previews : PreviewProvider {
         static var previews : some View {
             TopMenuView()

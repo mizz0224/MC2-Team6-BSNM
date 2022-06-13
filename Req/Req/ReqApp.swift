@@ -15,7 +15,7 @@ struct ReqApp: App {
         WindowGroup {
             //ContentView()
               //  .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            DetailView(imageName: "picture1", feedbackDate: Date.now, feedbackUserName: "커리", id: UUID.init())
+            DetailView(getFeedback: testData)
         }
     }
 }

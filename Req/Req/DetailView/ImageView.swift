@@ -7,16 +7,27 @@
 
 import SwiftUI
 struct ImageView : View {
-    var imageName : String
+    let pins : [Pin]
+    let imageName : String
     let PictureHeight : CGFloat = 520
     let PictureWidth : CGFloat = 390
     var body : some View {
-        Image(imageName).resizable()
-            .frame(width : PictureWidth, height : PictureHeight)
+        ZStack{
+            VStack{
+                Image(imageName)
+                    .resizable()
+                    .frame(width: 390, height: 520)
+            }.frame(height:520)//VStack
+            if !pins.isEmpty {
+                ForEach(pins, id: \.id) { pin in
+                    PinImage(x: pin.x, y: pin.y)
+                }
+            }
+        }//ZStack
     }//DetailView
     struct DetailView_Previews : PreviewProvider {
         static var previews : some View {
-            ImageView(imageName : "picture1")
+            ImageView(pins: testpins, imageName: "picture1")
         }
     }
     
