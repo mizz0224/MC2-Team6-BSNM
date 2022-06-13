@@ -10,12 +10,12 @@ import SwiftUI
 struct AdjustFeedbackBottomView: View {
     @Binding var currentPin: Pin
     
-    var title: String {
+    private var title: String {
         if let title = currentPin.title { return title }
         else { return "title을 불러오지 못했습니다." }
     }
     
-    var description: String {
+    private var description: String {
         if let description = currentPin.description { return description }
         else { return "description을 불러오지 못했습니다." }
     }
