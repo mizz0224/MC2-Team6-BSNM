@@ -20,6 +20,8 @@ struct FeedbackBottomView: View {
             AfterAddFeedbackBottomView()
         case .writeFeedback:
             EditFeedbackBottomView(title: $title, description: $description)
+        case .adjustFeedback:
+            Text("BeforeAdjustFeedbackBottomView")
         }
     }
 }
