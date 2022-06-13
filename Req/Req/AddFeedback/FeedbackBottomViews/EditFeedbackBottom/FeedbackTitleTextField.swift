@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct FeedbackTitleTextField: View {
+    @ObservedObject var keyboardHeightHelper: KeyboardHeightHelper
+    
     @Binding var title: String
+    
     let titlePlaceHolder: String = "무엇에 대한 피드백인가요?"
     
     var body: some View {

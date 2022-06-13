@@ -7,7 +7,10 @@
 
 import SwiftUI
 
+//TODO: 키보드 올라올때 View도 같이 올라오도록 구현 (현재 어색한 상태)
 struct AddFeedbackView: View {
+    @ObservedObject var keyboardHeightHelper = KeyboardHeightHelper()
+    
     @State private var changeFeedbackBottomView: FeedbackType = .addFeedback
     @State private var title: String = ""
     @State private var description: String = ""
@@ -19,9 +22,11 @@ struct AddFeedbackView: View {
         VStack(spacing: 0) {
             FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin)
             FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin)
-            FeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
+            FeedbackBottomView(keyboardHeightHelper: keyboardHeightHelper, changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
                 .frame(height: 224.0)
         }
+        .offset(y: -(self.keyboardHeightHelper.keyboardHeight/2))
+            .animation(.easeInOut(duration: 0.16))
         .ignoresSafeArea()
         .navigationBarHidden(true)
         

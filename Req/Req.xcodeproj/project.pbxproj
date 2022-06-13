@@ -35,6 +35,7 @@
 		55113C63285755B900B2AE5D /* AdjustFeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C62285755B900B2AE5D /* AdjustFeedbackBottomView.swift */; };
 		55113C652857761500B2AE5D /* AdjustFeedbackTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C642857761500B2AE5D /* AdjustFeedbackTitle.swift */; };
 		55113C672857767800B2AE5D /* AdjustFeedbackDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C662857767800B2AE5D /* AdjustFeedbackDescription.swift */; };
+		55113C6A28578EC900B2AE5D /* KeyboardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C6928578EC900B2AE5D /* KeyboardControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		55113C62285755B900B2AE5D /* AdjustFeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackBottomView.swift; sourceTree = "<group>"; };
 		55113C642857761500B2AE5D /* AdjustFeedbackTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackTitle.swift; sourceTree = "<group>"; };
 		55113C662857767800B2AE5D /* AdjustFeedbackDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackDescription.swift; sourceTree = "<group>"; };
+		55113C6928578EC900B2AE5D /* KeyboardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				55113C13285325B400B2AE5D /* Assets.xcassets */,
 				55113C18285325B400B2AE5D /* Persistence.swift */,
 				55113C402854E53B00B2AE5D /* TestCameraView.swift */,
+				55113C6928578EC900B2AE5D /* KeyboardControl.swift */,
 				55113C422854FDB200B2AE5D /* AddFeedback */,
 				55113C3628538E2B00B2AE5D /* Entity.swift */,
 				55113C1A285325B400B2AE5D /* Req.xcdatamodeld */,
@@ -269,6 +272,7 @@
 				55113C1C285325B400B2AE5D /* Req.xcdatamodeld in Sources */,
 				55113C19285325B400B2AE5D /* Persistence.swift in Sources */,
 				55113C462854FE9500B2AE5D /* BeforeAddFeedbackBottomView.swift in Sources */,
+				55113C6A28578EC900B2AE5D /* KeyboardControl.swift in Sources */,
 				55113C5028550A8F00B2AE5D /* PinImage.swift in Sources */,
 				55113C592857054800B2AE5D /* FeedbackNavigationBar.swift in Sources */,
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,

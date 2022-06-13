@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct EditFeedbackBottomView: View {
+    @ObservedObject var keyboardHeightHelper: KeyboardHeightHelper
+    
     @Binding var title: String
     @Binding var description: String
     
@@ -15,13 +17,13 @@ struct EditFeedbackBottomView: View {
         VStack(alignment: .leading ,spacing: 0) {
             Spacer()
                 .frame(height: 24.0)
-            FeedbackTitleTextField(title: $title)
+            FeedbackTitleTextField(keyboardHeightHelper: keyboardHeightHelper, title: $title)
             Spacer()
                 .frame(height: 20.0)
             DivisionLine()
             Spacer()
                 .frame(height: 20.0)
-            FeedbackDescriptionTextEditor(description: $description)
+            FeedbackDescriptionTextEditor(keyboardHeightHelper: keyboardHeightHelper, description: $description)
                 .frame(maxHeight: 130.0)
         }
     }

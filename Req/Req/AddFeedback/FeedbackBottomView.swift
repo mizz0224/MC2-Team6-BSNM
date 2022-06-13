@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FeedbackBottomView: View {
+    @ObservedObject var keyboardHeightHelper: KeyboardHeightHelper
+    
     @Binding var changeFeedbackBottomView: FeedbackType
     @Binding var title: String
     @Binding var description: String
@@ -23,7 +25,7 @@ struct FeedbackBottomView: View {
             //TODO: BeforeAdjustFeedbackBottomView 구현
             AdjustFeedbackBottomView(currentPin: $currentPin)
         default:
-            EditFeedbackBottomView(title: $title, description: $description)
+            EditFeedbackBottomView(keyboardHeightHelper: keyboardHeightHelper,title: $title, description: $description)
         }
     }
 }

@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct FeedbackDescriptionTextEditor: View {
-    @Binding var description: String
+    @ObservedObject var keyboardHeightHelper: KeyboardHeightHelper
+    
     @State private var placeholderText: String = "어떻게 해야 더 멋진 패션이 될까요? 상세히 설명해주세요."
+    
+    @Binding var description: String
     
     var body: some View {
         ZStack {
