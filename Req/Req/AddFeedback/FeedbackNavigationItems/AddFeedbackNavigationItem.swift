@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//TODO: Button별 분리
 struct AddFeedbackNavigationItem: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     

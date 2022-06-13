@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//TODO: Button별 분리
 struct AdjustFeedbackNavigationItem: View {
     @State private var alertShow: Bool = false
     
