@@ -18,6 +18,6 @@ struct Pin: Hashable {
     let id: Int
     let x: Double
     let y: Double
-    let title: String?
-    let description: String?
+    var title: String?
+    var description: String?
 }

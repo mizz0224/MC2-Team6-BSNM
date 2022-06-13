@@ -35,7 +35,7 @@ struct WriteFeedbackNavigationItem: View {
             Spacer()
             
             Button {
-                
+                completeWrtingFeedback()
             } label: {
                 Text("확인")
                     .font(.system(size: 18.0, weight: .semibold))
@@ -64,5 +64,14 @@ extension WriteFeedbackNavigationItem {
             pins.remove(at: nowId)
             idCount = nowId
         }
+    }
+    
+    // 피드백 작성 확인버튼
+    func completeWrtingFeedback() {
+        let nowId = idCount - 1
+        pins[nowId].title = title
+        pins[nowId].description = description
+        
+        changeFeedbackBottomView = .addFeedback
     }
 }
