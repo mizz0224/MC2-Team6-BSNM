@@ -34,7 +34,7 @@ struct FeedbackImage: View {
             
             if !pins.isEmpty {
                 ForEach(pins, id: \.id) { pin in
-                    PinImage(pin: pin)
+                    PinImage(changeFeedbackBottomView: $changeFeedbackBottomView ,pin: pin)
                 }
             }
             
