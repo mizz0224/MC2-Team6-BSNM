@@ -34,7 +34,7 @@ struct FeedbackImage: View {
             
             if !pins.isEmpty {
                 ForEach(pins, id: \.id) { pin in
-                    PinImage(x: pin.x, y: pin.y)
+                    PinImage(pin: pin)
                 }
             }
             

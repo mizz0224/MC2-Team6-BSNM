@@ -21,6 +21,7 @@ struct FeedbackBottomView: View {
         case .writeFeedback:
             EditFeedbackBottomView(title: $title, description: $description)
         case .adjustFeedback:
+            //TODO: BeforeAdjustFeedbackBottomView 구현
             Text("BeforeAdjustFeedbackBottomView")
         }
     }
