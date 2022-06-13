@@ -27,7 +27,11 @@ struct FeedbackImage: View {
                         changeFeedbackBottomView = .writeFeedback
                     }
                         .disabled(allowToTouchImage(changeFeedbackBottomView))
-                ) // image
+                )
+                .onTapGesture {
+                    hideKeyboard()
+                } // image
+            
             
             if !pins.isEmpty {
                 ForEach(pins, id: \.id) { pin in
