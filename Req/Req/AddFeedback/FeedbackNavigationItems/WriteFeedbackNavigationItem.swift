@@ -34,14 +34,20 @@ struct WriteFeedbackNavigationItem: View {
             
             Spacer()
             
-            Button {
-                completeWrtingFeedback()
-            } label: {
-                Text("확인")
-                    .font(.system(size: 18.0, weight: .semibold))
-                    .foregroundColor(isWritten ? .black : .gray)
+            switch changeFeedbackBottomView {
+            case .writeFeedback:
+                Button {
+                    completeWrtingFeedback()
+                } label: {
+                    Text("확인")
+                        .font(.system(size: 18.0, weight: .semibold))
+                        .foregroundColor(isWritten ? .black : .gray)
+                }
+                .disabled(!isWritten)
+            default:
+                EmptyView()
             }
-            .disabled(!isWritten)
+            
             
             Spacer()
                 .frame(width: 16.0)
