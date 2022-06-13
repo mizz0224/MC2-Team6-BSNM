@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WriteFeedbackNavigationItem: View {
+    @Binding var changeFeedbackBottomView: FeedbackType
     
     var body: some View {
         HStack() {
@@ -15,7 +16,7 @@ struct WriteFeedbackNavigationItem: View {
                 .frame(width: 16.0)
             
             Button {
-                
+                cancelWrtieFeedback()
             } label: {
                 Text("취소")
                     .font(.system(size: 18.0, weight: .semibold))
@@ -36,5 +37,15 @@ struct WriteFeedbackNavigationItem: View {
                 .frame(width: 16.0)
         }
         .frame(width: 390.0, height: 51.0)
+    }
+}
+
+extension WriteFeedbackNavigationItem {
+    
+    // 피드백 작성 취소버튼
+    func cancelWrtieFeedback() {
+        changeFeedbackBottomView = .addFeedback
+        
+        //TODO: 작성 취소시 작성하던 해당 pin 삭제 구현
     }
 }

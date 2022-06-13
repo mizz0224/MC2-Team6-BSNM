@@ -20,7 +20,7 @@ struct FeedbackNavigationBar: View {
             case .addFeedback:
                 AddFeedbackNavigationItem(pins: $pins)
             default:
-                WriteFeedbackNavigationItem()
+                WriteFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView)
             }
         }
     }
