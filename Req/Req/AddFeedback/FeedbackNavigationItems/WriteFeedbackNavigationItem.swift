@@ -112,7 +112,13 @@ extension WriteFeedbackNavigationItem {
         currentPin.title = title
         currentPin.description = description
         
-        pins[currentPin.id] = currentPin
+        var pinCount = 0
+        for pin in pins {
+            if pin.id == currentPin.id {
+                pins[pinCount] = currentPin
+            }
+            pinCount += 1
+        }
         
         title = ""
         description = ""
