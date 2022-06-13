@@ -19,6 +19,7 @@ struct AddFeedbackView: View {
             FeedbackBottomView(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description)
                 .frame(height: 224.0)
         }
+        .navigationBarHidden(true)
     }
 }
 

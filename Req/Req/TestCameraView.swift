@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct TestCameraView: View {
-    @State private var showView = false
     
     var body: some View {
-        Button {
-            showView = true
-        } label: {
-            Text("피드백하기")
-        }
-        .fullScreenCover(isPresented: $showView) {
-            AddFeedbackView()
+        NavigationView {
+            NavigationLink {
+                AddFeedbackView()
+            } label: {
+                Text("피드백하기")
+            }
+
         }
     }
 }
