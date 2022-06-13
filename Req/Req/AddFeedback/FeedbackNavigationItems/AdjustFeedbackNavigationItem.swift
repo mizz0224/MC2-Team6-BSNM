@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct AdjustFeedbackNavigationItem: View {
+    @State private var alertShow: Bool = false
+    
     @Binding var changeFeedbackBottomView: FeedbackType
     @Binding var title: String
     @Binding var description: String
+    @Binding var pins: [Pin]
     @Binding var currentPin: Pin
     
     var body: some View {
@@ -40,12 +43,22 @@ struct AdjustFeedbackNavigationItem: View {
                 .frame(width: 28.0)
             
             Button {
-                
-            } label: {
+                alertShow = true
+            }
+            label: {
                 Text("삭제")
                     .font(.system(size: 18.0, weight: .semibold))
                     .foregroundColor(.red)
             }
+            .alert("해당 피드백을 삭제하시겠습니까?", isPresented: $alertShow) {
+                Button("취소", role: .cancel) { alertShow = false }
+                Button("삭제", role: .destructive) {
+                    alertShow = false
+                    deletePin()
+                    
+                    changeFeedbackBottomView = .addFeedback
+                }
+            } // 삭제버튼
             
             Spacer()
                 .frame(width: 16.0)
@@ -65,4 +78,15 @@ extension AdjustFeedbackNavigationItem {
         if let pinDescription = currentPin.description { description = pinDescription } else { description = "description을 불러오지 못했습니다."}
     }
     
+    func deletePin() {
+        var pinCount = 0
+        for pin in pins {
+            if pin.id == currentPin.id {
+                pins.remove(at: pinCount)
+                
+                return
+            }
+            pinCount += 1
+        }
+    }
 }

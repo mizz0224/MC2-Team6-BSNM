@@ -88,9 +88,9 @@ extension WriteFeedbackNavigationItem {
     
     // 피드백 작성 확인버튼
     func completeWrtingFeedback() {
-        let nowId = idCount - 1
-        pins[nowId].title = title
-        pins[nowId].description = description
+        let lastIndex = pins.endIndex - 1
+        pins[lastIndex].title = title
+        pins[lastIndex].description = description
         
         title = ""
         description = ""
