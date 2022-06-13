@@ -11,6 +11,7 @@ struct FeedbackBottomView: View {
     @Binding var changeFeedbackBottomView: FeedbackType
     @Binding var title: String
     @Binding var description: String
+    @Binding var currentPin: Pin
     
     var body: some View {
         switch changeFeedbackBottomView {
@@ -22,7 +23,7 @@ struct FeedbackBottomView: View {
             EditFeedbackBottomView(title: $title, description: $description)
         case .adjustFeedback:
             //TODO: BeforeAdjustFeedbackBottomView 구현
-            Text("BeforeAdjustFeedbackBottomView")
+            AdjustFeedbackBottomView(currentPin: $currentPin)
         }
     }
 }

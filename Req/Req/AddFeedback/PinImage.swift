@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PinImage: View {
     @Binding var changeFeedbackBottomView: FeedbackType
+    @Binding var currentPin: Pin
     
     var pin: Pin
     var isAbleTouched: Bool {
@@ -28,6 +29,7 @@ struct PinImage: View {
             .position(x: pin.x, y: pin.y)
             .onTapGesture {
                 changeFeedbackBottomView = .adjustFeedback
+                currentPin = pin
             }
             .disabled(!isAbleTouched)
     }

@@ -11,6 +11,7 @@ struct FeedbackImage: View {
     @Binding var changeFeedbackBottomView: FeedbackType
     @Binding var pins: [Pin]
     @Binding var idCount: Int
+    @Binding var currentPin: Pin
     
     let image: Image = Image("TestImage")
     
@@ -34,7 +35,7 @@ struct FeedbackImage: View {
             
             if !pins.isEmpty {
                 ForEach(pins, id: \.id) { pin in
-                    PinImage(changeFeedbackBottomView: $changeFeedbackBottomView ,pin: pin)
+                    PinImage(changeFeedbackBottomView: $changeFeedbackBottomView, currentPin: $currentPin ,pin: pin)
                 }
             }
             
