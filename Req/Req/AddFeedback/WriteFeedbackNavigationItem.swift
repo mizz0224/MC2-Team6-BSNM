@@ -9,6 +9,8 @@ import SwiftUI
 
 struct WriteFeedbackNavigationItem: View {
     @Binding var changeFeedbackBottomView: FeedbackType
+    @Binding var pins: [Pin]
+    @Binding var idCount: Int
     
     var body: some View {
         HStack() {
@@ -46,6 +48,12 @@ extension WriteFeedbackNavigationItem {
     func cancelWrtieFeedback() {
         changeFeedbackBottomView = .addFeedback
         
-        //TODO: 작성 취소시 작성하던 해당 pin 삭제 구현
+        // 추가버튼 누른 직후 다시 취소할 경우 동작 안하도록 구현
+        if idCount != 0 {
+            // Pin에 부여한 id에 맞게 취소할 시 배열에서 삭제하기 위함
+            let nowId = idCount - 1
+            pins.remove(at: nowId)
+            idCount = nowId
+        }
     }
 }

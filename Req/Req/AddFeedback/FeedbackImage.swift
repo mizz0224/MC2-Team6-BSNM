@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct FeedbackImage: View {
-    @State private var idCount: Int = 0
-    
     @Binding var changeFeedbackBottomView: FeedbackType
     @Binding var pins: [Pin]
+    @Binding var idCount: Int
     
     let image: Image = Image("TestImage")
     
