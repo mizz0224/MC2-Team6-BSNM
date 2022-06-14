@@ -31,23 +31,7 @@ struct AdjustFeedbackNavigationItem: View {
             Spacer()
                 .frame(width: 28.0)
             
-            Button {
-                alertShow = true
-            }
-            label: {
-                Text("삭제")
-                    .font(.system(size: 18.0, weight: .semibold))
-                    .foregroundColor(.red)
-            }
-            .alert("해당 피드백을 삭제하시겠습니까?", isPresented: $alertShow) {
-                Button("취소", role: .cancel) { alertShow = false }
-                Button("삭제", role: .destructive) {
-                    alertShow = false
-                    deletePin()
-                    
-                    changeFeedbackBottomView = .addFeedback
-                }
-            } // 삭제버튼
+            AdjustFeedbackNavigationDeleteButton(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, currentPin: $currentPin)
             
             Spacer()
                 .frame(width: 16.0)
@@ -55,20 +39,5 @@ struct AdjustFeedbackNavigationItem: View {
         } // HStack
         .frame(width: 390.0, height: 51.0)
 
-    }
-}
-
-extension AdjustFeedbackNavigationItem {
-    
-    func deletePin() {
-        var pinCount = 0
-        for pin in pins {
-            if pin.id == currentPin.id {
-                pins.remove(at: pinCount)
-                
-                return
-            }
-            pinCount += 1
-        }
     }
 }
