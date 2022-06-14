@@ -53,6 +53,7 @@
 		4241F846285487E5001E11DF /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
+				42695E1228574490005D18A8 /* PinImage.swift */,
 				4241F84728548802001E11DF /* DetailView.swift */,
 				4249EE89285513B300F63F11 /* TopMenuView.swift */,
 				4249EE8B285515C600F63F11 /* ImageView.swift */,
@@ -81,7 +82,6 @@
 		55113C0E285325B300B2AE5D /* Req */ = {
 			isa = PBXGroup;
 			children = (
-				42695E1228574490005D18A8 /* PinImage.swift */,
 				4241F846285487E5001E11DF /* DetailView */,
 				55113C0F285325B300B2AE5D /* ReqApp.swift */,
 				55113C11285325B300B2AE5D /* ContentView.swift */,
