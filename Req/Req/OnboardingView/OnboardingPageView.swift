@@ -48,7 +48,7 @@ struct OnboardingPageView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 347)
             }
-            //온보당 이미지
+            //온보딩 이미지
             
             Spacer().frame(height: 24)
             

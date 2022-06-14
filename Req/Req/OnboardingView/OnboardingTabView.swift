@@ -35,21 +35,22 @@ struct OnboardingTabView: View {
                 
                 // 페이지 3: 읽기 페이지 안내 + 온보딩 완료
                 OnboardingLastPageView(
-                    title: "Take",
-                    title2: "A Picture",
-                    imageName: "온보딩이미지1",
-                    subtitle: "그 날의 패션을 지인을",
-                    subtitle2: "통해 기록하세요",
+                    title: "Grow Up!",
+                    imageName: "온보딩이미지3",
+                    subtitle: "Req한 기록을 통해",
+                    subtitle2: "여러분의 패션을 성장시키세요",
                     isFirstLaunching: $isFirstLaunching
                 )
                 .tag(3)
             }
-            .tabViewStyle(PageTabViewStyle())
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+            
             
             
             if pageIndex == 3
             {
                 HStack{
+                    Spacer().frame(height: 100)
                     Button {
                         isFirstLaunching.toggle()
                     } label: {

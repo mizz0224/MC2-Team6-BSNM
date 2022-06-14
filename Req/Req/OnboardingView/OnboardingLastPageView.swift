@@ -9,7 +9,6 @@ import SwiftUI
 
 struct OnboardingLastPageView: View {
     let title: String
-    let title2: String
     let imageName: String
     let subtitle: String
     let subtitle2: String
@@ -17,7 +16,7 @@ struct OnboardingLastPageView: View {
     @Binding var isFirstLaunching: Bool
     var body: some View {
         VStack {
-            Spacer().frame(height: 100)
+            Spacer().frame(height: 130)
             
             VStack{
                 HStack{
@@ -26,32 +25,16 @@ struct OnboardingLastPageView: View {
                         .font(.system(size: 60, weight: .bold))
                     Spacer()
                 }
-                HStack{
-                    Spacer().frame(width:32)
-                    Text(title2)
-                        .font(.system(size: 60, weight: .bold))
-                    Spacer()
-                }
             }
             //온보딩 타이틀
             
             Spacer().frame(height: 6)
             
-            ZStack {
-                VStack{
-                    Spacer().frame(height:160)
-                    Rectangle()
-                        .frame(width: 390, height: 165)
-                        .foregroundColor(Color.purple)
-                }
-                Image(imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 347)
-            }
-            //온보당 이미지
-            
-            Spacer().frame(height: 24)
+            Image(imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 400)
+            //온보딩 이미지
             
             VStack{
                 Text(subtitle)
@@ -59,7 +42,7 @@ struct OnboardingLastPageView: View {
                 Spacer().frame(height:4)
                 Text(subtitle2)
                     .font(.system(size: 18, weight: .semibold))
-            }
+            }.offset(y: -26)
             //온보딩 설명
             
             
@@ -72,14 +55,14 @@ struct OnboardingLastPageView: View {
     }
 }
 
-//struct OnboardingLastPageView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        OnboardingLastPageView
-//        (title: "Take",
-//         title2: "A Picture",
-//         imageName: "온보딩이미지1",
-//         subtitle: "그 날의 패션을 지인을",
-//         subtitle2: "통해 기록하세요"
-//        )
-//    }
-//}
+struct OnboardingLastPageView_Previews: PreviewProvider {
+    static var previews: some View {
+        OnboardingLastPageView(
+            title: "Grow Up!",
+            imageName: "온보딩이미지3",
+            subtitle: "Req한 기록을 통해",
+            subtitle2: "여러분의 패션을 성장시키세요", isFirstLaunching: .constant(true)
+        )
+
+    }
+}
