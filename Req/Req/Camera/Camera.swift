@@ -106,7 +106,7 @@ func cropImage(_ inputImage: UIImage) -> UIImage? {
         x: CGFloat(0.0),
         y: CGFloat(image.size.height * (100 / 844) + 13),
         width: image.size.width,
-        height: image.size.height * (520 / 744) + 95
+        height: image.size.height * (520 / 744) + 97
     )
 
     // Perform cropping in Core Graphics

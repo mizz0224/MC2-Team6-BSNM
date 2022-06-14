@@ -52,7 +52,7 @@ class CameraViewModel: ObservableObject {
         
         model.$recentImage.sink { [weak self] (photo) in
             guard let pic = photo else { return }
-            self?.recentImage = pic
+            self?.recentImage = cropImage(pic)
         }
         .store(in: &self.subscriptions)
     }
