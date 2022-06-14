@@ -22,13 +22,7 @@ struct AdjustFeedbackNavigationItem: View {
             Spacer()
                 .frame(width: 16.0)
             
-            Button {
-                changeFeedbackBottomView = .addFeedback
-            } label: {
-                Text("취소")
-                    .font(.system(size: 18.0, weight: .semibold))
-                    .foregroundColor(.black)
-            }
+            AdjustFeedbackNavigationCancelButton(changeFeedbackBottomView: $changeFeedbackBottomView)
             
             Spacer()
             

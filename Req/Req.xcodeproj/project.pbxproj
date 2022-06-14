@@ -40,6 +40,7 @@
 		55113C9028585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C8F28585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift */; };
 		55113C9328585CC900B2AE5D /* WriteFeedbackNavigationCancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C9228585CC900B2AE5D /* WriteFeedbackNavigationCancelButton.swift */; };
 		55113C9528585DEA00B2AE5D /* WriteFeedbackNavigationCompleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C9428585DEA00B2AE5D /* WriteFeedbackNavigationCompleteButton.swift */; };
+		55113C982858611A00B2AE5D /* AdjustFeedbackNavigationCancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C972858611A00B2AE5D /* AdjustFeedbackNavigationCancelButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		55113C8F28585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackNavigationSaveButton.swift; sourceTree = "<group>"; };
 		55113C9228585CC900B2AE5D /* WriteFeedbackNavigationCancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteFeedbackNavigationCancelButton.swift; sourceTree = "<group>"; };
 		55113C9428585DEA00B2AE5D /* WriteFeedbackNavigationCompleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteFeedbackNavigationCompleteButton.swift; sourceTree = "<group>"; };
+		55113C972858611A00B2AE5D /* AdjustFeedbackNavigationCancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackNavigationCancelButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,10 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				55113C9128585AC800B2AE5D /* AddFeedbackNavigationItem */,
-				55113C5C2857268A00B2AE5D /* WriteFeedbackNavigationItem.swift */,
-				55113C9428585DEA00B2AE5D /* WriteFeedbackNavigationCompleteButton.swift */,
-				55113C9228585CC900B2AE5D /* WriteFeedbackNavigationCancelButton.swift */,
+				55113C9628585EE600B2AE5D /* WriteFeedbackNavigationItem */,
 				55113C5E28574D0B00B2AE5D /* AdjustFeedbackNavigationItem.swift */,
+				55113C972858611A00B2AE5D /* AdjustFeedbackNavigationCancelButton.swift */,
 			);
 			path = FeedbackNavigationItems;
 			sourceTree = "<group>";
@@ -216,6 +217,16 @@
 				55113C8F28585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift */,
 			);
 			path = AddFeedbackNavigationItem;
+			sourceTree = "<group>";
+		};
+		55113C9628585EE600B2AE5D /* WriteFeedbackNavigationItem */ = {
+			isa = PBXGroup;
+			children = (
+				55113C5C2857268A00B2AE5D /* WriteFeedbackNavigationItem.swift */,
+				55113C9428585DEA00B2AE5D /* WriteFeedbackNavigationCompleteButton.swift */,
+				55113C9228585CC900B2AE5D /* WriteFeedbackNavigationCancelButton.swift */,
+			);
+			path = WriteFeedbackNavigationItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +310,7 @@
 				55113C8E2858595900B2AE5D /* AddFeedbackNavigationXButton.swift in Sources */,
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,
 				55113C4B285501E600B2AE5D /* DivisionLine.swift in Sources */,
+				55113C982858611A00B2AE5D /* AdjustFeedbackNavigationCancelButton.swift in Sources */,
 				55113C3728538E2B00B2AE5D /* Entity.swift in Sources */,
 				55113C5D2857268A00B2AE5D /* WriteFeedbackNavigationItem.swift in Sources */,
 				55113C9528585DEA00B2AE5D /* WriteFeedbackNavigationCompleteButton.swift in Sources */,
