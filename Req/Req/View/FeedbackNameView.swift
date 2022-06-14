@@ -39,11 +39,15 @@ struct FeedbackNameView: View {
                 Spacer()
 
                 if !self.name.isEmpty {
-                    NavigationLink(destination: { /*TODO: 카메라와 링크 연결할 것*/ }) {
+                    NavigationLink(
+                        destination: { FeedbackCameraView(name: self.$name)
+                                .navigationBarTitleDisplayMode(.inline)
+                                .navigationBarHidden(true)
+                        }) {
                         ZStack {
                             Rectangle()
                                 .foregroundColor(.black)
-                            
+
                             Text("사진 촬영하기")
                                 .font(.custom("Apple SD Gothic Neo Medium", size: 16))
                                 .foregroundColor(.white)
@@ -65,7 +69,7 @@ struct FeedbackNameView_Previews: PreviewProvider {
 
 struct CustomTextField: View {
     @Binding var name: String
-    
+
     var body: some View {
         ZStack {
             if self.name.isEmpty {
