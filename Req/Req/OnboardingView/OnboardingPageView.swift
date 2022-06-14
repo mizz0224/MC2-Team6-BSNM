@@ -16,23 +16,31 @@ struct OnboardingPageView: View {
     
     var body: some View {
         VStack {
-            Spacer().frame(height: 56)
+            Spacer().frame(height: 100)
+            
             VStack{
-                Text(title)
-                    .font(.system(size: 60, weight: .bold))
-                    .offset(x: -101)
-                Text(title2)
-                    .font(.system(size: 60, weight: .bold))
-                    .offset(x: -40)
+                HStack{
+                    Spacer().frame(width:32)
+                    Text(title)
+                        .font(.system(size: 60, weight: .bold))
+                    Spacer()
+                }
+                HStack{
+                    Spacer().frame(width:32)
+                    Text(title2)
+                        .font(.system(size: 60, weight: .bold))
+                    Spacer()
+                }
             }
+            //온보딩 타이틀
             
             Spacer().frame(height: 6)
             
             ZStack {
                 VStack{
-                    Spacer().frame(height:180)
+                    Spacer().frame(height:160)
                     Rectangle()
-                        .frame(width: 390, height: 160)
+                        .frame(width: 390, height: 165)
                         .foregroundColor(Color.purple)
                 }
                 Image(imageName)
@@ -40,32 +48,24 @@ struct OnboardingPageView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 347)
             }
+            //온보당 이미지
             
             Spacer().frame(height: 24)
             
             VStack{
                 Text(subtitle)
-                    .font(.system(size: 18, weight: .medium))
+                    .font(.system(size: 18, weight: .semibold))
                 Spacer().frame(height:4)
                 Text(subtitle2)
-                    .font(.system(size: 18, weight: .medium))
+                    .font(.system(size: 18, weight: .semibold))
             }
+            //온보딩 설명
+            
+            
+            //여기가 페이지 인디케이터 자리
+            //인디케이터 들어가면 Spacer height 수정해서 조정해야함
             
             Spacer().frame(height: 100)
-            
-            HStack{
-                Spacer().frame(width: 32)
-                Button {
-                    
-                } label: {
-                    Text("Skip")
-                        .foregroundColor(.gray)
-                        .font(.system(size: 24, weight: .bold))
-                }
-                Spacer()
-            }
-            
-            Spacer().frame(height: 40)
             
         }
     }

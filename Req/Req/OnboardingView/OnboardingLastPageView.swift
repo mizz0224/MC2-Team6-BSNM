@@ -17,39 +17,57 @@ struct OnboardingLastPageView: View {
     @Binding var isFirstLaunching: Bool
     var body: some View {
         VStack {
-            Text(title)
-                .font(.system(size: 60, weight: .bold))
-                .offset(x: -101)
-            Text(title2)
-                .font(.system(size: 60, weight: .bold))
-                .offset(x: -40)
+            Spacer().frame(height: 100)
+            
+            VStack{
+                HStack{
+                    Spacer().frame(width:32)
+                    Text(title)
+                        .font(.system(size: 60, weight: .bold))
+                    Spacer()
+                }
+                HStack{
+                    Spacer().frame(width:32)
+                    Text(title2)
+                        .font(.system(size: 60, weight: .bold))
+                    Spacer()
+                }
+            }
+            //온보딩 타이틀
+            
+            Spacer().frame(height: 6)
+            
             ZStack {
-                Rectangle()
-                    .offset(y: 100)
-                    .frame(width: 390, height: 160)
-                    .foregroundColor(Color.blue)
+                VStack{
+                    Spacer().frame(height:160)
+                    Rectangle()
+                        .frame(width: 390, height: 165)
+                        .foregroundColor(Color.purple)
+                }
                 Image(imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 347)
             }
-            Text(subtitle)
-                .font(.system(size: 18, weight: .medium))
-            Text(subtitle2)
-                .font(.system(size: 18, weight: .medium))
+            //온보당 이미지
             
-            // 온보딩 완료 버튼.
-            // AppStorage의 isFirstLaunching 값을 false로 바꾸기 때문에, 다음번에 앱을 실행할 때는 OnboardingTabView를 띄우지 않음.
-            Button {
-                isFirstLaunching.toggle()
-            } label: {
-                Text("앱 시작하기")
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .frame(width: 150, height: 46)
-                    .background(Color.black)
-                    .cornerRadius(25)
+            Spacer().frame(height: 24)
+            
+            VStack{
+                Text(subtitle)
+                    .font(.system(size: 18, weight: .semibold))
+                Spacer().frame(height:4)
+                Text(subtitle2)
+                    .font(.system(size: 18, weight: .semibold))
             }
+            //온보딩 설명
+            
+            
+            //여기가 페이지 인디케이터 자리
+            //인디케이터 들어가면 Spacer height 수정해서 조정해야함
+            
+            Spacer().frame(height: 100)
+            
         }
     }
 }
