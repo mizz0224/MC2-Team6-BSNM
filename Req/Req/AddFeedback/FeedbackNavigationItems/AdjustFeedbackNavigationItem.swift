@@ -26,13 +26,7 @@ struct AdjustFeedbackNavigationItem: View {
             
             Spacer()
             
-            Button {
-                adjustInformation()
-            } label: {
-                Text("수정")
-                    .font(.system(size: 18.0, weight: .semibold))
-                    .foregroundColor(.black)
-            }
+            AdjustFeedbackNavigationAdjustButton(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
             
             Spacer()
                 .frame(width: 28.0)
@@ -65,13 +59,6 @@ struct AdjustFeedbackNavigationItem: View {
 }
 
 extension AdjustFeedbackNavigationItem {
-    
-    func adjustInformation() {
-        changeFeedbackBottomView = .afterAdjustFeedback
-        
-        if let pinTitle = currentPin.title { title = pinTitle } else { title = "title을 불러오지 못했습니다."}
-        if let pinDescription = currentPin.description { description = pinDescription } else { description = "description을 불러오지 못했습니다."}
-    }
     
     func deletePin() {
         var pinCount = 0

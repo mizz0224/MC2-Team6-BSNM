@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-//TODO: Button별 분리
 struct WriteFeedbackNavigationItem: View {
     @Binding var changeFeedbackBottomView: FeedbackType
     @Binding var title: String
