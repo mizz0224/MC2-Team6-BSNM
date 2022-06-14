@@ -14,6 +14,7 @@
 		55113C19285325B400B2AE5D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C18285325B400B2AE5D /* Persistence.swift */; };
 		55113C1C285325B400B2AE5D /* Req.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55113C1A285325B400B2AE5D /* Req.xcdatamodeld */; };
 		F509D6382858DDE200D81AC3 /* NogitFakeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509D6372858DDE200D81AC3 /* NogitFakeHomeView.swift */; };
+		F509D63B2858E59400D81AC3 /* FeedbackNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */; };
 		F5117C23285857F100FA29C3 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C22285857F100FA29C3 /* CameraViewModel.swift */; };
 		F5117C29285857FA00FA29C3 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C26285857FA00FA29C3 /* Camera.swift */; };
 		F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */; };
@@ -29,6 +30,7 @@
 		55113C18285325B400B2AE5D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		55113C1B285325B400B2AE5D /* Req.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Req.xcdatamodel; sourceTree = "<group>"; };
 		F509D6372858DDE200D81AC3 /* NogitFakeHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NogitFakeHomeView.swift; sourceTree = "<group>"; };
+		F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackNameView.swift; sourceTree = "<group>"; };
 		F5117C22285857F100FA29C3 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		F5117C26285857FA00FA29C3 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCameraView.swift; sourceTree = "<group>"; };
@@ -67,13 +69,13 @@
 			isa = PBXGroup;
 			children = (
 				55113C0F285325B300B2AE5D /* ReqApp.swift */,
+				F509D6392858E58400D81AC3 /* View */,
 				F5FE1B7A285718A200A3B5BE /* Camera */,
 				55113C11285325B300B2AE5D /* ContentView.swift */,
 				55113C13285325B400B2AE5D /* Assets.xcassets */,
 				55113C18285325B400B2AE5D /* Persistence.swift */,
 				55113C1A285325B400B2AE5D /* Req.xcdatamodeld */,
 				55113C15285325B400B2AE5D /* Preview Content */,
-				F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */,
 			);
 			path = Req;
 			sourceTree = "<group>";
@@ -84,6 +86,15 @@
 				55113C16285325B400B2AE5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F509D6392858E58400D81AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */,
+				F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F5FE1B7A285718A200A3B5BE /* Camera */ = {
@@ -174,6 +185,7 @@
 				F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */,
 				F5117C23285857F100FA29C3 /* CameraViewModel.swift in Sources */,
 				F5117C29285857FA00FA29C3 /* Camera.swift in Sources */,
+				F509D63B2858E59400D81AC3 /* FeedbackNameView.swift in Sources */,
 				F5117C2F2858C59700FA29C3 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
