@@ -10,6 +10,9 @@ import SwiftUI
 struct AddFeedbackNavigationItem: View {
     @Binding var pins: [Pin]
     
+    let reviewerName: String
+    let image: UIImage
+    
     var body: some View {
         HStack {
             Spacer()
@@ -20,7 +23,7 @@ struct AddFeedbackNavigationItem: View {
             Spacer()
             
             if !pins.isEmpty {
-                AddFeedbackNavigationSaveButton()
+                AddFeedbackNavigationSaveButton(pins: $pins, reviewerName: reviewerName, image: image)
                 Spacer()
                     .frame(width: 16.0)
             }

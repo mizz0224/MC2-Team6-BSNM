@@ -13,11 +13,11 @@ struct FeedbackImage: View {
     @Binding var idCount: Int
     @Binding var currentPin: Pin
     
-    let image: Image = Image("TestImage")
+    let image: UIImage
     
     var body: some View {
         ZStack {
-            image
+            Image(uiImage: image)
                 .resizable()
                 .frame(width: 390.0, height: 520.0)
                 .overlay(

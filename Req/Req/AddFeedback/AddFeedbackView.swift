@@ -18,10 +18,13 @@ struct AddFeedbackView: View {
     @State private var idCount: Int = 0
     @State private var currentPin: Pin = Pin(id: 0, x: 0.0, y: 0.0, title: nil, description: nil)
     
+    let reviewerName: String
+    let image: UIImage
+    
     var body: some View {
         VStack(spacing: 0) {
-            FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin)
-            FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin)
+            FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin, reviewerName: reviewerName, image: image)
+            FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin, image: image)
             FeedbackBottomView(keyboardHeightHelper: keyboardHeightHelper, changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
                 .frame(height: 224.0)
         }
@@ -30,12 +33,6 @@ struct AddFeedbackView: View {
         .ignoresSafeArea()
         .navigationBarHidden(true)
         
-    }
-}
-
-struct AddFeedbackView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddFeedbackView()
     }
 }
 

@@ -9,10 +9,13 @@ import SwiftUI
 
 struct TestCameraView: View {
     
+    let reviewerName: String = "커리"
+    let reviewImage: UIImage = UIImage(named: "TestImage")!
+    
     var body: some View {
         NavigationView {
             NavigationLink {
-                AddFeedbackView()
+                AddFeedbackView(reviewerName: reviewerName, image: reviewImage)
             } label: {
                 Text("피드백하기")
             }

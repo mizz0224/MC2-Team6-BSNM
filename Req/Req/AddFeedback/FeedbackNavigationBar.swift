@@ -15,6 +15,9 @@ struct FeedbackNavigationBar: View {
     @Binding var idCount: Int
     @Binding var currentPin: Pin
     
+    let reviewerName: String
+    let image: UIImage
+    
     var body: some View {
         VStack(spacing: 0) {
             Spacer()
@@ -22,7 +25,7 @@ struct FeedbackNavigationBar: View {
             
             switch changeFeedbackBottomView {
             case .addFeedback:
-                AddFeedbackNavigationItem(pins: $pins)
+                AddFeedbackNavigationItem(pins: $pins, reviewerName: reviewerName, image: image)
             case .beforeAdjustFeedback:
                 AdjustFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, currentPin: $currentPin)
             default:
