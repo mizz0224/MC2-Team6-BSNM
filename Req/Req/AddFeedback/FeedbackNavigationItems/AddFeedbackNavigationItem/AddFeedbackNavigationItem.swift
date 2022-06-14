@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-//TODO: Button별 분리
 struct AddFeedbackNavigationItem: View {
     @Binding var pins: [Pin]
     
