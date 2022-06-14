@@ -73,7 +73,7 @@ class Camera: NSObject, ObservableObject {
     func savePhoto(_ imageData: Data) {
         guard let image = UIImage(data: imageData) else { return }
 
-        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        UIImageWriteToSavedPhotosAlbum(cropImage(image)!, nil, nil, nil)
 
         // 사진 저장하기
         print("[Camera]: Photo's saved")
@@ -100,3 +100,22 @@ extension Camera: AVCapturePhotoCaptureDelegate {
     }
 }
 
+func cropImage(_ inputImage: UIImage) -> UIImage? {
+    let image = inputImage
+    let cropRect = CGRect(
+        x: CGFloat(0.0),
+        y: CGFloat(image.size.height * (100 / 844) + 13),
+        width: image.size.width,
+        height: image.size.height * (520 / 744) + 95
+    )
+
+    // Perform cropping in Core Graphics
+    guard let cutImageRef: CGImage = image.cgImage?.cropping(to: cropRect)
+        else {
+        return nil
+    }
+
+    // Return image to UIImage
+    let croppedImage: UIImage = UIImage(cgImage: cutImageRef)
+    return croppedImage
+}
