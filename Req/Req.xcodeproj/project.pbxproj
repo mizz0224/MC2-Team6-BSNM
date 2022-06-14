@@ -37,6 +37,7 @@
 		55113C672857767800B2AE5D /* AdjustFeedbackDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C662857767800B2AE5D /* AdjustFeedbackDescription.swift */; };
 		55113C6A28578EC900B2AE5D /* KeyboardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C6928578EC900B2AE5D /* KeyboardControl.swift */; };
 		55113C8E2858595900B2AE5D /* AddFeedbackNavigationXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C8D2858595900B2AE5D /* AddFeedbackNavigationXButton.swift */; };
+		55113C9028585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C8F28585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		55113C662857767800B2AE5D /* AdjustFeedbackDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackDescription.swift; sourceTree = "<group>"; };
 		55113C6928578EC900B2AE5D /* KeyboardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardControl.swift; sourceTree = "<group>"; };
 		55113C8D2858595900B2AE5D /* AddFeedbackNavigationXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackNavigationXButton.swift; sourceTree = "<group>"; };
+		55113C8F28585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackNavigationSaveButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			children = (
 				55113C5A285713AC00B2AE5D /* AddFeedbackNavigationItem.swift */,
 				55113C8D2858595900B2AE5D /* AddFeedbackNavigationXButton.swift */,
+				55113C8F28585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift */,
 				55113C5C2857268A00B2AE5D /* WriteFeedbackNavigationItem.swift */,
 				55113C5E28574D0B00B2AE5D /* AdjustFeedbackNavigationItem.swift */,
 			);
@@ -295,6 +298,7 @@
 				55113C63285755B900B2AE5D /* AdjustFeedbackBottomView.swift in Sources */,
 				55113C492855004E00B2AE5D /* AfterAddFeedbackText.swift in Sources */,
 				55113C3B2854C18500B2AE5D /* FeedbackBottomView.swift in Sources */,
+				55113C9028585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
 				55113C562855CBCE00B2AE5D /* EditFeedbackBottomView.swift in Sources */,
 				55113C522855B19700B2AE5D /* FeedbackTitleTextField.swift in Sources */,

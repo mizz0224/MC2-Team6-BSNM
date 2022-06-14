@@ -21,14 +21,7 @@ struct AddFeedbackNavigationItem: View {
             Spacer()
             
             if !pins.isEmpty {
-                Button {
-                
-                } label: {
-                    Text("저장하기")
-                        .font(.system(size: 18.0, weight: .semibold))
-                        .foregroundColor(.black)
-                }
-                
+                AddFeedbackNavigationSaveButton()
                 Spacer()
                     .frame(width: 16.0)
             }
