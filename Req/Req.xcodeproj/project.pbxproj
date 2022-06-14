@@ -36,6 +36,7 @@
 		55113C652857761500B2AE5D /* AdjustFeedbackTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C642857761500B2AE5D /* AdjustFeedbackTitle.swift */; };
 		55113C672857767800B2AE5D /* AdjustFeedbackDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C662857767800B2AE5D /* AdjustFeedbackDescription.swift */; };
 		55113C6A28578EC900B2AE5D /* KeyboardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C6928578EC900B2AE5D /* KeyboardControl.swift */; };
+		55113C8E2858595900B2AE5D /* AddFeedbackNavigationXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C8D2858595900B2AE5D /* AddFeedbackNavigationXButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		55113C642857761500B2AE5D /* AdjustFeedbackTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackTitle.swift; sourceTree = "<group>"; };
 		55113C662857767800B2AE5D /* AdjustFeedbackDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackDescription.swift; sourceTree = "<group>"; };
 		55113C6928578EC900B2AE5D /* KeyboardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardControl.swift; sourceTree = "<group>"; };
+		55113C8D2858595900B2AE5D /* AddFeedbackNavigationXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackNavigationXButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				55113C5A285713AC00B2AE5D /* AddFeedbackNavigationItem.swift */,
+				55113C8D2858595900B2AE5D /* AddFeedbackNavigationXButton.swift */,
 				55113C5C2857268A00B2AE5D /* WriteFeedbackNavigationItem.swift */,
 				55113C5E28574D0B00B2AE5D /* AdjustFeedbackNavigationItem.swift */,
 			);
@@ -275,6 +278,7 @@
 				55113C6A28578EC900B2AE5D /* KeyboardControl.swift in Sources */,
 				55113C5028550A8F00B2AE5D /* PinImage.swift in Sources */,
 				55113C592857054800B2AE5D /* FeedbackNavigationBar.swift in Sources */,
+				55113C8E2858595900B2AE5D /* AddFeedbackNavigationXButton.swift in Sources */,
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,
 				55113C4B285501E600B2AE5D /* DivisionLine.swift in Sources */,
 				55113C3728538E2B00B2AE5D /* Entity.swift in Sources */,

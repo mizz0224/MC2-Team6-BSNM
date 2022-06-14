@@ -9,8 +9,6 @@ import SwiftUI
 
 //TODO: Button별 분리
 struct AddFeedbackNavigationItem: View {
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
     @Binding var pins: [Pin]
     
     var body: some View {
@@ -18,15 +16,8 @@ struct AddFeedbackNavigationItem: View {
             Spacer()
                 .frame(width: 16.0)
             
-            Button {
-                popToRootView()
-            } label: {
-                Image(systemName: "xmark")
-                    .resizable()
-                    .frame(width: 14.0, height: 14.0, alignment: .center)
-                    .foregroundColor(.black)
-            }
-
+            AddFeedbackNavigationXButton()
+            
             Spacer()
             
             if !pins.isEmpty {
@@ -44,13 +35,4 @@ struct AddFeedbackNavigationItem: View {
         }
         .frame(width: 390.0, height: 51.0)
     }
-}
-
-extension AddFeedbackNavigationItem {
-    
-    func popToRootView() {
-        self.presentationMode.wrappedValue.dismiss()
-    }
-    //출처 : https://sweetdev.tistory.com/695
-    
 }
