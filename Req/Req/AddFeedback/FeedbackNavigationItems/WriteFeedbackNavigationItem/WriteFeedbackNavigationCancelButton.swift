@@ -36,10 +36,11 @@ extension WriteFeedbackNavigationCancelButton {
     func cancelWrtieFeedback() {
         // 추가버튼 누른 직후 다시 취소할 경우 동작 안하도록 구현
         if changeFeedbackBottomView == .writeFeedback {
-            // Pin에 부여한 id에 맞게 취소할 시 배열에서 삭제하기 위함
-            let nowId = idCount - 1
-            pins.remove(at: nowId)
-            idCount = nowId
+            // pins 배열에 가장 최근에 부여한 Pin을 제거하기 위한 인덱스
+            let lastIndex = pins.count - 1
+            
+            pins.remove(at: lastIndex)
+            idCount -= 1
             
             title = ""
             description = ""
