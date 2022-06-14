@@ -33,6 +33,7 @@ struct FeedbackNameView: View {
                     Divider()
                         .padding(EdgeInsets(top: 0, leading: 16, bottom: 28, trailing: 16))
 
+                    CustomTextField(name: self.$name)
                 }
 
                 Spacer()
@@ -62,3 +63,18 @@ struct FeedbackNameView_Previews: PreviewProvider {
     }
 }
 
+struct CustomTextField: View {
+    @Binding var name: String
+    
+    var body: some View {
+        ZStack {
+            if self.name.isEmpty {
+                Text("이름 입력은 05자로 제한됩니다.")
+                    .font(.custom("Apple SD Gothic Neo Bold", size: 24))
+                    .foregroundColor(.black.opacity(0.2)) //FIXME: 글자 입력 안됐을 시 투명도 조절할 것
+            }
+            TextField("", text: self.$name)
+                .multilineTextAlignment(.center)
+        }
+    }
+}
