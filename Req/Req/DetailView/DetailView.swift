@@ -1,5 +1,5 @@
-//ToDO :  홈뷰로이동, 피드백 삭제, 핀 선택시 하단 내용변경, 사진 선택시 핀선택해제
-//Do : 상세페이지 뷰만 구현, 뷰 분리(그림, 하단 설명 페이지 분리), 핀그리기(그리기만), 핀선택시 보이는뷰(상세_피드백)구현하기, 데이터 전달,삭제 확인alert 뷰만 구현
+//ToDO :  홈뷰로이동, 피드백 삭제
+//Do : 상세페이지 :  뷰 구현(Image,Name,Date), 핀 이미지 그리기 구현, 이미지 선택시 선택된핀 선택 해제 및 상세뷰로 돌아가기 구현 / 상세 피드백 : 핀 선택시 해당된 핀내용 그리기 구현, 선택된 핀 터치시 상세페이지 뷰 그리기 구현, 다른핀 선택시 기존에 그렸던핀 선택해제 및 하단 내용 변경 구현
 //struct Feedback {
 //    let id : UUID
 //    let name : String
@@ -21,12 +21,10 @@ struct DetailView: View {
     let getFeedback : Feedback
     var body: some View {
         VStack(spacing:0) {
-            Spacer().frame(height:48)
+            //Spacer().frame(height:48)
             TopMenuView(idToDelete: getFeedback.id)
             
-            ImageView(pins: getFeedback.pins, imageName: getFeedback.image)//ImageView(개별 뷰로 구현)
-                
-            DetailViewDescription(feedbackDate: getFeedback.date, feedbackUserName: getFeedback.name)
+            ImageView(getFeedback : getFeedback)//ImageView(개별 뷰로 구현)
                 
         }.frame(height:796)//VStack
     }//body
