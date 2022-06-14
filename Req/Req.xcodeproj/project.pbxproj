@@ -13,6 +13,10 @@
 		55113C17285325B400B2AE5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55113C16285325B400B2AE5D /* Preview Assets.xcassets */; };
 		55113C19285325B400B2AE5D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C18285325B400B2AE5D /* Persistence.swift */; };
 		55113C1C285325B400B2AE5D /* Req.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55113C1A285325B400B2AE5D /* Req.xcdatamodeld */; };
+		F5117C23285857F100FA29C3 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C22285857F100FA29C3 /* CameraViewModel.swift */; };
+		F5117C28285857FA00FA29C3 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C25285857FA00FA29C3 /* CameraView.swift */; };
+		F5117C29285857FA00FA29C3 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C26285857FA00FA29C3 /* Camera.swift */; };
+		F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		55113C16285325B400B2AE5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55113C18285325B400B2AE5D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		55113C1B285325B400B2AE5D /* Req.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Req.xcdatamodel; sourceTree = "<group>"; };
+		F5117C22285857F100FA29C3 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		F5117C25285857FA00FA29C3 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		F5117C26285857FA00FA29C3 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +64,13 @@
 			isa = PBXGroup;
 			children = (
 				55113C0F285325B300B2AE5D /* ReqApp.swift */,
+				F5FE1B7A285718A200A3B5BE /* Camera */,
 				55113C11285325B300B2AE5D /* ContentView.swift */,
 				55113C13285325B400B2AE5D /* Assets.xcassets */,
 				55113C18285325B400B2AE5D /* Persistence.swift */,
 				55113C1A285325B400B2AE5D /* Req.xcdatamodeld */,
 				55113C15285325B400B2AE5D /* Preview Content */,
+				F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */,
 			);
 			path = Req;
 			sourceTree = "<group>";
@@ -71,6 +81,16 @@
 				55113C16285325B400B2AE5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5FE1B7A285718A200A3B5BE /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				F5117C26285857FA00FA29C3 /* Camera.swift */,
+				F5117C25285857FA00FA29C3 /* CameraView.swift */,
+				F5117C22285857F100FA29C3 /* CameraViewModel.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +167,10 @@
 				55113C19285325B400B2AE5D /* Persistence.swift in Sources */,
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
+				F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */,
+				F5117C23285857F100FA29C3 /* CameraViewModel.swift in Sources */,
+				F5117C28285857FA00FA29C3 /* CameraView.swift in Sources */,
+				F5117C29285857FA00FA29C3 /* Camera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Req/Preview Content\"";
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용합니다.";
@@ -305,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Req/Preview Content\"";
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용합니다.";
