@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36DFB0492859FF5300D919FE /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFB0482859FF5300D919FE /* PhotoModel.swift */; };
 		55113C10285325B300B2AE5D /* ReqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C0F285325B300B2AE5D /* ReqApp.swift */; };
 		55113C12285325B300B2AE5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C11285325B300B2AE5D /* ContentView.swift */; };
 		55113C14285325B400B2AE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55113C13285325B400B2AE5D /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36DFB0482859FF5300D919FE /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		55113C0C285325B300B2AE5D /* Req.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Req.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55113C0F285325B300B2AE5D /* ReqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqApp.swift; sourceTree = "<group>"; };
 		55113C11285325B300B2AE5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +38,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36DFB0452859FD0400D919FE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				36DFB0472859FD8600D919FE /* Views */,
+				36DFB0462859FD7300D919FE /* Models */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		36DFB0462859FD7300D919FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36DFB0482859FF5300D919FE /* PhotoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36DFB0472859FD8600D919FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		55113C03285325B300B2AE5D = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +81,7 @@
 		55113C0E285325B300B2AE5D /* Req */ = {
 			isa = PBXGroup;
 			children = (
+				36DFB0452859FD0400D919FE /* New Group */,
 				55113C0F285325B300B2AE5D /* ReqApp.swift */,
 				55113C11285325B300B2AE5D /* ContentView.swift */,
 				55113C13285325B400B2AE5D /* Assets.xcassets */,
@@ -146,6 +173,7 @@
 				55113C1C285325B400B2AE5D /* Req.xcdatamodeld in Sources */,
 				55113C19285325B400B2AE5D /* Persistence.swift in Sources */,
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,
+				36DFB0492859FF5300D919FE /* PhotoModel.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
