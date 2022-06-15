@@ -14,25 +14,29 @@ struct DetailViewFeedback : View {
     
     var body : some View{
         VStack(alignment: .leading, spacing: 0){
+            Spacer().frame(height:24)
             HStack {
+                Spacer().frame(width: 16)
                 Text(pinTitle)//핀의 피드백 제목
                 .font(pinTitleFont)//핀의 피드백 제목 폰트
-                .padding(EdgeInsets(top: 24, leading: 16, bottom: 20, trailing: 16))
+                //.padding(EdgeInsets(top: 24, leading: 16, bottom: 20, trailing: 16))
+                Spacer().frame(width: 16)
             }//pinTitle 텍스트
-            
+            Spacer().frame(height:20)
             DivisionLine()
-            
+            Spacer().frame(height:20)
             HStack {
+                Spacer().frame(width: 16)
                 Text(pinDescription)//핀의 피드백 내용
                 .font(pinDescriptionFont)//핀의 피드백 내용 폰트
-                .lineLimit(5)//최대 줄수,5줄로 임의로 설정
+                .lineLimit(4)//최대 줄수,4줄로 임의로 설정
+                .lineSpacing(4)//줄간격
                 .fixedSize(horizontal: false, vertical: true)//5줄 넘어가기전까진 생략없이
-                .padding(EdgeInsets(top: 20, leading: 16, bottom: 0, trailing: 16))
+                //.padding(EdgeInsets(top: 20, leading: 16, bottom: 0, trailing: 16))
+                Spacer().frame(width: 16)
             }//pinDescrption 텍스트
-            
             Spacer()
-            
-        }//vstack
+        }.frame(height:224)//vstack
     }
     struct DetailViewFeedback_Previews : PreviewProvider{
         static var previews : some View{

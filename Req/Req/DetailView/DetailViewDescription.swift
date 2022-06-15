@@ -23,15 +23,15 @@ struct DetailViewDescription : View {
     var body : some View{
         VStack(alignment:.center, spacing:0){
             Spacer().frame(height:20)//공백
-            HStack {
+            HStack(alignment:.center, spacing:0) {
                 Text("Feedback From")
                     .font(FeedbackFromFont)//FeedbackFrom 폰트
             }//Hsack
             Spacer().frame(height:12)//공백
-            HStack {
+            HStack(alignment:.center, spacing:0) {
                 Text(feedbackUserName)//피드백 해준 유저 이름 출력
                 .font(FeedbackUserNameFont)//피드백 해준 유저 이름 폰트
-            }.frame(height: 18)//Hstack
+            }//Hstack
             Spacer().frame(height:64)//공백
             DivisionLine()//구분선
             Spacer().frame(height:16)//공백
@@ -39,9 +39,9 @@ struct DetailViewDescription : View {
                 Text(feedbackDateString)//String 타입이고 형식으로 변환한 피드백 날짜
                     .font(FeedbackDateFont)//피드백 날짜 폰트
                     .foregroundColor(DateColor)//피드백 날짜 색깔(RGB : 171,171,171 / Hex : ababab)
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 45, trailing: 0))
             }//피드백 날짜 출력
-        }//vstack
+            Spacer().frame(height:45)//공백
+        }.frame(height:224)//vstack
     }//DetailViewDescriptionView
     struct DetailViewDescription_Previews : PreviewProvider{
         static var previews : some View{
