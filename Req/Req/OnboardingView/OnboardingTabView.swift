@@ -18,18 +18,18 @@ struct OnboardingTabView: View {
                 OnboardingPageView(
                     title: "Take",
                     title2: "A Picture",
-                    imageName: "온보딩이미지1",
                     subtitle: "그 날의 패션을 지인을",
-                    subtitle2: "통해 기록하세요"
+                    subtitle2: "통해 기록하세요",
+                    LottieName: "Req_Onboarding_Lottie1"
                 )
                 .tag(1)
                 
                 OnboardingPageView(
                     title: "Get",
                     title2: "Feedback",
-                    imageName: "온보딩이미지2",
                     subtitle: "피드백을 요청하고",
-                    subtitle2: "새로운 시선을 확인하세요"
+                    subtitle2: "새로운 시선을 확인하세요",
+                    LottieName: "Req_Onboarding_Lottie1"
                 )
                 .tag(2)
                 

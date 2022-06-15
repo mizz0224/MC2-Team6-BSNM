@@ -10,9 +10,9 @@ import SwiftUI
 struct OnboardingPageView: View {
     let title: String
     let title2: String
-    let imageName: String
     let subtitle: String
     let subtitle2: String
+    let LottieName: String
     
     var body: some View {
         VStack {
@@ -43,10 +43,7 @@ struct OnboardingPageView: View {
                         .frame(width: 390, height: 165)
                         .foregroundColor(Color.purple)
                 }
-                Image(imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 347)
+                LottieView(filename: LottieName)
             }
             //온보딩 이미지
             
@@ -76,9 +73,9 @@ struct OnboardingPageView_Previews: PreviewProvider {
         OnboardingPageView(
             title: "Take",
             title2: "A Picture",
-            imageName: "온보딩이미지1",
             subtitle: "그 날의 패션을 지인을",
-            subtitle2: "통해 기록하세요"
+            subtitle2: "통해 기록하세요",
+            LottieName: "Req_Onboarding_Lottie1"
         )
     }
 }
