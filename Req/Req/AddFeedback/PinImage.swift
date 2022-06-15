@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PinImage: View {
     @Binding var changeFeedbackBottomView: FeedbackType
+    @Binding var pins: [Pin]
     @Binding var currentPin: Pin
     
     var pin: Pin
@@ -25,7 +26,7 @@ struct PinImage: View {
         case .addFeedback, .touchPin:
             return .gray
         default:
-            return .purple
+            return pin == currentPin ? .purple : .gray
         }
     }
     var pinFrame: CGFloat {
@@ -33,7 +34,7 @@ struct PinImage: View {
         case .addFeedback, .touchPin:
             return 32.0
         default:
-            return 44.0
+            return pin == currentPin ? 44.0 : 32.0
         }
     }
     
@@ -44,8 +45,8 @@ struct PinImage: View {
             .frame(width: pinFrame, height: pinFrame)
             .position(x: pin.x, y: pin.y)
             .onTapGesture {
-                changeFeedbackBottomView = .beforeAdjustFeedback
                 currentPin = pin
+                changeFeedbackBottomView = .beforeAdjustFeedback
             }
             .disabled(!isAbleTouched)
     }

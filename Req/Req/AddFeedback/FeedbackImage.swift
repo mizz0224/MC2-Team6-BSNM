@@ -23,6 +23,7 @@ struct FeedbackImage: View {
                 .overlay(
                     tapBackground { location in
                         appendPinLocation(location: location)
+                        currentPin = pins.last!
                         plusId()
                         changeFeedbackBottomView = .writeFeedback
                     }
@@ -35,7 +36,7 @@ struct FeedbackImage: View {
             
             if !pins.isEmpty {
                 ForEach(pins, id: \.id) { pin in
-                    PinImage(changeFeedbackBottomView: $changeFeedbackBottomView, currentPin: $currentPin ,pin: pin)
+                    PinImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, currentPin: $currentPin ,pin: pin)
                 }
             }
             
