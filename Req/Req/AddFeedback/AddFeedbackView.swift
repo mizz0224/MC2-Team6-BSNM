@@ -22,17 +22,23 @@ struct AddFeedbackView: View {
     let image: UIImage
     
     var body: some View {
-        VStack(spacing: 0) {
-            FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin, reviewerName: reviewerName, image: image)
-            FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin, image: image)
-            FeedbackBottomView(keyboardHeightHelper: keyboardHeightHelper, changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
-                .frame(height: 224.0)
+        ZStack {
+            VStack {
+                if self.keyboardHeightHelper.keyboardHeight == 0 { Spacer().frame(height: 99.0) }
+                VStack {
+                    FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin, image: image)
+                    FeedbackBottomView(keyboardHeightHelper: keyboardHeightHelper, changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
+                }
+                .frame(height: self.keyboardHeightHelper.keyboardHeight == 0 ? 224.0 : 220.0)
+                if self.keyboardHeightHelper.keyboardHeight != 0 { Spacer() }
+            }
+            VStack {
+                FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin, reviewerName: reviewerName, image: image)
+                Spacer()
+            }
         }
-        .offset(y: -(self.keyboardHeightHelper.keyboardHeight/2))
-//            .animation(.easeInOut(duration: 0.16))
         .ignoresSafeArea()
         .navigationBarHidden(true)
-        
     }
 }
 

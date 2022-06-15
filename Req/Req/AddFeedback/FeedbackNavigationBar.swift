@@ -19,10 +19,10 @@ struct FeedbackNavigationBar: View {
     let image: UIImage
     
     var body: some View {
-        VStack(spacing: 0) {
+        VStack {
             Spacer()
                 .frame(height: 48.0)
-            
+
             switch changeFeedbackBottomView {
             case .addFeedback:
                 AddFeedbackNavigationItem(pins: $pins, reviewerName: reviewerName, image: image)
@@ -32,5 +32,6 @@ struct FeedbackNavigationBar: View {
                 WriteFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin)
             }
         }
+        .background(Color.white)
     }
 }
