@@ -29,7 +29,7 @@ struct AddFeedbackView: View {
                 .frame(height: 224.0)
         }
         .offset(y: -(self.keyboardHeightHelper.keyboardHeight/2))
-            .animation(.easeInOut(duration: 0.16))
+//            .animation(.easeInOut(duration: 0.16))
         .ignoresSafeArea()
         .navigationBarHidden(true)
         
