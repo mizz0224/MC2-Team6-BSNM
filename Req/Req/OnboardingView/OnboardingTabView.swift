@@ -14,7 +14,7 @@ struct OnboardingTabView: View {
     var body: some View {
         VStack{
             TabView(selection: $pageIndex) {
-                // 페이지 1: 앱 소개
+                
                 OnboardingPageView(
                     title: "Take",
                     title2: "A Picture",
@@ -33,7 +33,6 @@ struct OnboardingTabView: View {
                 )
                 .tag(2)
                 
-                // 페이지 3: 읽기 페이지 안내 + 온보딩 완료
                 OnboardingLastPageView(
                     title: "Grow Up!",
                     imageName: "온보딩이미지3",
@@ -43,10 +42,12 @@ struct OnboardingTabView: View {
                 )
                 .tag(3)
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+            .tabViewStyle(
+                PageTabViewStyle(indexDisplayMode: .always)
+            )
             
             
-            //마지막 페이지에서 앱 시작하기 버튼
+            //온보딩 마지막 페이지에서 앱 시작하기 버튼
             if pageIndex == 3
             {
                 HStack{
@@ -64,13 +65,13 @@ struct OnboardingTabView: View {
                     Spacer().frame(height: 100)
                 }
             }
-            //1,2 페이지에서는 스킵 버튼
+            //온보딩 1,2 페이지에서는 스킵 버튼
             else
             {
                 HStack{
                     Spacer().frame(width: 32)
                     Button {
-                        
+                        isFirstLaunching.toggle()
                     } label: {
                         Text("Skip")
                             .foregroundColor(.gray)

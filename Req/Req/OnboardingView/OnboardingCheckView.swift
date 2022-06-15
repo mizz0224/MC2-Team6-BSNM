@@ -13,7 +13,7 @@ struct OnboardingCheckView: View {
     @AppStorage("_isFirstLaunching") var isFirstLaunching: Bool = true
     
     var body: some View {
-        Text("App Main")
+        EmptyHomeView()
         // 앱 최초 구동 시 전체화면으로 OnboardingTabView 띄우기
             .fullScreenCover(isPresented: $isFirstLaunching) {
                 OnboardingTabView(isFirstLaunching: $isFirstLaunching)

@@ -55,7 +55,7 @@ struct GradientStyle3: View {
             .font(.system(size: 76, weight: .bold))
             .overlay{
                 LinearGradient(
-                    colors: [.purple.opacity(0.2), .purple.opacity(0)],
+                    colors: [.purple.opacity(0.15), .purple.opacity(0)],
                     startPoint: .leading,
                     endPoint: .trailing
                 )
