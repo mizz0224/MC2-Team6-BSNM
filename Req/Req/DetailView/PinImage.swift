@@ -10,7 +10,7 @@ import SwiftUI
 struct PinImage: View {
     let x : CGFloat
     let y : CGFloat
-    @Binding var selected : Bool
+    var selected : Bool
     var body: some View {
         Image(systemName: "text.bubble.fill")
             .resizable()

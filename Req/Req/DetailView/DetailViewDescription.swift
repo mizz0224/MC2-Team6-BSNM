@@ -41,7 +41,7 @@ struct DetailViewDescription : View {
                     .foregroundColor(DateColor)//피드백 날짜 색깔(RGB : 171,171,171 / Hex : ababab)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 45, trailing: 0))
             }//피드백 날짜 출력
-        }.frame(height:224)//vstack
+        }//vstack
     }//DetailViewDescriptionView
     struct DetailViewDescription_Previews : PreviewProvider{
         static var previews : some View{

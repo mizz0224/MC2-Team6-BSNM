@@ -32,7 +32,7 @@ struct DetailViewFeedback : View {
             
             Spacer()
             
-        }.frame(height:224)//vstack
+        }//vstack
     }
     struct DetailViewFeedback_Previews : PreviewProvider{
         static var previews : some View{

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TopMenuView : View {
-    
     @State private var showingAlert = false //alert 띄워주기 위한 변수
     let MenuFont : Font = Font.system(size:20).bold() //메뉴(뒤로가기,삭제) 버튼 폰트
     let idToDelete : UUID //삭제될 피드백의 아이디(UUID)
@@ -47,6 +46,7 @@ struct TopMenuView : View {
     func gotoHome()->Void {
         //go to home
         print("go to home")
+
     }
     func deleteFeedback(targetUUID : UUID)->Void {
         //delete feedback
