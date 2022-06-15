@@ -26,14 +26,13 @@ struct PostGridView: View {
                         .frame(width: 160, height: 213.3)
                         .clipped()
                     }
-                    
+
                     Text("Feedback from \n \(item.name)")
-                        .padding(.init(top: 170, leading: 5, bottom: 10, trailing: 10))
+                        .padding(.init(top: 170, leading: 0, bottom: 10, trailing: 10))
                         .foregroundColor(.white)
                 }
             }
         }
-        
     }
 }
 
