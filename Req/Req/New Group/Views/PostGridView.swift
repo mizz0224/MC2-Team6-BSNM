@@ -20,10 +20,12 @@ struct PostGridView: View {
             
             ForEach(data) { item in
                 ZStack(alignment: .center){
+                    Button(action: {}){
                     Image(item.image)
                         .resizable()
                         .frame(width: 160, height: 213.3)
                         .clipped()
+                    }
                     
                     Text("Feedback from \n \(item.name)")
                         .padding(.init(top: 170, leading: 5, bottom: 10, trailing: 10))
