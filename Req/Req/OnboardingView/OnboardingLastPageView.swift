@@ -42,7 +42,7 @@ struct OnboardingLastPageView: View {
                 Spacer().frame(height:4)
                 Text(subtitle2)
                     .font(.system(size: 18, weight: .semibold))
-            }.offset(y: -26)
+            }.offset(y: 10)
             //온보딩 설명
             
             

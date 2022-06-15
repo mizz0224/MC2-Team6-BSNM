@@ -8,35 +8,30 @@
 import SwiftUI
 
 struct EmptyHomeView: View {
+    //    let text: String
+    // merge 이후에 색 지정하면 색깔 바꿔주기
     var body: some View {
         HStack{
             Spacer().frame(width: 32)
-            VStack(alignment: .leading, spacing: 12){
-                Text("Take")
-                    .font(.system(size: 60, weight: .bold))
-                    .overlay{
-                        LinearGradient(
-                            colors: [.black, .black],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                        .mask(
-                            Text("Take")
-                                .font(.system(size: 60, weight: .bold))
-                        )
-                    }
-                Text("A")
-                    .font(.system(size: 60, weight: .bold))
-                Text("Picture")
-                    .font(.system(size: 60, weight: .bold))
-                Text("And")
-                    .font(.system(size: 60, weight: .bold))
-                Text("Get")
-                    .font(.system(size: 60, weight: .bold))
-                Text("Feedback")
-                    .font(.system(size: 60, weight: .bold))
+            ZStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 4){
+                    GradientStyle3(textString: "Take")
+                    GradientStyle3(textString: "A")
+                    GradientStyle3(textString: "Picture")
+                    GradientStyle3(textString: "And")
+                    GradientStyle3(textString: "Get")
+                    GradientStyle3(textString: "Feedback")
+                }
+                VStack(alignment: .leading, spacing: 12){
+                    GradientStyle(textString: "Take")
+                    GradientStyle(textString: "A")
+                    GradientStyle2(textString: "Picture")
+                    GradientStyle(textString: "And")
+                    GradientStyle(textString: "Get")
+                    GradientStyle2(textString: "Feedback")
+                    
+                }
             }
-            
             Spacer()
         }
     }

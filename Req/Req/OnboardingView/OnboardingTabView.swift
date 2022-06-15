@@ -46,7 +46,7 @@ struct OnboardingTabView: View {
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             
             
-            
+            //마지막 페이지에서 앱 시작하기 버튼
             if pageIndex == 3
             {
                 HStack{
@@ -64,7 +64,7 @@ struct OnboardingTabView: View {
                     Spacer().frame(height: 100)
                 }
             }
-            
+            //1,2 페이지에서는 스킵 버튼
             else
             {
                 HStack{
