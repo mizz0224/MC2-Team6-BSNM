@@ -23,6 +23,10 @@
 		D9A7D6AB285A7AC20051FA12 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7D6AA285A7AC20051FA12 /* LottieView.swift */; };
 		D9A7D6AF285A84250051FA12 /* Req_Onboarding_Lottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A7D6AE285A84250051FA12 /* Req_Onboarding_Lottie1.json */; };
 		D9A7D6B7285A90140051FA12 /* Req_Onboarding_Lottie2.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A7D6B6285A90140051FA12 /* Req_Onboarding_Lottie2.json */; };
+		D9A7D6BB285B152E0051FA12 /* Req_Onboarding_Lottie3_Star.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A7D6BA285B152E0051FA12 /* Req_Onboarding_Lottie3_Star.json */; };
+		D9A7D6BD285B16720051FA12 /* Req_Onboarding_Star.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A7D6BC285B16720051FA12 /* Req_Onboarding_Star.json */; };
+		D9A7D6BF285B1BA50051FA12 /* LottieLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */; };
+		D9A7D6C1285B23410051FA12 /* Req_Onboarding_Lottie3.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A7D6C0285B23410051FA12 /* Req_Onboarding_Lottie3.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		D9A7D6AA285A7AC20051FA12 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		D9A7D6AE285A84250051FA12 /* Req_Onboarding_Lottie1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Req_Onboarding_Lottie1.json; path = ../../../../../Desktop/Req_Onboarding_Lottie1.json; sourceTree = "<group>"; };
 		D9A7D6B6285A90140051FA12 /* Req_Onboarding_Lottie2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Req_Onboarding_Lottie2.json; path = ../../../../../Desktop/Req_Onboarding_Lottie2.json; sourceTree = "<group>"; };
+		D9A7D6BA285B152E0051FA12 /* Req_Onboarding_Lottie3_Star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Req_Onboarding_Lottie3_Star.json; path = ../../../../../Downloads/Req_Onboarding_Lottie3_Star.json; sourceTree = "<group>"; };
+		D9A7D6BC285B16720051FA12 /* Req_Onboarding_Star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Req_Onboarding_Star.json; path = ../../../../../Downloads/Req_Onboarding_Star.json; sourceTree = "<group>"; };
+		D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLoopView.swift; sourceTree = "<group>"; };
+		D9A7D6C0285B23410051FA12 /* Req_Onboarding_Lottie3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Req_Onboarding_Lottie3.json; path = ../../../../../Desktop/Req_Onboarding_Lottie3.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +89,15 @@
 				D98C3CE82859024C0081C153 /* EmptyHomeView.swift */,
 				55113C13285325B400B2AE5D /* Assets.xcassets */,
 				D9A7D6AA285A7AC20051FA12 /* LottieView.swift */,
+				D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */,
 				D98C3CEE285910A60081C153 /* GradientStyle.swift */,
 				55113C18285325B400B2AE5D /* Persistence.swift */,
 				55113C1A285325B400B2AE5D /* Req.xcdatamodeld */,
 				D9A7D6AE285A84250051FA12 /* Req_Onboarding_Lottie1.json */,
 				D9A7D6B6285A90140051FA12 /* Req_Onboarding_Lottie2.json */,
+				D9A7D6C0285B23410051FA12 /* Req_Onboarding_Lottie3.json */,
+				D9A7D6BC285B16720051FA12 /* Req_Onboarding_Star.json */,
+				D9A7D6BA285B152E0051FA12 /* Req_Onboarding_Lottie3_Star.json */,
 				55113C15285325B400B2AE5D /* Preview Content */,
 			);
 			path = Req;
@@ -177,6 +189,9 @@
 				55113C17285325B400B2AE5D /* Preview Assets.xcassets in Resources */,
 				D9A7D6AF285A84250051FA12 /* Req_Onboarding_Lottie1.json in Resources */,
 				55113C14285325B400B2AE5D /* Assets.xcassets in Resources */,
+				D9A7D6BB285B152E0051FA12 /* Req_Onboarding_Lottie3_Star.json in Resources */,
+				D9A7D6C1285B23410051FA12 /* Req_Onboarding_Lottie3.json in Resources */,
+				D9A7D6BD285B16720051FA12 /* Req_Onboarding_Star.json in Resources */,
 				D9A7D6B7285A90140051FA12 /* Req_Onboarding_Lottie2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +208,7 @@
 				D98C3CDF285866200081C153 /* OnboardingLastPageView.swift in Sources */,
 				55113C19285325B400B2AE5D /* Persistence.swift in Sources */,
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,
+				D9A7D6BF285B1BA50051FA12 /* LottieLoopView.swift in Sources */,
 				D98C3CE92859024C0081C153 /* EmptyHomeView.swift in Sources */,
 				D98C3CE128587F4F0081C153 /* OnboardingCheckView.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,

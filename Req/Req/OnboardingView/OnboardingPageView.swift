@@ -45,7 +45,7 @@ struct OnboardingPageView: View {
                 }
                 LottieView(filename: LottieName)
             }
-            //온보딩 이미지
+            //온보딩 로티 애니메이션
             
             Spacer().frame(height: 24)
             

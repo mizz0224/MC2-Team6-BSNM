@@ -12,6 +12,10 @@ struct OnboardingLastPageView: View {
     let imageName: String
     let subtitle: String
     let subtitle2: String
+    let LottieName: String
+    let LottieName2: String
+    
+    @State var startTimer: Int = 0
     
     @Binding var isFirstLaunching: Bool
     var body: some View {
@@ -30,11 +34,22 @@ struct OnboardingLastPageView: View {
             
             Spacer().frame(height: 6)
             
-            Image(imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 400)
-            //온보딩 이미지
+            ZStack{
+                LottieView(filename: LottieName)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 390)
+                    .onAppear {
+                        Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) { timer in
+                            self.startTimer += 1
+                        }
+                    }
+                if self.startTimer >= 1 {
+                    LottieLoopView(filename: LottieName2)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 300)
+                }
+            }
+            //온보딩 로티 애니메이션
             
             VStack{
                 Text(subtitle)
@@ -42,7 +57,7 @@ struct OnboardingLastPageView: View {
                 Spacer().frame(height:4)
                 Text(subtitle2)
                     .font(.system(size: 18, weight: .semibold))
-            }.offset(y: 10)
+            }
             //온보딩 설명
             
             
@@ -61,8 +76,11 @@ struct OnboardingLastPageView_Previews: PreviewProvider {
             title: "Grow Up!",
             imageName: "온보딩이미지3",
             subtitle: "Req한 기록을 통해",
-            subtitle2: "여러분의 패션을 성장시키세요", isFirstLaunching: .constant(true)
+            subtitle2: "여러분의 패션을 성장시키세요",
+            LottieName: "Req_Onboarding_Lottie3",
+            LottieName2: "Req_Onboarding_Star",
+            isFirstLaunching: .constant(true)
         )
-
+        
     }
 }

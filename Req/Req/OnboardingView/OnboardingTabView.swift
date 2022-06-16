@@ -38,6 +38,8 @@ struct OnboardingTabView: View {
                     imageName: "온보딩이미지3",
                     subtitle: "Req한 기록을 통해",
                     subtitle2: "여러분의 패션을 성장시키세요",
+                    LottieName: "Req_Onboarding_Lottie3",
+                    LottieName2: "Req_Onboarding_Star",
                     isFirstLaunching: $isFirstLaunching
                 )
                 .tag(3)
