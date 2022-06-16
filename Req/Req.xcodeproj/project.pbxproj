@@ -13,12 +13,6 @@
 		55113C17285325B400B2AE5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55113C16285325B400B2AE5D /* Preview Assets.xcassets */; };
 		55113C19285325B400B2AE5D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C18285325B400B2AE5D /* Persistence.swift */; };
 		55113C1C285325B400B2AE5D /* Req.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55113C1A285325B400B2AE5D /* Req.xcdatamodeld */; };
-		F509D6382858DDE200D81AC3 /* NogitFakeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509D6372858DDE200D81AC3 /* NogitFakeHomeView.swift */; };
-		F509D63B2858E59400D81AC3 /* FeedbackNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */; };
-		F5117C23285857F100FA29C3 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C22285857F100FA29C3 /* CameraViewModel.swift */; };
-		F5117C29285857FA00FA29C3 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C26285857FA00FA29C3 /* Camera.swift */; };
-		F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */; };
-		F5117C2F2858C59700FA29C3 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2E2858C59700FA29C3 /* CameraView.swift */; };
 		55113C3728538E2B00B2AE5D /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C3628538E2B00B2AE5D /* Entity.swift */; };
 		55113C392854C03000B2AE5D /* FeedbackImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C382854C03000B2AE5D /* FeedbackImage.swift */; };
 		55113C3B2854C18500B2AE5D /* FeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */; };
@@ -49,6 +43,11 @@
 		55113C982858611A00B2AE5D /* AdjustFeedbackNavigationCancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C972858611A00B2AE5D /* AdjustFeedbackNavigationCancelButton.swift */; };
 		55113C9A2858619500B2AE5D /* AdjustFeedbackNavigationAdjustButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C992858619500B2AE5D /* AdjustFeedbackNavigationAdjustButton.swift */; };
 		55113C9C2858630C00B2AE5D /* AdjustFeedbackNavigationDeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C9B2858630C00B2AE5D /* AdjustFeedbackNavigationDeleteButton.swift */; };
+		F509D63B2858E59400D81AC3 /* FeedbackNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */; };
+		F5117C23285857F100FA29C3 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C22285857F100FA29C3 /* CameraViewModel.swift */; };
+		F5117C29285857FA00FA29C3 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C26285857FA00FA29C3 /* Camera.swift */; };
+		F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */; };
+		F5117C2F2858C59700FA29C3 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2E2858C59700FA29C3 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,12 +58,6 @@
 		55113C16285325B400B2AE5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55113C18285325B400B2AE5D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		55113C1B285325B400B2AE5D /* Req.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Req.xcdatamodel; sourceTree = "<group>"; };
-		F509D6372858DDE200D81AC3 /* NogitFakeHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NogitFakeHomeView.swift; sourceTree = "<group>"; };
-		F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackNameView.swift; sourceTree = "<group>"; };
-		F5117C22285857F100FA29C3 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
-		F5117C26285857FA00FA29C3 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCameraView.swift; sourceTree = "<group>"; };
-		F5117C2E2858C59700FA29C3 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		55113C3628538E2B00B2AE5D /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		55113C382854C03000B2AE5D /* FeedbackImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackImage.swift; sourceTree = "<group>"; };
 		55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackBottomView.swift; sourceTree = "<group>"; };
@@ -95,6 +88,11 @@
 		55113C972858611A00B2AE5D /* AdjustFeedbackNavigationCancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackNavigationCancelButton.swift; sourceTree = "<group>"; };
 		55113C992858619500B2AE5D /* AdjustFeedbackNavigationAdjustButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackNavigationAdjustButton.swift; sourceTree = "<group>"; };
 		55113C9B2858630C00B2AE5D /* AdjustFeedbackNavigationDeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackNavigationDeleteButton.swift; sourceTree = "<group>"; };
+		F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackNameView.swift; sourceTree = "<group>"; };
+		F5117C22285857F100FA29C3 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		F5117C26285857FA00FA29C3 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCameraView.swift; sourceTree = "<group>"; };
+		F5117C2E2858C59700FA29C3 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +109,9 @@
 		55113C03285325B300B2AE5D = {
 			isa = PBXGroup;
 			children = (
-				F509D6372858DDE200D81AC3 /* NogitFakeHomeView.swift */,
 				55113C0E285325B300B2AE5D /* Req */,
 				55113C0D285325B300B2AE5D /* Products */,
+				F5EF00FB285B0FF80085DB6B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,23 +150,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F509D6392858E58400D81AC3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */,
-				F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F5FE1B7A285718A200A3B5BE /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				F5117C26285857FA00FA29C3 /* Camera.swift */,
-				F5117C2E2858C59700FA29C3 /* CameraView.swift */,
-				F5117C22285857F100FA29C3 /* CameraViewModel.swift */,
-			);
-			path = Camera;
 		55113C422854FDB200B2AE5D /* AddFeedback */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +256,25 @@
 			path = AdjustFeedbackNavigationItem;
 			sourceTree = "<group>";
 		};
+		F509D6392858E58400D81AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */,
+				F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5FE1B7A285718A200A3B5BE /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				F5117C26285857FA00FA29C3 /* Camera.swift */,
+				F5117C2E2858C59700FA29C3 /* CameraView.swift */,
+				F5117C22285857F100FA29C3 /* CameraViewModel.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -376,7 +376,6 @@
 				55113C3B2854C18500B2AE5D /* FeedbackBottomView.swift in Sources */,
 				55113C9028585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
-				F509D6382858DDE200D81AC3 /* NogitFakeHomeView.swift in Sources */,
 				F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */,
 				F5117C23285857F100FA29C3 /* CameraViewModel.swift in Sources */,
 				F5117C29285857FA00FA29C3 /* Camera.swift in Sources */,
