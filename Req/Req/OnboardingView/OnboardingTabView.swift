@@ -29,7 +29,7 @@ struct OnboardingTabView: View {
                     title2: "Feedback",
                     subtitle: "피드백을 요청하고",
                     subtitle2: "새로운 시선을 확인하세요",
-                    LottieName: "Req_Onboarding_Lottie1"
+                    LottieName: "Req_Onboarding_Lottie2"
                 )
                 .tag(2)
                 
