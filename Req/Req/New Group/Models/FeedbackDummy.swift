@@ -34,13 +34,13 @@ let testData : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now, i
 
 
 let testData1 : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now, image: "picture1", pins: testpins)
-let testData2 : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now, image: "picture1", pins: testpins)
-let testData3 : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now, image: "picture1", pins: testpins)
-let testData4 : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now, image: "picture1", pins: testpins)
+let testData2 : Feedback = Feedback(id: UUID(), name: "사샤", date: Date.now, image: "picture2", pins: testpins)
+let testData3 : Feedback = Feedback(id: UUID(), name: "미쯔", date: Date.now, image: "picture3", pins: testpins)
+let testData4 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now, image: "picture4", pins: testpins)
 
-var testDataSet1 : [Feedback] = [Feedback](repeating: testData1, count: 4)
-var testDataSet2 : [Feedback] = [Feedback](repeating: testData2, count: 9)
+var testDataSet1 : [Feedback] = [Feedback](repeating: testData1, count: 1)
+var testDataSet2 : [Feedback] = [Feedback](repeating: testData2, count: 1)
 var testDataSet3 : [Feedback] = [Feedback](repeating: testData3, count: 1)
-var testDataSet4 : [Feedback] = [Feedback](repeating: testData4, count: 8)
+var testDataSet4 : [Feedback] = [Feedback](repeating: testData4, count: 1)
 
 var testDataSet : [Feedback] = testDataSet1 + testDataSet2 + testDataSet3 + testDataSet4

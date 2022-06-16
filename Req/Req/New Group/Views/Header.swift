@@ -15,7 +15,7 @@ struct Header: View {
     @State var isSearching = false
     @State var showResults = false
     @State var loadSearch = false
-//    @State var isSearch = false
+
     var body: some View {
         HStack(alignment: .center) {
             Spacer()

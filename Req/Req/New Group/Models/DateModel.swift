@@ -18,8 +18,7 @@ struct DateModel: View {
     
     var body: some View {
         VStack {
-//            Text(releaseDate, format: Date.FormatStyle().month().year())
-
+            
          Text("\(releaseDate, formatter: Self.kDateFormat)")
         }
     }

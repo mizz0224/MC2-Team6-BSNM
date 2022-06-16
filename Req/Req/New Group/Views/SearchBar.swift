@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SearchBar: View {
-    //    @State var hearder = Header()
     @State var change = false
     @State var show = false
     @State var txt = ""
@@ -16,7 +15,7 @@ struct SearchBar: View {
     @Binding var isSearching: Bool
     @Binding var showResults: Bool
     @Binding var loadSearch: Bool
-    //    @Binding var isSearch : Bool
+
     var body: some View {
         
         

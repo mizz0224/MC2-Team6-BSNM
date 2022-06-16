@@ -8,6 +8,7 @@
 import Foundation
 
 var PostData: [PostModel] = [
+    
     PostModel(image: "samplePhoto1", name: "Curry", date: nil),
     PostModel(image: "samplePhoto2", name: "Mizz", date: nil),
     PostModel(image: "samplePhoto3", name: "Sasha", date: nil),

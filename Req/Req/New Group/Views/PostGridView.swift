@@ -11,14 +11,14 @@ struct PostGridView: View {
 
     
     let gridLayout:[GridItem] =  Array(repeating: .init(.fixed(160), spacing: 10), count: 2)
-    let data: [PostModel]
+    let data: [Feedback]
     
     
     var body: some View {
         //그리드
         LazyVGrid(columns: gridLayout, alignment: .center, spacing: 0){
             
-            ForEach(data) { item in
+            ForEach(data, id: \.id) { item in
                 ZStack(alignment: .center){
                     Button(action: {}){
                     Image(item.image)
@@ -38,6 +38,6 @@ struct PostGridView: View {
 
 struct PostGridView_Previews: PreviewProvider {
     static var previews: some View {
-        PostGridView(data: PostData)
+        PostGridView(data: testDataSet)
     }
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     var getDataSet = testDataSet
     var body: some View {
         VStack{
