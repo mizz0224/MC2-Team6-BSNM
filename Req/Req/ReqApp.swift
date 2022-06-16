@@ -15,8 +15,9 @@ struct ReqApp: App {
         WindowGroup {
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            
-            TestCameraView()
+            FeedbackNameView()
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
         }
     }
 }

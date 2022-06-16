@@ -18,7 +18,6 @@
 		55113C3B2854C18500B2AE5D /* FeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */; };
 		55113C3D2854C49300B2AE5D /* AddFeedbackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C3C2854C49300B2AE5D /* AddFeedbackButton.swift */; };
 		55113C3F2854E35900B2AE5D /* AddFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C3E2854E35900B2AE5D /* AddFeedbackView.swift */; };
-		55113C412854E53B00B2AE5D /* TestCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C402854E53B00B2AE5D /* TestCameraView.swift */; };
 		55113C442854FE3A00B2AE5D /* BeforeAddFeedbackText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C432854FE3A00B2AE5D /* BeforeAddFeedbackText.swift */; };
 		55113C462854FE9500B2AE5D /* BeforeAddFeedbackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C452854FE9500B2AE5D /* BeforeAddFeedbackBottomView.swift */; };
 		55113C492855004E00B2AE5D /* AfterAddFeedbackText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C482855004E00B2AE5D /* AfterAddFeedbackText.swift */; };
@@ -63,7 +62,6 @@
 		55113C3A2854C18500B2AE5D /* FeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackBottomView.swift; sourceTree = "<group>"; };
 		55113C3C2854C49300B2AE5D /* AddFeedbackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackButton.swift; sourceTree = "<group>"; };
 		55113C3E2854E35900B2AE5D /* AddFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackView.swift; sourceTree = "<group>"; };
-		55113C402854E53B00B2AE5D /* TestCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCameraView.swift; sourceTree = "<group>"; };
 		55113C432854FE3A00B2AE5D /* BeforeAddFeedbackText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeAddFeedbackText.swift; sourceTree = "<group>"; };
 		55113C452854FE9500B2AE5D /* BeforeAddFeedbackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeAddFeedbackBottomView.swift; sourceTree = "<group>"; };
 		55113C482855004E00B2AE5D /* AfterAddFeedbackText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterAddFeedbackText.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 			children = (
 				55113C0E285325B300B2AE5D /* Req */,
 				55113C0D285325B300B2AE5D /* Products */,
-				F5EF00FB285B0FF80085DB6B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +129,6 @@
 				55113C11285325B300B2AE5D /* ContentView.swift */,
 				55113C13285325B400B2AE5D /* Assets.xcassets */,
 				55113C18285325B400B2AE5D /* Persistence.swift */,
-				55113C402854E53B00B2AE5D /* TestCameraView.swift */,
 				55113C6928578EC900B2AE5D /* KeyboardControl.swift */,
 				55113C422854FDB200B2AE5D /* AddFeedback */,
 				55113C3628538E2B00B2AE5D /* Entity.swift */,
@@ -383,7 +379,6 @@
 				F5117C2F2858C59700FA29C3 /* CameraView.swift in Sources */,
 				55113C562855CBCE00B2AE5D /* EditFeedbackBottomView.swift in Sources */,
 				55113C522855B19700B2AE5D /* FeedbackTitleTextField.swift in Sources */,
-				55113C412854E53B00B2AE5D /* TestCameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

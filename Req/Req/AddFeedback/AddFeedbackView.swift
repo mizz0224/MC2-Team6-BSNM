@@ -18,22 +18,22 @@ struct AddFeedbackView: View {
     @State private var idCount: Int = 0
     @State private var currentPin: Pin = Pin(id: 0, x: 0.0, y: 0.0, title: nil, description: nil)
     
-    let reviewerName: String
-    let image: UIImage
+    @Binding var reviewerName: String
+    @Binding var image: UIImage?
     
     var body: some View {
         ZStack {
             VStack {
                 if self.keyboardHeightHelper.keyboardHeight == 0 { Spacer().frame(height: 99.0) }
                 VStack {
-                    FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin, image: image)
+                    FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin, image: image!)
                     FeedbackBottomView(keyboardHeightHelper: keyboardHeightHelper, changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
                 }
                 .frame(height: self.keyboardHeightHelper.keyboardHeight == 0 ? 224.0 : 220.0)
                 if self.keyboardHeightHelper.keyboardHeight != 0 { Spacer() }
             }
             VStack {
-                FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin, reviewerName: reviewerName, image: image)
+                FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin, reviewerName: reviewerName, image: image!)
                 Spacer()
             }
         }
