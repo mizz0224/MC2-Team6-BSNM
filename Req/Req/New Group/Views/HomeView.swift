@@ -18,13 +18,11 @@ struct HomeView: View {
                         .padding(.init(top: 20, leading: 40, bottom: 16, trailing: 0))
                     PostView()
                 }
-            }
+            }.background(.white)
         }
         .preferredColorScheme(.dark)
-        .background(.white)
         
     }
-    
 }
 
 
