@@ -29,6 +29,7 @@ struct LottieLoopView: UIViewRepresentable {
         animationView.loopMode = .loop //애니메이션 무한 반복해줌
         //애니메이션 재생
         animationView.play()
+        animationView.backgroundBehavior = .pauseAndRestore
         
         //컨테이너의 너비와 높이를 자동으로 지정할 수 있도록
         animationView.translatesAutoresizingMaskIntoConstraints = false

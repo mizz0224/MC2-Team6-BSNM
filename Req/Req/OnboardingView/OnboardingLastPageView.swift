@@ -45,8 +45,9 @@ struct OnboardingLastPageView: View {
                     }
                 if self.startTimer >= 1 {
                     LottieLoopView(filename: LottieName2)
-                        .aspectRatio(contentMode: .fill)
+                        .aspectRatio(contentMode: .fit)
                         .frame(width: 300)
+                        .offset(y: 60)
                 }
             }
             //온보딩 로티 애니메이션
