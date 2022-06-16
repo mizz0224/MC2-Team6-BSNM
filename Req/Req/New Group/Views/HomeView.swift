@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    var getDataSet = testDataSet
     var body: some View {
         VStack{
             Header()
@@ -15,7 +16,7 @@ struct HomeView: View {
                 VStack(alignment: .leading){
                     Slogan()
                         .padding(.init(top: 20, leading: 40, bottom: 16, trailing: 0))
-                    PostGridView(data: PostData)
+                    PostView()
                     
                 }
             }
