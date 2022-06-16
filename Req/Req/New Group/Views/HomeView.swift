@@ -17,10 +17,11 @@ struct HomeView: View {
                     Slogan()
                         .padding(.init(top: 20, leading: 40, bottom: 16, trailing: 0))
                     PostView()
-                    
                 }
             }
         }
+        .preferredColorScheme(.dark)
+        .background(.white)
         
     }
     

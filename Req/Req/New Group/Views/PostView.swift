@@ -18,7 +18,6 @@ struct PostView: View {
             
             PostGridView(data: PostData)
         }
-
     }
 }
 

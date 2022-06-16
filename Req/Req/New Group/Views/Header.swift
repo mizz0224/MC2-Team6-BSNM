@@ -15,14 +15,9 @@ struct Header: View {
     @State var isSearching = false
     @State var showResults = false
     @State var loadSearch = false
-    
+//    @State var isSearch = false
     var body: some View {
         HStack(alignment: .center) {
-            Text("Req!")
-                .foregroundColor(.purple)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .font(.title)
-                .padding(.init(top: 0, leading: 32, bottom: 18, trailing: 0))
             Spacer()
             //서치바
             HStack{
@@ -31,10 +26,16 @@ struct Header: View {
                         .padding(.top, 8)
                         .padding(.bottom, 2)
                 }
+                
                 else{
+                    Text("Req!")
+                        .foregroundColor(.purple)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .font(.title)
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing:200))
                     
                     Button(action: {
-                        
+//                        isSearch = true
                         withAnimation {
                             
                             self.show.toggle()
@@ -46,19 +47,17 @@ struct Header: View {
                             .foregroundColor(.white)
                             .padding(.init(top: 10, leading: 0, bottom: 18, trailing: 10))
                     }
+                    Button(action: {
+                        
+                    }) {
+                    Image(systemName: "camera")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                        .foregroundColor(.white)
+                    }.padding(.init(top: 10, leading: 10, bottom: 18, trailing: 32))
                 }
             }
             .padding(self.show ? 10 : 0)
-            
-            //카메라
-            Button(action: {
-                
-            }) {
-            Image(systemName: "camera")
-                .resizable()
-                .frame(width: 24, height: 24)
-                .foregroundColor(.white)
-            }.padding(.init(top: 10, leading: 10, bottom: 18, trailing: 32))
         }
         .background(Color.black)
         .opacity(0.9)

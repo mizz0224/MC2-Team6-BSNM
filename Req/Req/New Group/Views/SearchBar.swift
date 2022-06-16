@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct SearchBar: View {
+    //    @State var hearder = Header()
+    @State var change = false
+    @State var show = false
+    @State var txt = ""
     @Binding var searchText: String
     @Binding var isSearching: Bool
     @Binding var showResults: Bool
     @Binding var loadSearch: Bool
-    
+    //    @Binding var isSearch : Bool
     var body: some View {
         
         
@@ -32,7 +36,9 @@ struct SearchBar: View {
             })
             .overlay (
                 HStack {
-                    Image(systemName: "magnifyingglass")
+                    Button(action: {showResults = true}){
+                        Image(systemName: "magnifyingglass")
+                    }
                     Spacer()
                     
                     
@@ -47,24 +53,19 @@ struct SearchBar: View {
                     .foregroundColor(.gray)
             )
             
-            if isSearching {
-                Button(action: {
-                    isSearching = false
-                    searchText = ""
-                    showResults = false
-                    
-                    
-                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-                },
-                       label: {
-                    Image(systemName: "xmark")
-                        .padding(.trailing)
-                        .padding(.leading, 8)
-                }
-                )
-                .transition(.move(edge: .trailing))
+            Button(action: {
+                self.change.toggle()
+                
+            },
+                   label: {
+                Image(systemName: "xmark")
+                    .padding(.trailing)
+                    .padding(.leading, 8)
             }
+            )
+            .transition(.move(edge: .trailing))
         }
+        
     }
     
 }
