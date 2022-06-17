@@ -12,7 +12,19 @@ struct EmptyHomeView: View {
     // merge 이후에 색 지정하면 색깔 바꿔주기
     var body: some View {
         VStack{
-            Spacer().frame(height: 50)
+            ZStack{
+                Rectangle()
+                    .foregroundColor(.black)
+                    .ignoresSafeArea()
+                HStack {
+                    Image("ReqLogo")
+                        .resizable()
+                        .frame(width: 72,height: 32)
+                        .padding()
+                    Spacer()
+                }
+            }
+            Spacer().frame(height: 50 - 32)
             HStack{
                 Spacer().frame(width: 32)
                 ZStack(alignment: .leading){
