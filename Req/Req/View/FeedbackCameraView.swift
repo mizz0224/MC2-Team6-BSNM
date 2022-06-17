@@ -21,10 +21,18 @@ struct FeedbackCameraView: View {
                     .foregroundColor(.black)
 
                 if viewModel.recentImage == nil {
-                    viewModel.cameraPreview
-                        .onAppear {
-                        viewModel.configure()
+                    ZStack {
+                        viewModel.cameraPreview
+                            .onAppear {
+                            viewModel.configure()
+                        }
+                        
+                        Image("silhouette")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 520)
                     }
+                  
                 }
                 else {
                     Image(uiImage: viewModel.recentImage!)
