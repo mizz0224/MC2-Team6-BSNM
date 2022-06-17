@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct TopMenu: View {
-//    @State var isSearch : Bool = false
-    @State var searchText = ""
     @State var getisSearch = false
-    @State var isSearching = false
-    @State var showResults = false
-    @State var loadSearch = false
+    @Binding var searchText: String
+    @Binding var isSearching: Bool
+    @Binding var showResults: Bool
+    @Binding var loadSearch: Bool
     
     var body: some View {
         VStack(spacing:0){
             if getisSearch {
-                SearchBar(searchText: $searchText, getisSearch: $getisSearch, isSearching: $isSearching, showResults: $showResults, loadSearch: $loadSearch)
+                SearchBar(getisSearch: $getisSearch, searchText: $searchText, isSearching: $isSearching, showResults: $showResults)
             }   else    {
                 Header(getisSearch: $getisSearch)
             }
@@ -26,8 +25,3 @@ struct TopMenu: View {
     }
 }
 
-struct TopMenu_Previews: PreviewProvider {
-    static var previews: some View {
-        TopMenu()
-    }
-}
