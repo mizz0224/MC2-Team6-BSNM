@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=xcode,swift
 
 #
-.DS_Store
+*.DS*
 
 
 ### Swift ###
