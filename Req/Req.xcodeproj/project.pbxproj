@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368B9CC6285C441000BC6769 /* TopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B9CC5285C441000BC6769 /* TopMenu.swift */; };
 		36DFB04D285A02F700D919FE /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFB04C285A02F700D919FE /* SearchBar.swift */; };
 		36DFB0A7285A33A600D919FE /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFB0A6285A33A600D919FE /* PostData.swift */; };
 		36DFB0A9285A33C500D919FE /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFB0A8285A33C500D919FE /* PostModel.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		368B9CC5285C441000BC6769 /* TopMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenu.swift; sourceTree = "<group>"; };
 		36DFB04C285A02F700D919FE /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		36DFB0A6285A33A600D919FE /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		36DFB0A8285A33C500D919FE /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				36DFB0AC285A365A00D919FE /* Slogan.swift */,
 				36DFB0AE285A3B1900D919FE /* Header.swift */,
 				36DFB0B2285A3D3E00D919FE /* HomeView.swift */,
+				368B9CC5285C441000BC6769 /* TopMenu.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				36DFB0AD285A365A00D919FE /* Slogan.swift in Sources */,
 				36DFB0B5285A429500D919FE /* FeedbackDummy.swift in Sources */,
 				36DFB0A7285A33A600D919FE /* PostData.swift in Sources */,
+				368B9CC6285C441000BC6769 /* TopMenu.swift in Sources */,
 				36DFB04D285A02F700D919FE /* SearchBar.swift in Sources */,
 				36DFB0B3285A3D3E00D919FE /* HomeView.swift in Sources */,
 				36DFB0AB285A345F00D919FE /* PostGridView.swift in Sources */,

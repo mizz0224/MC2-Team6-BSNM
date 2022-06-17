@@ -8,63 +8,58 @@
 import SwiftUI
 
 struct SearchBar: View {
-    @State var change = false
-    @State var show = false
-    @State var txt = ""
-    @Binding var searchText: String
+    @Binding var searchText : String//검색할 텍스트가 담길부분
+    @Binding var getisSearch : Bool//받아온 isSearch가 담길 변수
     @Binding var isSearching: Bool
     @Binding var showResults: Bool
     @Binding var loadSearch: Bool
-
+    
     var body: some View {
         
-        
-        HStack (spacing: 0){
-            HStack {
-                TextField("패션아이템 이름", text: $searchText)
-                    .padding(.leading, 24)
-            }
-            .frame(height: 2)
-            .padding()
-            .background(Color(.systemGray5))
-            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-            .padding(.horizontal)
-            .onTapGesture(perform: {
-                isSearching = true
-                showResults = true
-            })
-            .overlay (
-                HStack {
-                    Button(action: {showResults = true}){
-                        Image(systemName: "magnifyingglass")
-                    }
-                    Spacer()
-                    
-                    
-                    Button(action: {searchText = ""}, label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .padding(.vertical)
-                            .foregroundColor(.gray)
-                            .opacity(isSearching ? 1 : 0)
-                    })
+        VStack (spacing: 0) {
+            Spacer()
+            HStack(spacing: 0) {
+                Spacer().frame(width:8)
+                
+                HStack(spacing: 0 ) {
+                    TextField("패션 아이템의 이름을 입력하세요", text: $searchText)
+                        .padding(.leading, 24)
                 }
+                .frame(height:20)
+                .padding(.horizontal)
+                .background(.gray)
+                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                .onTapGesture(perform: {
+                    isSearching = true
+                    showResults = true
+                })
+                .overlay (
+                    HStack {
+                        Image(systemName: "magnifyingglass")
+                        Spacer()
+                        
+                        Button(action: {searchText = ""}, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .padding(.vertical)
+                                .foregroundColor(.gray)
+                                .opacity(isSearching ? 1 : 0)
+                        })
+                    }
                     .padding(.horizontal, 32)
                     .foregroundColor(.gray)
-            )
-            
-            Button(action: {
-                self.change.toggle()
+                )
                 
-            },
-                   label: {
-                Image(systemName: "xmark")
-                    .padding(.trailing)
-                    .padding(.leading, 8)
+                Spacer()
+                
+                Button(action: {self.getisSearch = false}) {//홈으로 이동
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundColor(.gray)
+                }//뒤로가기 버튼
+                
+                Spacer().frame(width:32)
             }
-            )
-            .transition(.move(edge: .trailing))
+            Spacer().frame(height:18)
         }
-        
     }
     
 }

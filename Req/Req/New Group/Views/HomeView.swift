@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     var getDataSet = testDataSet
+    @State var searchText = ""
+    @State var getisSearch = false
+    @State var isSearching = false
+    @State var showResults = false
+    @State var loadSearch = false
     var body: some View {
         VStack{
-            Header()
+            TopMenu()
             ScrollView{
                 VStack(alignment: .leading){
                     Slogan()
@@ -22,13 +26,15 @@ struct HomeView: View {
             }.background(.white)
         }
         .preferredColorScheme(.dark)
-        
+        .onAppear(perform: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                loadSearch = true
+            }})
     }
+    
 }
-
-
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
-}
+ }

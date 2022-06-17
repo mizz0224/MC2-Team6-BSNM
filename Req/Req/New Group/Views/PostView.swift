@@ -17,6 +17,10 @@ struct PostView: View {
         return formatter
     }()
     
+    @State var searchText = ""
+    @State var loadSearch = false
+
+
     var body: some View {
         VStack{
             RoundedRectangle(cornerRadius: 20)
@@ -27,6 +31,11 @@ struct PostView: View {
             
             PostGridView(data: testDataSet)
         }
+//        .onAppear(perform: {
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+//                loadSearch = true
+//            }
+//        })
     }
 }
 
