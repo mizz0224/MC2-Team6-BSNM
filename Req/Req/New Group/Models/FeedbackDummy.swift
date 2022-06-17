@@ -8,22 +8,22 @@
 
 import Foundation
 
-struct Feedback: Identifiable {
-    var id : UUID
-    var name : String
-    var date : Date
-    var title: String
-    var image : String
-    var pins : [Pin]
-}
-
-struct Pin {
-    let id : UUID
-    let x : Double
-    let y : Double
-    let title : String
-    let description : String
-}
+//struct Feedback: Identifiable {
+//    var id : UUID
+//    var name : String
+//    var date : Date
+//    var title: String
+//    var image : String
+//    var pins : [Pin]
+//}
+//
+//struct Pin {
+//    let id : UUID
+//    let x : Double
+//    let y : Double
+//    let title : String
+//    let description : String
+//}
 var pin0 = Pin(id: UUID(), x: 0, y: 0, title: "테스트타이틀1", description: "테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명")
 var pin1 = Pin(id: UUID(), x: 200, y: 200, title: "테스트타이틀2", description: "테스트설명테스트설명테스트설명테스트설명테스트설테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명")
 var pin2 = Pin(id: UUID(), x: 300, y: 300, title: "티셔츠 로고플레이", description: "로고플레이가 맘에 안듬.\n로고플레이가 들어간 티셔츠보다 무늬가 없는 티셔츠가 현재 옷에 더 잘 어울릴것 같음")
@@ -40,16 +40,16 @@ var testpins : [Pin] = [pin0,pin1,pin2,pin3,pin4,pin5,pin6,pin7,pin8,pin9,pin10]
 
 
 
-let testData1 : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now, title: "black1", image: "black1", pins: testpins)
-let testData2 : Feedback = Feedback(id: UUID(), name: "미쯔", date: Date.now, title: "white2", image: "white2", pins: testpins)
-let testData3 : Feedback = Feedback(id: UUID(), name: "사샤", date: Date.now, title: "warm3", image: "warm3", pins: testpins)
-let testData4 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now, title: "dark4", image: "dark4", pins: testpins)
-let testData5 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now, title: "a5", image: "a5", pins: testpins)
-let testData6 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now, title: "f6", image: "f6", pins: testpins)
-let testData7 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now, title: "f7", image: "f7", pins: testpins)
-let testData8 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now, title: "c8", image: "c8", pins: testpins)
-let testData9 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now, title: "c9", image: "c9", pins: testpins)
-let testData10 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now, title: "d10", image: "d10", pins: testpins)
+let testData1 : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now,  image: "black1", pins: testpins)
+let testData2 : Feedback = Feedback(id: UUID(), name: "미쯔", date: Date.now,  image: "white2", pins: testpins)
+let testData3 : Feedback = Feedback(id: UUID(), name: "사샤", date: Date.now,  image: "warm3", pins: testpins)
+let testData4 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "dark4", pins: testpins)
+let testData5 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "a5", pins: testpins)
+let testData6 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "f6", pins: testpins)
+let testData7 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "f7", pins: testpins)
+let testData8 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "c8", pins: testpins)
+let testData9 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "c9", pins: testpins)
+let testData10 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "d10", pins: testpins)
 
 
 

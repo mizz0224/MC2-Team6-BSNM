@@ -15,7 +15,9 @@ struct ReqApp: App {
         WindowGroup {
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            OnboardingCheckView()
+//            OnboardingCheckView()
+//            HomeView()
+            DetailView(getFeedback: testData)
         }
     }
 }

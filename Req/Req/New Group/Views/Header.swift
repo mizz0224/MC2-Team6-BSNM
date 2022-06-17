@@ -36,6 +36,7 @@ struct Header: View {
             VStack(spacing:0){
                 Spacer()
                 Button(action: {}) {
+                    //TODO: 카메라 버튼 추가하기
                     Image(systemName: "camera.fill")
                         .font(menuFont)
                         .foregroundColor(iconColor)
