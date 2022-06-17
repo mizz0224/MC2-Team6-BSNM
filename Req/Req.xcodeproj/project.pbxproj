@@ -32,11 +32,11 @@
 		D98C3CEF285910A60081C153 /* GradientStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98C3CEE285910A60081C153 /* GradientStyle.swift */; };
 		D9A7D6A9285A7A7E0051FA12 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D9A7D6A8285A7A7E0051FA12 /* Lottie */; };
 		D9A7D6AB285A7AC20051FA12 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7D6AA285A7AC20051FA12 /* LottieView.swift */; };
-		D9A7D6AF285A84250051FA12 /* Req_Onboarding_Lottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A7D6AE285A84250051FA12 /* Req_Onboarding_Lottie1.json */; };
-		D9A7D6B7285A90140051FA12 /* Req_Onboarding_Lottie2.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A7D6B6285A90140051FA12 /* Req_Onboarding_Lottie2.json */; };
-		D9A7D6BD285B16720051FA12 /* Req_Onboarding_Star.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A7D6BC285B16720051FA12 /* Req_Onboarding_Star.json */; };
 		D9A7D6BF285B1BA50051FA12 /* LottieLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */; };
-		D9A7D6C1285B23410051FA12 /* Req_Onboarding_Lottie3.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A7D6C0285B23410051FA12 /* Req_Onboarding_Lottie3.json */; };
+		F5AEC47E285C4C5D007C330C /* Req_Onboarding_Lottie2.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */; };
+		F5AEC47F285C4C5D007C330C /* Req_Onboarding_Lottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */; };
+		F5AEC480285C4C5D007C330C /* Req_Onboarding_Lottie3.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47D285C4C5D007C330C /* Req_Onboarding_Lottie3.json */; };
+		F5AEC482285C4C87007C330C /* Req_Onboarding_Star.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC481285C4C87007C330C /* Req_Onboarding_Star.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,11 +65,11 @@
 		D98C3CE82859024C0081C153 /* EmptyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyHomeView.swift; sourceTree = "<group>"; };
 		D98C3CEE285910A60081C153 /* GradientStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientStyle.swift; sourceTree = "<group>"; };
 		D9A7D6AA285A7AC20051FA12 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		D9A7D6AE285A84250051FA12 /* Req_Onboarding_Lottie1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Req_Onboarding_Lottie1.json; path = ../../../../../Desktop/Req_Onboarding_Lottie1.json; sourceTree = "<group>"; };
-		D9A7D6B6285A90140051FA12 /* Req_Onboarding_Lottie2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Req_Onboarding_Lottie2.json; path = ../../../../../Desktop/Req_Onboarding_Lottie2.json; sourceTree = "<group>"; };
-		D9A7D6BC285B16720051FA12 /* Req_Onboarding_Star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Req_Onboarding_Star.json; path = ../../../../../Downloads/Req_Onboarding_Star.json; sourceTree = "<group>"; };
 		D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLoopView.swift; sourceTree = "<group>"; };
-		D9A7D6C0285B23410051FA12 /* Req_Onboarding_Lottie3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Req_Onboarding_Lottie3.json; path = ../../../../../Desktop/Req_Onboarding_Lottie3.json; sourceTree = "<group>"; };
+		F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie2.json; sourceTree = "<group>"; };
+		F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie1.json; sourceTree = "<group>"; };
+		F5AEC47D285C4C5D007C330C /* Req_Onboarding_Lottie3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie3.json; sourceTree = "<group>"; };
+		F5AEC481285C4C87007C330C /* Req_Onboarding_Star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Star.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,12 +146,12 @@
 				D9A7D6AA285A7AC20051FA12 /* LottieView.swift */,
 				D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */,
 				D98C3CEE285910A60081C153 /* GradientStyle.swift */,
+				F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */,
+				F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */,
+				F5AEC481285C4C87007C330C /* Req_Onboarding_Star.json */,
+				F5AEC47D285C4C5D007C330C /* Req_Onboarding_Lottie3.json */,
 				55113C18285325B400B2AE5D /* Persistence.swift */,
 				55113C1A285325B400B2AE5D /* Req.xcdatamodeld */,
-				D9A7D6AE285A84250051FA12 /* Req_Onboarding_Lottie1.json */,
-				D9A7D6B6285A90140051FA12 /* Req_Onboarding_Lottie2.json */,
-				D9A7D6C0285B23410051FA12 /* Req_Onboarding_Lottie3.json */,
-				D9A7D6BC285B16720051FA12 /* Req_Onboarding_Star.json */,
 				55113C15285325B400B2AE5D /* Preview Content */,
 			);
 			path = Req;
@@ -241,11 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				55113C17285325B400B2AE5D /* Preview Assets.xcassets in Resources */,
-				D9A7D6AF285A84250051FA12 /* Req_Onboarding_Lottie1.json in Resources */,
 				55113C14285325B400B2AE5D /* Assets.xcassets in Resources */,
-				D9A7D6C1285B23410051FA12 /* Req_Onboarding_Lottie3.json in Resources */,
-				D9A7D6BD285B16720051FA12 /* Req_Onboarding_Star.json in Resources */,
-				D9A7D6B7285A90140051FA12 /* Req_Onboarding_Lottie2.json in Resources */,
+				F5AEC480285C4C5D007C330C /* Req_Onboarding_Lottie3.json in Resources */,
+				F5AEC482285C4C87007C330C /* Req_Onboarding_Star.json in Resources */,
+				F5AEC47F285C4C5D007C330C /* Req_Onboarding_Lottie1.json in Resources */,
+				F5AEC47E285C4C5D007C330C /* Req_Onboarding_Lottie2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
