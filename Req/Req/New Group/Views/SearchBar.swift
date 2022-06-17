@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct SearchBar: View {
-    @Binding var searchText : String//검색할 텍스트가 담길부분
-    @Binding var getisSearch : Bool//받아온 isSearch가 담길 변수
+    @Binding var getisSearch: Bool
+    @Binding var searchText: String
     @Binding var isSearching: Bool
     @Binding var showResults: Bool
-    @Binding var loadSearch: Bool
     
     var body: some View {
         

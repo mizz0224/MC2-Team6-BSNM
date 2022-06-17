@@ -16,9 +16,9 @@ struct PostView: View {
         formatter.dateFormat = "yyyy년 M월"
         return formatter
     }()
-    
-    @State var searchText = ""
-    @State var loadSearch = false
+    @Binding var searchText: String
+
+    @Binding var loadSearch: Bool
 
 
     var body: some View {
@@ -26,21 +26,22 @@ struct PostView: View {
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.black)
                 .frame(width: 358, height: 1)
-            Text("\(releaseDate, formatter: Self.kDateFormat)")                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 200))
+            Text("\(releaseDate, formatter: Self.kDateFormat)")
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 200))
                 .foregroundColor(.black)
             
-            PostGridView(data: testDataSet)
+            PostGridView(searchText: $searchText, data: testDataSet)
         }
-//        .onAppear(perform: {
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-//                loadSearch = true
-//            }
-//        })
+        .onAppear(perform: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                loadSearch = true
+            }
+        })
     }
 }
 
-struct PostView_Previews: PreviewProvider {
-    static var previews: some View {
-        PostView()
-    }
-}
+//struct PostView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PostView(searchText: $searchText, loadSearch: $loadSearch)
+//    }
+//}

@@ -8,44 +8,47 @@
 import SwiftUI
 
 struct PostGridView: View {
+    @Binding var searchText: String
+    var getDataSet = testDataSet
+    
 
-    @State var searchText = ""
-    let gridLayout:[GridItem] =  Array(repeating: .init(.fixed(160), spacing: 2), count: 2)
-//    let data: [PostModel]
+    let gridLayout:[GridItem] =  Array(repeating: .init(.fixed(160), spacing: 10), count: 2)
     let data: [Feedback]
+    
     
     var body: some View {
         //그리드
-        LazyVGrid(columns: gridLayout, alignment: .center, spacing:.zero){
-//            data, id: \.id
-            
-            ForEach(data, id: \.id)  { item in
-                ZStack(alignment: .center){
-                    
-                    Button(action: {}){
+        
+            LazyVGrid(columns: gridLayout, alignment: .center, spacing: 0){
+                NavigationView{
 
+                ForEach(data.filter({"\($0)"
+                    .contains(searchText.lowercased()) ||
+                    searchText.isEmpty
+                }), id: \.id) { item in
+                    ZStack(alignment: .center){
+                        
+                        NavigationLink(destination: {}){
+                            Image(item.image)
+                                .resizable()
+                                .frame(width: 160, height: 213.3)
+                                .clipped()
+                        }
+                        
+                        Text("Feedback from \n \(item.name)")
+                            .padding(.init(top: 170, leading: 0, bottom: 10, trailing: 10))
+                            .foregroundColor(.white)
 
-                        Image(item.image)
-                        .resizable()
-                        .frame(width: 160, height: 213.3)
-                        .clipped()
                     }
-                    LinearGradient(colors: [.black.opacity(0.5), .black.opacity(0)], startPoint: .bottom, endPoint: .top)
-                        .frame(width: 160, height: 213.3)
-
-                    Text("Feedback from \n \(item.name)")
-                        .padding(.init(top: 170, leading: 0, bottom: 10, trailing: 10))
-                        .foregroundColor(.gray)
-
                 }
-                
             }
+            .animation(.spring())
         }
     }
 }
 
-struct PostGridView_Previews: PreviewProvider {
-    static var previews: some View {
-        PostGridView(data: testDataSet)
-    }
-}
+//struct PostGridView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PostGridView(searchText: $searchText, data: testDataSet)
+//    }
+//}

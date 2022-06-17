@@ -9,19 +9,18 @@ import SwiftUI
 
 struct HomeView: View {
     var getDataSet = testDataSet
-    @State var searchText = ""
-    @State var getisSearch = false
+    @State var searchText=""
     @State var isSearching = false
     @State var showResults = false
     @State var loadSearch = false
     var body: some View {
         VStack{
-            TopMenu()
+            TopMenu(searchText: $searchText,  isSearching: $isSearching, showResults: $showResults, loadSearch: $loadSearch)
             ScrollView{
                 VStack(alignment: .leading){
                     Slogan()
                         .padding(.init(top: 20, leading: 40, bottom: 16, trailing: 0))
-                    PostView()
+                    PostView(searchText: $searchText, loadSearch: $loadSearch)
                 }
             }.background(.white)
         }
