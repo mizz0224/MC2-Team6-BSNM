@@ -45,7 +45,7 @@ struct EmptyHomeView: View {
                     .frame(width: 136, height: 46)
                     .background(Color.black)
                     .cornerRadius(25)
-            }
+            } //TODO: 카메라와 연결하기
             Spacer().frame(height: 40)
         }
     }

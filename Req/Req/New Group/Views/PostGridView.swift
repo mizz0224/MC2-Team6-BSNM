@@ -19,10 +19,7 @@ struct PostGridView: View {
         LazyVGrid(columns: gridLayout, alignment: .center, spacing:.zero){
 //            data, id: \.id
             
-            ForEach(testDataSet.filter({"\($0)"
-                .contains(searchText.lowercased()) ||
-searchText.isEmpty
-}))  { item in
+            ForEach(data, id: \.id)  { item in
                 ZStack(alignment: .center){
                     
                     Button(action: {}){
