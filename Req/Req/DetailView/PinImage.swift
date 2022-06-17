@@ -13,16 +13,22 @@ struct PinImage: View {
     let pinWidth : CGFloat = 88
     let pinHeight : CGFloat = 76
     var selected : Bool
+    @State var newPin : Bool = true
     //createPinLottie : 핀 생성될때 로티
     //selectePinLottie : 핀 선택될때 로티
     //unselectePinLottie : 핀 선택해제 될때 로티
     //LottieView(filename: "selectPinLottie").frame(width: pinWidth, height: pinHeight).position(x: pinX, y: pinY)
     var body: some View {
         if selected {
-            LottieView(filename: "selectPinLottie").frame(width: pinWidth, height: pinHeight).position(x: pinX, y: pinY)
+            LottieView(filename: "selectPinLottie").frame(width: pinWidth, height: pinHeight).position(x: pinX, y: pinY).onAppear{
+                newPin = false
+            }
         } else {
-            LottieView(filename: "createPinLottie").frame(width: pinWidth, height: pinHeight).position(x: pinX, y: pinY)
+            if newPin {
+                LottieView(filename: "createPinLottie").frame(width: pinWidth, height: pinHeight).position(x: pinX, y: pinY)
+            } else {
+                LottieView(filename: "unSelectPinLottie").frame(width: pinWidth, height: pinHeight).position(x: pinX, y: pinY)
+            }
         }
     }
 }
-
