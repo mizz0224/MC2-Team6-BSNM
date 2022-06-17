@@ -28,7 +28,7 @@ struct PostGridView: View {
                 }), id: \.id) { item in
                     ZStack(alignment: .center){
                         
-                        NavigationLink(destination: {}){
+                        NavigationLink(destination: {DetailView(getFeedback: item)}){
                             Image(item.image)
                                 .resizable()
                                 .frame(width: 160, height: 213.3)
