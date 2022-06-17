@@ -38,6 +38,7 @@ struct PostGridView: View {
                         Text("Feedback from \n \(item.name)")
                             .padding(.init(top: 170, leading: 0, bottom: 10, trailing: 10))
                             .foregroundColor(.white)
+
                     }
                 }
             }
