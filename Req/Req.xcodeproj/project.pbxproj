@@ -56,6 +56,7 @@
 		F5AEC47F285C4C5D007C330C /* Req_Onboarding_Lottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */; };
 		F5AEC480285C4C5D007C330C /* Req_Onboarding_Lottie3.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47D285C4C5D007C330C /* Req_Onboarding_Lottie3.json */; };
 		F5AEC482285C4C87007C330C /* Req_Onboarding_Star.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC481285C4C87007C330C /* Req_Onboarding_Star.json */; };
+		F5EBA1FF285CB4F100870BF3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBA1FE285CB4F100870BF3 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +110,7 @@
 		F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie1.json; sourceTree = "<group>"; };
 		F5AEC47D285C4C5D007C330C /* Req_Onboarding_Lottie3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie3.json; sourceTree = "<group>"; };
 		F5AEC481285C4C87007C330C /* Req_Onboarding_Star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Star.json; sourceTree = "<group>"; };
+		F5EBA1FE285CB4F100870BF3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				36DFB0AC285A365A00D919FE /* Slogan.swift */,
 				36DFB0B2285A3D3E00D919FE /* HomeView.swift */,
 				368B9CC5285C441000BC6769 /* TopMenu.swift */,
+				F5EBA1FE285CB4F100870BF3 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4239FA19285601B6005B9C82 /* DetailViewDescription.swift in Sources */,
+				F5EBA1FF285CB4F100870BF3 /* MainView.swift in Sources */,
 				D98C3CDD2858660C0081C153 /* OnboardingPageView.swift in Sources */,
 				55113C1C285325B400B2AE5D /* Req.xcdatamodeld in Sources */,
 				D98C3CDF285866200081C153 /* OnboardingLastPageView.swift in Sources */,
