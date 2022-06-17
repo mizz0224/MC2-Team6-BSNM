@@ -14,7 +14,20 @@
 		4249EE8C285515C600F63F11 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249EE8B285515C600F63F11 /* ImageView.swift */; };
 		42695E1128574410005D18A8 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42695E1028574410005D18A8 /* Entity.swift */; };
 		42695E1328574490005D18A8 /* PinImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42695E1228574490005D18A8 /* PinImage.swift */; };
+		4287CFFD285B8C7D004486AC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4287CFFC285B8C7D004486AC /* Lottie */; };
+		4287D005285B8F7C004486AC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287D004285B8F7C004486AC /* LottieView.swift */; };
+		4287D007285B8FC7004486AC /* createPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4287D006285B8FC7004486AC /* createPinLottie.json */; };
+		4287D00A285B98F5004486AC /* selectPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4287D009285B98F5004486AC /* selectPinLottie.json */; };
+		4287D00C285BA3F6004486AC /* unSelectPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4287D00B285BA3F6004486AC /* unSelectPinLottie.json */; };
 		42E77FBF2858C84000A346FF /* DivisionLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E77FBE2858C84000A346FF /* DivisionLine.swift */; };
+		42ED1F81285AF9350016F86E /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42ED1F79285AF9350016F86E /* Ubuntu-Light.ttf */; };
+		42ED1F82285AF9350016F86E /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42ED1F7A285AF9350016F86E /* Ubuntu-LightItalic.ttf */; };
+		42ED1F83285AF9350016F86E /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42ED1F7B285AF9350016F86E /* Ubuntu-MediumItalic.ttf */; };
+		42ED1F84285AF9350016F86E /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42ED1F7C285AF9350016F86E /* Ubuntu-Regular.ttf */; };
+		42ED1F85285AF9350016F86E /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42ED1F7D285AF9350016F86E /* Ubuntu-Bold.ttf */; };
+		42ED1F86285AF9350016F86E /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42ED1F7E285AF9350016F86E /* Ubuntu-BoldItalic.ttf */; };
+		42ED1F87285AF9350016F86E /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42ED1F7F285AF9350016F86E /* Ubuntu-Medium.ttf */; };
+		42ED1F88285AF9350016F86E /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42ED1F80285AF9350016F86E /* Ubuntu-Italic.ttf */; };
 		55113C10285325B300B2AE5D /* ReqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C0F285325B300B2AE5D /* ReqApp.swift */; };
 		55113C12285325B300B2AE5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C11285325B300B2AE5D /* ContentView.swift */; };
 		55113C14285325B400B2AE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55113C13285325B400B2AE5D /* Assets.xcassets */; };
@@ -31,7 +44,20 @@
 		4249EE8B285515C600F63F11 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		42695E1028574410005D18A8 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		42695E1228574490005D18A8 /* PinImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinImage.swift; sourceTree = "<group>"; };
+		4287D004285B8F7C004486AC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		4287D006285B8FC7004486AC /* createPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = createPinLottie.json; sourceTree = "<group>"; };
+		4287D009285B98F5004486AC /* selectPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = selectPinLottie.json; sourceTree = "<group>"; };
+		4287D00B285BA3F6004486AC /* unSelectPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = unSelectPinLottie.json; sourceTree = "<group>"; };
 		42E77FBE2858C84000A346FF /* DivisionLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionLine.swift; sourceTree = "<group>"; };
+		42ED1F79285AF9350016F86E /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		42ED1F7A285AF9350016F86E /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		42ED1F7B285AF9350016F86E /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		42ED1F7C285AF9350016F86E /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		42ED1F7D285AF9350016F86E /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		42ED1F7E285AF9350016F86E /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		42ED1F7F285AF9350016F86E /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		42ED1F80285AF9350016F86E /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		42ED1F89285AFC330016F86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		55113C0C285325B300B2AE5D /* Req.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Req.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55113C0F285325B300B2AE5D /* ReqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqApp.swift; sourceTree = "<group>"; };
 		55113C11285325B300B2AE5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4287CFFD285B8C7D004486AC /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +82,7 @@
 		4241F846285487E5001E11DF /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
+				4287D008285B98BC004486AC /* Lottie */,
 				42695E1228574490005D18A8 /* PinImage.swift */,
 				4241F84728548802001E11DF /* DetailView.swift */,
 				4249EE89285513B300F63F11 /* TopMenuView.swift */,
@@ -62,8 +90,34 @@
 				4239FA18285601B6005B9C82 /* DetailViewDescription.swift */,
 				4239FA1C28564901005B9C82 /* DetailViewFeedback.swift */,
 				42E77FBE2858C84000A346FF /* DivisionLine.swift */,
+				4287D004285B8F7C004486AC /* LottieView.swift */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		427609A5285AF5B500F6F3A0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				42ED1F7D285AF9350016F86E /* Ubuntu-Bold.ttf */,
+				42ED1F7E285AF9350016F86E /* Ubuntu-BoldItalic.ttf */,
+				42ED1F80285AF9350016F86E /* Ubuntu-Italic.ttf */,
+				42ED1F79285AF9350016F86E /* Ubuntu-Light.ttf */,
+				42ED1F7A285AF9350016F86E /* Ubuntu-LightItalic.ttf */,
+				42ED1F7F285AF9350016F86E /* Ubuntu-Medium.ttf */,
+				42ED1F7B285AF9350016F86E /* Ubuntu-MediumItalic.ttf */,
+				42ED1F7C285AF9350016F86E /* Ubuntu-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4287D008285B98BC004486AC /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				4287D006285B8FC7004486AC /* createPinLottie.json */,
+				4287D009285B98F5004486AC /* selectPinLottie.json */,
+				4287D00B285BA3F6004486AC /* unSelectPinLottie.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		55113C03285325B300B2AE5D = {
@@ -85,6 +139,8 @@
 		55113C0E285325B300B2AE5D /* Req */ = {
 			isa = PBXGroup;
 			children = (
+				42ED1F89285AFC330016F86E /* Info.plist */,
+				427609A5285AF5B500F6F3A0 /* Fonts */,
 				4241F846285487E5001E11DF /* DetailView */,
 				55113C0F285325B300B2AE5D /* ReqApp.swift */,
 				55113C11285325B300B2AE5D /* ContentView.swift */,
@@ -121,6 +177,9 @@
 			dependencies = (
 			);
 			name = Req;
+			packageProductDependencies = (
+				4287CFFC285B8C7D004486AC /* Lottie */,
+			);
 			productName = Req;
 			productReference = 55113C0C285325B300B2AE5D /* Req.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +208,9 @@
 				Base,
 			);
 			mainGroup = 55113C03285325B300B2AE5D;
+			packageReferences = (
+				4287CFFB285B8C7D004486AC /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 55113C0D285325B300B2AE5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,7 +225,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42ED1F86285AF9350016F86E /* Ubuntu-BoldItalic.ttf in Resources */,
+				42ED1F84285AF9350016F86E /* Ubuntu-Regular.ttf in Resources */,
+				42ED1F87285AF9350016F86E /* Ubuntu-Medium.ttf in Resources */,
+				42ED1F88285AF9350016F86E /* Ubuntu-Italic.ttf in Resources */,
+				42ED1F82285AF9350016F86E /* Ubuntu-LightItalic.ttf in Resources */,
 				55113C17285325B400B2AE5D /* Preview Assets.xcassets in Resources */,
+				42ED1F83285AF9350016F86E /* Ubuntu-MediumItalic.ttf in Resources */,
+				4287D00C285BA3F6004486AC /* unSelectPinLottie.json in Resources */,
+				4287D00A285B98F5004486AC /* selectPinLottie.json in Resources */,
+				4287D007285B8FC7004486AC /* createPinLottie.json in Resources */,
+				42ED1F85285AF9350016F86E /* Ubuntu-Bold.ttf in Resources */,
+				42ED1F81285AF9350016F86E /* Ubuntu-Light.ttf in Resources */,
 				55113C14285325B400B2AE5D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +258,7 @@
 				4241F84828548802001E11DF /* DetailView.swift in Sources */,
 				4249EE8C285515C600F63F11 /* ImageView.swift in Sources */,
 				42695E1328574490005D18A8 /* PinImage.swift in Sources */,
+				4287D005285B8F7C004486AC /* LottieView.swift in Sources */,
 				42E77FBF2858C84000A346FF /* DivisionLine.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
 			);
@@ -318,6 +392,7 @@
 				DEVELOPMENT_TEAM = 59HAHH5VLW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Req/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -347,6 +422,7 @@
 				DEVELOPMENT_TEAM = 59HAHH5VLW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Req/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -387,6 +463,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4287CFFB285B8C7D004486AC /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4287CFFC285B8C7D004486AC /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4287CFFB285B8C7D004486AC /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		55113C1A285325B400B2AE5D /* Req.xcdatamodeld */ = {

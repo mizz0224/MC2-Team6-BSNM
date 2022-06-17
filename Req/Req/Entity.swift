@@ -28,7 +28,9 @@ var pin2 = Pin(id: UUID(), x: 300, y: 300, title: "티셔츠 로고플레이", d
 var pin3 = Pin(id: UUID(), x: 350, y: 350, title: "테스트타이틀4", description: "테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명")
 var pin4 = Pin(id: UUID(), x: 390, y: 520, title: "테스트타이틀5", description: "테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명")
 var testpins : [Pin] = [pin0,pin1,pin2,pin3,pin4]
+let testData : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now, image: "picture1", pins: testpins)
 
-var testData : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now, image: "picture1", pins: testpins)
+
+
 
 

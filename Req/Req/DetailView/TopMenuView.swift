@@ -9,9 +9,12 @@ import SwiftUI
 
 struct TopMenuView : View {
     @State private var showingAlert : Bool = false //alert 띄워주기 위한 변수
+    @State var navigateNext = false
     let MenuFont : Font = Font.system(size:20).bold() //메뉴(뒤로가기,삭제) 버튼 폰트
     let idToDelete : UUID //삭제될 피드백의 아이디(UUID)
-    
+    //let TopMenuIconColor : Color = Color(red: 13, green: 13, blue: 14)//상단메뉴 아이콘 색깔 : reqBlack : 0d0de
+    //let TopMenuBgColor : Color = Color(red: 251, green: 251, blue: 255)//상단메뉴 배경 색깔 : reqWhite : fdfdff
+    let TopMenuIconColor : Color = Color.black
     var body : some View {
         
         VStack(alignment: .center, spacing: 0){
@@ -20,7 +23,7 @@ struct TopMenuView : View {
                     Image(systemName: "chevron.backward")
                         .font(MenuFont)
                         .frame(height: 24)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(TopMenuIconColor)
                         .padding(EdgeInsets(top: 10, leading: 16, bottom: 18, trailing: 0))
                 }//뒤로가기 버튼
                 Spacer()//좌우 구분을 위한 공백
@@ -28,7 +31,7 @@ struct TopMenuView : View {
                     Image(systemName : "trash.fill")
                         .font(MenuFont)
                         .frame(height: 24)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(TopMenuIconColor)
                         .padding(EdgeInsets(top: 10, leading: 0, bottom: 18, trailing: 16))
                         .alert(isPresented: $showingAlert) {
                             Alert(
@@ -47,7 +50,8 @@ struct TopMenuView : View {
     func gotoHome()->Void {
         //go to home
         print("go to home")
-
+        navigateNext.toggle()
+        print(navigateNext)
     }
     func deleteFeedback(targetUUID : UUID)->Void {
         //delete feedback
@@ -61,6 +65,11 @@ struct TopMenuView : View {
         }
     }
     
+}
+struct DestinationVC: View {
+    var body: some View {
+        Text("Hello!")
+    }
 }
 
 

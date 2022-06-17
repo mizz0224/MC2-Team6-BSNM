@@ -23,7 +23,6 @@ struct ImageView: View {
     
     let getFeedback : Feedback//피드백 데이터
     @State var selectedPin : Pin? = nil// 선택된 핀을 담을 변수(옵셔널)
-    
     var body : some View {
         ZStack{
             VStack(alignment:.center, spacing:0){
@@ -43,7 +42,7 @@ struct ImageView: View {
             }//vstack
             if !getFeedback.pins.isEmpty {//pins가 빈데이터가 아니라면(그럴리는 없겠지만)
                 ForEach(getFeedback.pins, id: \.id) { pin in //받아온 피드백데이터의 pins배열 에서 pin을 추출한다음
-                    PinImage(x: pin.x, y: pin.y, selected: pin == selectedPin)//해당 핀이 선택되었는지 넣어주고
+                    PinImage(pinX: pin.x, pinY: pin.y, selected: pin==selectedPin)//해당 핀이 선택되었는지 넣어주고
                         .onTapGesture {//핀을 터치할때
                             if pin == selectedPin {//이미 선택된 핀이라면
                                 selectedPin = nil//선택된 핀을 해제하고

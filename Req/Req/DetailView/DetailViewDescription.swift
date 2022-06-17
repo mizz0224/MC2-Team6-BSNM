@@ -10,7 +10,7 @@ import SwiftUI
 struct DetailViewDescription : View {
     let FeedbackDateFont : Font = Font.custom("AppleSDGothicNeo-Regular", size:15) //피드백 날짜 폰트
     let FeedbackUserNameFont : Font = Font.custom("AppleSDGothicNeo-Bold", size:24)//피드백 유저 이름 폰트
-    let FeedbackFromFont : Font = Font.custom("AppleSDGothicNeo-Light", size:15)//Feedback from 폰트
+    let FeedbackFromFont : Font = Font.custom("Ubuntu-Light", size:15)//Feedback from 폰트
     let DateColor : Color = Color(red: 171/255, green: 171/255, blue: 171/255)//날짜 출력 폰트
     let feedbackDate : Date//피드백 받은날짜
     var feedbackDateString : String {//Date형식으로 받은 피드백 날짜를 ****년 *월 **시 **분으로 출력
@@ -45,7 +45,7 @@ struct DetailViewDescription : View {
     }//DetailViewDescriptionView
     struct DetailViewDescription_Previews : PreviewProvider{
         static var previews : some View{
-            DetailViewDescription(feedbackDate : Date.now, feedbackUserName : "Curry")
+            DetailViewDescription(feedbackDate : Date.now, feedbackUserName : "커리")
         }
     }
 }
