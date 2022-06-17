@@ -13,9 +13,9 @@ struct ReqApp: App {
 
     var body: some Scene {
         WindowGroup {
-            //ContentView()
-              //  .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            DetailView(getFeedback: testData)
+//            ContentView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            OnboardingCheckView()
         }
     }
 }
