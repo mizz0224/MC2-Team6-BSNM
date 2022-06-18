@@ -14,7 +14,19 @@ struct FeedbackNameView: View {
     var body: some View {
         //TODO: 네비게이션 바로 진행할 것인지 커스텀 바로 진행할 것인지 정할 것
         NavigationView {
-            VStack {
+            VStack(spacing: 0) {
+                HStack {
+                    Button(action: { self.showCameraView = false }) {
+                        Image(systemName: "chevron.backward")
+                            .foregroundColor(.black)
+                    }
+                        .padding()
+                    Spacer()
+                }
+
+                Spacer()
+                    .frame(height: 44)
+
                 Group {
                     Divider()
                         .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
@@ -58,8 +70,12 @@ struct FeedbackNameView: View {
                 }
             }
 
+                .navigationBarHidden(true)
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarBackButtonHidden(true)
+
         }
-        .preferredColorScheme(.light)
+            .preferredColorScheme(.light)
     }
 }
 
