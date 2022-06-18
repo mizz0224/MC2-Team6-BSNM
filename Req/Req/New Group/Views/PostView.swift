@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PostView: View {
+    @EnvironmentObject var userData: UserDataManager
+    
     //날짜 모델
     let releaseDate = Date()
     
@@ -30,7 +32,7 @@ struct PostView: View {
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 200))
                 .foregroundColor(.black)
             
-            PostGridView(searchText: $searchText, data: testDataSet)
+            PostGridView(searchText: $searchText, data: userData.FeedbackArray)
         }
         .onAppear(perform: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {

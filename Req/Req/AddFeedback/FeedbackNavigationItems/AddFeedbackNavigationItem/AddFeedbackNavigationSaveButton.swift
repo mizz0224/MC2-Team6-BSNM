@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AddFeedbackNavigationSaveButton: View {
+    @EnvironmentObject var userData: UserDataManager
+    
     @State private var saveAlertShow: Bool = false
     @State private var dataAlertShow: Bool = false
     
@@ -38,7 +40,10 @@ struct AddFeedbackNavigationSaveButton: View {
             isPresented: $dataAlertShow
         ) {
             Button("확인", role: .cancel) {
+                saveData()
+                
                 dataAlertShow = false
+                showCameraView = false
             }
         } // 확인 Alert
     }
@@ -65,6 +70,12 @@ extension AddFeedbackNavigationSaveButton {
         }()
         
         return "\(dateFormatter.string(from: date))"
+    }
+    
+    func saveData() {
+        let Feedback = Feedback(id: UUID() ,name: reviewerName, date: Date(), image: image.jpegData(compressionQuality: 1) ?? Data(), pins: pins)
+        
+        userData.addFeedbackArray(addedFeedback: Feedback)
     }
     
 }

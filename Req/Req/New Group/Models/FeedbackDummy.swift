@@ -40,28 +40,28 @@ var testpins : [Pin] = [pin0,pin1,pin2,pin3,pin4,pin5,pin6,pin7,pin8,pin9,pin10]
 
 
 
-let testData1 : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now,  image: "black1", pins: testpins)
-let testData2 : Feedback = Feedback(id: UUID(), name: "미쯔", date: Date.now,  image: "white2", pins: testpins)
-let testData3 : Feedback = Feedback(id: UUID(), name: "사샤", date: Date.now,  image: "warm3", pins: testpins)
-let testData4 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "dark4", pins: testpins)
-let testData5 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "a5", pins: testpins)
-let testData6 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "f6", pins: testpins)
-let testData7 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "f7", pins: testpins)
-let testData8 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "c8", pins: testpins)
-let testData9 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "c9", pins: testpins)
-let testData10 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "d10", pins: testpins)
+//let testData1 : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now,  image: "black1", pins: testpins)
+//let testData2 : Feedback = Feedback(id: UUID(), name: "미쯔", date: Date.now,  image: "white2", pins: testpins)
+//let testData3 : Feedback = Feedback(id: UUID(), name: "사샤", date: Date.now,  image: "warm3", pins: testpins)
+//let testData4 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "dark4", pins: testpins)
+//let testData5 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "a5", pins: testpins)
+//let testData6 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "f6", pins: testpins)
+//let testData7 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "f7", pins: testpins)
+//let testData8 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "c8", pins: testpins)
+//let testData9 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "c9", pins: testpins)
+//let testData10 : Feedback = Feedback(id: UUID(), name: "토비", date: Date.now,  image: "d10", pins: testpins)
 
 
 
-var testDataSet1 : [Feedback] = [Feedback](repeating: testData1, count: 1)
-var testDataSet2 : [Feedback] = [Feedback](repeating: testData2, count: 1)
-var testDataSet3 : [Feedback] = [Feedback](repeating: testData3, count: 1)
-var testDataSet4 : [Feedback] = [Feedback](repeating: testData4, count: 1)
-var testDataSet5 : [Feedback] = [Feedback](repeating: testData5, count: 1)
-var testDataSet6 : [Feedback] = [Feedback](repeating: testData6, count: 1)
-var testDataSet7 : [Feedback] = [Feedback](repeating: testData7, count: 1)
-var testDataSet8 : [Feedback] = [Feedback](repeating: testData8, count: 1)
-var testDataSet9 : [Feedback] = [Feedback](repeating: testData9, count: 1)
-var testDataSet10 : [Feedback] = [Feedback](repeating: testData10, count: 1)
+//var testDataSet1 : [Feedback] = [Feedback](repeating: testData1, count: 1)
+//var testDataSet2 : [Feedback] = [Feedback](repeating: testData2, count: 1)
+//var testDataSet3 : [Feedback] = [Feedback](repeating: testData3, count: 1)
+//var testDataSet4 : [Feedback] = [Feedback](repeating: testData4, count: 1)
+//var testDataSet5 : [Feedback] = [Feedback](repeating: testData5, count: 1)
+//var testDataSet6 : [Feedback] = [Feedback](repeating: testData6, count: 1)
+//var testDataSet7 : [Feedback] = [Feedback](repeating: testData7, count: 1)
+//var testDataSet8 : [Feedback] = [Feedback](repeating: testData8, count: 1)
+//var testDataSet9 : [Feedback] = [Feedback](repeating: testData9, count: 1)
+//var testDataSet10 : [Feedback] = [Feedback](repeating: testData10, count: 1)
 
-var testDataSet : [Feedback] = testDataSet1 + testDataSet2 + testDataSet3 + testDataSet4 + testDataSet5 + testDataSet6 + testDataSet7 + testDataSet8 + testDataSet9 + testDataSet10
+//var testDataSet : [Feedback] = testDataSet1 + testDataSet2 + testDataSet3 + testDataSet4 + testDataSet5 + testDataSet6 + testDataSet7 + testDataSet8 + testDataSet9 + testDataSet10

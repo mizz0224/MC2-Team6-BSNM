@@ -11,7 +11,7 @@ struct Feedback: Codable {
     let id : UUID
     let name : String
     let date : Date
-    let image : String
+    let image : Data
     let pins : [Pin]
 }
 
@@ -28,7 +28,6 @@ struct Pin : Hashable, Codable {
 //var pin3 = Pin(id: UUID(), x: 350, y: 350, title: "테스트타이틀4", description: "테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명")
 //var pin4 = Pin(id: UUID(), x: 390, y: 520, title: "테스트타이틀5", description: "테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명")
 //var testpins : [Pin] = [pin0,pin1,pin2,pin3,pin4]
-let testData : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now, image: "picture1", pins: testpins)
 
 
 

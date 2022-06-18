@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct PostGridView: View {
+    @EnvironmentObject var userData: UserDataManager
+    
     @Binding var searchText: String
-    var getDataSet = testDataSet
+    var getDataSet: [Feedback] {
+        userData.requestFeedbackArray()
+        
+        return userData.FeedbackArray
+    }
 
 
     let gridLayout: [GridItem] = Array(repeating: .init(.fixed(160), spacing: 10), count: 2)
@@ -25,7 +31,7 @@ struct PostGridView: View {
                         NavigationLink(destination: { DetailView(getFeedback: item)
                                 .navigationBarHidden(true)
                         }) {
-                            Image(item.image)
+                            Image(uiImage: UIImage(data: item.image) ?? UIImage(systemName: "exclamationmark.icloud")!)
                                 .resizable()
                                 .frame(width: 160, height: 213.3)
                                 .clipped()

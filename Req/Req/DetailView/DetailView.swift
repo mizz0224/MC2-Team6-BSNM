@@ -36,11 +36,11 @@ struct DetailView: View {
             ImageView(getFeedback: getFeedback)//이미지 뷰, 하단 설명뷰는 이미지 뷰에서 구현
         }.frame(height:totalFrameHeight)//VStack
     }//body
-    struct DetailView_Previews: PreviewProvider {
-        static var previews: some View {
-            DetailView(getFeedback: testData)
-        }
-    }
+//    struct DetailView_Previews: PreviewProvider {
+//        static var previews: some View {
+//            DetailView(getFeedback: testData)
+//        }
+//    }
     
 }
 

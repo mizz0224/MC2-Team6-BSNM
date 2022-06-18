@@ -40,6 +40,9 @@ struct HomeView: View {
                 } })
         .navigationBarHidden(true)
         }
+        .onAppear {
+            userData.requestFeedbackArray()
+        }
         
     }
 

@@ -26,7 +26,8 @@ struct ImageView: View {
     var body : some View {
         ZStack{
             VStack(alignment:.center, spacing:0){
-                Image(getFeedback.image)
+//                Image(getFeedback.image)
+                Image(uiImage: UIImage(data: getFeedback.image) ?? UIImage(systemName: "exclamationmark.icloud")!)
                     .resizable()
                     .frame(width: 390, height: 520)
                     .onTapGesture { //이미지를 선택하면
@@ -54,10 +55,5 @@ struct ImageView: View {
             }//if !getFeedback
         }//ZStack
     }//DetailView
-    struct DetailView_Previews : PreviewProvider {
-        static var previews : some View {
-            ImageView(getFeedback: testData)
-        }
-    }
     
 }
