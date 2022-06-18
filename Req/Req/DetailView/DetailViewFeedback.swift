@@ -9,15 +9,15 @@ struct DetailViewFeedback : View {
     
     let pinTitleFont : Font = Font.custom("AppleSDGothicNeo-Bold", size:24)//핀의 피드백 제목 폰트
     let pinDescriptionFont : Font = Font.custom("AppleSDGothicNeo-Regular", size:15)//핀의 피드백 내용 폰트
-    let pinTitle : String//핀의 피드백 제목
-    let pinDescription : String//핀의 피드백 내용
+    let pinTitle : String?//핀의 피드백 제목
+    let pinDescription : String?//핀의 피드백 내용
     
     var body : some View{
         VStack(alignment: .leading, spacing: 0){
             Spacer().frame(height:24)
             HStack {
                 Spacer().frame(width: 16)
-                Text(pinTitle)//핀의 피드백 제목
+                Text(pinTitle!)//핀의 피드백 제목
                 .font(pinTitleFont)//핀의 피드백 제목 폰트
                 //.padding(EdgeInsets(top: 24, leading: 16, bottom: 20, trailing: 16))
                 Spacer().frame(width: 16)
@@ -27,7 +27,7 @@ struct DetailViewFeedback : View {
             Spacer().frame(height:20)
             HStack {
                 Spacer().frame(width: 16)
-                Text(pinDescription)//핀의 피드백 내용
+                Text(pinDescription!)//핀의 피드백 내용
                 .font(pinDescriptionFont)//핀의 피드백 내용 폰트
                 .lineLimit(4)//최대 줄수,4줄로 임의로 설정
                 .lineSpacing(4)//줄간격
