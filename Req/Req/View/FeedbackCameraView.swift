@@ -81,7 +81,8 @@ struct FeedbackCameraView: View {
                                 NavigationLink(destination: {
                                     AddFeedbackView(
                                         reviewerName: self.$name,
-                                        image: self.$image
+                                        image: self.$image,
+                                        showCameraView: self.$showCameraView
                                     )
                                     
                                 }) {

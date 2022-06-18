@@ -85,7 +85,6 @@
 		F509D63B2858E59400D81AC3 /* FeedbackNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */; };
 		F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */; };
 		F56D83D6285DDAE000BF6907 /* LightCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D83D5285DDAE000BF6907 /* LightCamera.swift */; };
-		F5117C2F2858C59700FA29C3 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2E2858C59700FA29C3 /* CameraView.swift */; };
 		F5AEC47E285C4C5D007C330C /* Req_Onboarding_Lottie2.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */; };
 		F5AEC47F285C4C5D007C330C /* Req_Onboarding_Lottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */; };
 		F5AEC480285C4C5D007C330C /* Req_Onboarding_Lottie3.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47D285C4C5D007C330C /* Req_Onboarding_Lottie3.json */; };
@@ -173,7 +172,6 @@
 		F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackNameView.swift; sourceTree = "<group>"; };
 		F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCameraView.swift; sourceTree = "<group>"; };
 		F56D83D5285DDAE000BF6907 /* LightCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightCamera.swift; sourceTree = "<group>"; };
-		F5117C2E2858C59700FA29C3 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie2.json; sourceTree = "<group>"; };
 		F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie1.json; sourceTree = "<group>"; };
 		F5AEC47D285C4C5D007C330C /* Req_Onboarding_Lottie3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie3.json; sourceTree = "<group>"; };
@@ -748,7 +746,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Req/Preview Content\"";
-				DEVELOPMENT_TEAM = 8B3RT7D582;
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Req/Info.plist;
@@ -759,6 +757,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -780,7 +779,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Req/Preview Content\"";
-				DEVELOPMENT_TEAM = 8B3RT7D582;
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Req/Info.plist;
@@ -791,6 +790,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
