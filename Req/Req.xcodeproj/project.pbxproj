@@ -23,7 +23,6 @@
 		4241F84828548802001E11DF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4241F84728548802001E11DF /* DetailView.swift */; };
 		4249EE8A285513B300F63F11 /* TopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249EE89285513B300F63F11 /* TopMenuView.swift */; };
 		4249EE8C285515C600F63F11 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249EE8B285515C600F63F11 /* ImageView.swift */; };
-		42695E1128574410005D18A8 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42695E1028574410005D18A8 /* Entity.swift */; };
 		42695E1328574490005D18A8 /* DetailViewPinImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42695E1228574490005D18A8 /* DetailViewPinImage.swift */; };
 		4287D007285B8FC7004486AC /* createPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4287D006285B8FC7004486AC /* createPinLottie.json */; };
 		4287D00A285B98F5004486AC /* selectPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4287D009285B98F5004486AC /* selectPinLottie.json */; };
@@ -109,7 +108,6 @@
 		4241F84728548802001E11DF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4249EE89285513B300F63F11 /* TopMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuView.swift; sourceTree = "<group>"; };
 		4249EE8B285515C600F63F11 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		42695E1028574410005D18A8 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		42695E1228574490005D18A8 /* DetailViewPinImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPinImage.swift; sourceTree = "<group>"; };
 		4287D006285B8FC7004486AC /* createPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = createPinLottie.json; sourceTree = "<group>"; };
 		4287D009285B98F5004486AC /* selectPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = selectPinLottie.json; sourceTree = "<group>"; };
@@ -191,29 +189,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		36DFB0452859FD0400D919FE /* New Group */ = {
+		36DFB0462859FD7300D919FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				36DFB0472859FD8600D919FE /* Views */,
-				36DFB0462859FD7300D919FE /* Models */,
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		36DFB0462859FD7300D919FE /* Models */ = {
-			isa = PBXGroup;
-			children = (
+				427609A5285AF5B500F6F3A0 /* Fonts */,
+				55113C3628538E2B00B2AE5D /* Entity.swift */,
 				36DFB0A6285A33A600D919FE /* PostData.swift */,
 				36DFB0CC285B564F00D919FE /* DateModel.swift */,
 				36DFB0A8285A33C500D919FE /* PostModel.swift */,
 				36DFB0B4285A429500D919FE /* FeedbackDummy.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		36DFB0472859FD8600D919FE /* Views */ = {
+		36DFB0472859FD8600D919FE /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				D98C3CEE285910A60081C153 /* GradientStyle.swift */,
+				D98C3CE82859024C0081C153 /* EmptyHomeView.swift */,
 				36DFB04C285A02F700D919FE /* SearchBar.swift */,
 				36DFB0AE285A3B1900D919FE /* Header.swift */,
 				36DFB0B0285A3C3400D919FE /* PostView.swift */,
@@ -223,13 +216,12 @@
 				368B9CC5285C441000BC6769 /* TopMenu.swift */,
 				F5EBA1FE285CB4F100870BF3 /* MainView.swift */,
 			);
-			path = Views;
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		4241F846285487E5001E11DF /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
-				4287D008285B98BC004486AC /* Lottie */,
 				42695E1228574490005D18A8 /* DetailViewPinImage.swift */,
 				4241F84728548802001E11DF /* DetailView.swift */,
 				4249EE89285513B300F63F11 /* TopMenuView.swift */,
@@ -256,16 +248,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		4287D008285B98BC004486AC /* Lottie */ = {
-			isa = PBXGroup;
-			children = (
-				4287D006285B8FC7004486AC /* createPinLottie.json */,
-				4287D009285B98F5004486AC /* selectPinLottie.json */,
-				4287D00B285BA3F6004486AC /* unSelectPinLottie.json */,
-			);
-			path = Lottie;
-			sourceTree = "<group>";
-		};
 		55113C03285325B300B2AE5D = {
 			isa = PBXGroup;
 			children = (
@@ -286,31 +268,15 @@
 			isa = PBXGroup;
 			children = (
 				42ED1F89285AFC330016F86E /* Info.plist */,
-				427609A5285AF5B500F6F3A0 /* Fonts */,
-				4241F846285487E5001E11DF /* DetailView */,
-				36DFB0452859FD0400D919FE /* New Group */,
 				55113C0F285325B300B2AE5D /* ReqApp.swift */,
-				D98C3CD92858653F0081C153 /* OnboardingView */,
+				F56D83DB285E060900BF6907 /* Controller */,
+				F56D83DA285E060400BF6907 /* CoreData */,
 				F509D6392858E58400D81AC3 /* View */,
-				F5FE1B7A285718A200A3B5BE /* Camera */,
-				55113C11285325B300B2AE5D /* ContentView.swift */,
-				D98C3CE82859024C0081C153 /* EmptyHomeView.swift */,
 				55113C13285325B400B2AE5D /* Assets.xcassets */,
-				D9A7D6AA285A7AC20051FA12 /* LottieView.swift */,
-				D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */,
-				D98C3CEE285910A60081C153 /* GradientStyle.swift */,
-				F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */,
-				F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */,
-				F5AEC481285C4C87007C330C /* Req_Onboarding_Star.json */,
-				F5AEC47D285C4C5D007C330C /* Req_Onboarding_Lottie3.json */,
-				55113C18285325B400B2AE5D /* Persistence.swift */,
-				55113C6928578EC900B2AE5D /* KeyboardControl.swift */,
-				55113C422854FDB200B2AE5D /* AddFeedback */,
-				55113C3628538E2B00B2AE5D /* Entity.swift */,
+				F56D83D9285E054F00BF6907 /* LottieJson */,
+				36DFB0462859FD7300D919FE /* Model */,
 				55113C1A285325B400B2AE5D /* Req.xcdatamodeld */,
 				55113C15285325B400B2AE5D /* Preview Content */,
-				42695E1028574410005D18A8 /* Entity.swift */,
-				558F301F285DDD38008D5622 /* UserDataManager.swift */,
 			);
 			path = Req;
 			sourceTree = "<group>";
@@ -323,7 +289,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		55113C422854FDB200B2AE5D /* AddFeedback */ = {
+		55113C422854FDB200B2AE5D /* AddFeedbackView */ = {
 			isa = PBXGroup;
 			children = (
 				55113C3E2854E35900B2AE5D /* AddFeedbackView.swift */,
@@ -335,7 +301,7 @@
 				55113C612857539A00B2AE5D /* FeedbackNavigationItems */,
 				55113C602857537F00B2AE5D /* FeedbackBottomViews */,
 			);
-			path = AddFeedback;
+			path = AddFeedbackView;
 			sourceTree = "<group>";
 		};
 		55113C472854FFD100B2AE5D /* BeforeAddFeedbackBottom */ = {
@@ -443,10 +409,65 @@
 		F509D6392858E58400D81AC3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4241F846285487E5001E11DF /* DetailView */,
+				55113C422854FDB200B2AE5D /* AddFeedbackView */,
+				F56D83D8285E053700BF6907 /* LottieView */,
+				36DFB0472859FD8600D919FE /* HomeView */,
+				D98C3CD92858653F0081C153 /* OnboardingView */,
+				F56D83D7285E04E600BF6907 /* FeedbackView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F56D83D7285E04E600BF6907 /* FeedbackView */ = {
+			isa = PBXGroup;
+			children = (
+				F5FE1B7A285718A200A3B5BE /* Camera */,
 				F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */,
 				F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */,
 			);
-			path = View;
+			path = FeedbackView;
+			sourceTree = "<group>";
+		};
+		F56D83D8285E053700BF6907 /* LottieView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A7D6AA285A7AC20051FA12 /* LottieView.swift */,
+				D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */,
+			);
+			path = LottieView;
+			sourceTree = "<group>";
+		};
+		F56D83D9285E054F00BF6907 /* LottieJson */ = {
+			isa = PBXGroup;
+			children = (
+				4287D006285B8FC7004486AC /* createPinLottie.json */,
+				4287D009285B98F5004486AC /* selectPinLottie.json */,
+				4287D00B285BA3F6004486AC /* unSelectPinLottie.json */,
+				F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */,
+				F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */,
+				F5AEC481285C4C87007C330C /* Req_Onboarding_Star.json */,
+				F5AEC47D285C4C5D007C330C /* Req_Onboarding_Lottie3.json */,
+			);
+			path = LottieJson;
+			sourceTree = "<group>";
+		};
+		F56D83DA285E060400BF6907 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				55113C11285325B300B2AE5D /* ContentView.swift */,
+				558F301F285DDD38008D5622 /* UserDataManager.swift */,
+				55113C18285325B400B2AE5D /* Persistence.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F56D83DB285E060900BF6907 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55113C6928578EC900B2AE5D /* KeyboardControl.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		F5FE1B7A285718A200A3B5BE /* Camera */ = {
@@ -557,7 +578,6 @@
 				55113C12285325B300B2AE5D /* ContentView.swift in Sources */,
 				4249EE8A285513B300F63F11 /* TopMenuView.swift in Sources */,
 				4239FA1D28564901005B9C82 /* DetailViewFeedback.swift in Sources */,
-				42695E1128574410005D18A8 /* Entity.swift in Sources */,
 				4241F84828548802001E11DF /* DetailView.swift in Sources */,
 				4249EE8C285515C600F63F11 /* ImageView.swift in Sources */,
 				42695E1328574490005D18A8 /* DetailViewPinImage.swift in Sources */,
