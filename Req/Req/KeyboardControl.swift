@@ -12,7 +12,7 @@ class KeyboardHeightHelper: ObservableObject {
     @Published var keyboardHeight: CGFloat = 0
     
     private func listenForKeyboardNotifications() {
-        NotificationCenter.default.addObserver(forName: UIResponder.keyboardDidShowNotification,
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification,
                                                object: nil,
                                                queue: .main) { (notification) in
                                                 guard let userInfo = notification.userInfo,
@@ -21,7 +21,7 @@ class KeyboardHeightHelper: ObservableObject {
                                                 self.keyboardHeight = keyboardRect.height
         }
         
-        NotificationCenter.default.addObserver(forName: UIResponder.keyboardDidHideNotification,
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification,
                                                object: nil,
                                                queue: .main) { (notification) in
                                                 self.keyboardHeight = 0
