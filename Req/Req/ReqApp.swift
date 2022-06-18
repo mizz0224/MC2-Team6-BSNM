@@ -18,7 +18,7 @@ struct ReqApp: App {
 //            OnboardingCheckView()
 //             HomeView()
 //            DetailView(getFeedback: testData)
-            FeedbackNameView()
+            HomeView()
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
         }

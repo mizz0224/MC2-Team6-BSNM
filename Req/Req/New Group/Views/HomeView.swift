@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
-    var getDataSet = testDataSet
+    @EnvironmentObject var userData: UserDataManager
+    
+    var getDataSet: [Feedback] {
+        userData.requestFeedbackArray()
+        
+        return userData.FeedbackArray
+    }
     @State var searchText = ""
     @State var isSearching = false
     @State var showResults = false
