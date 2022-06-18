@@ -31,21 +31,13 @@ struct AddFeedbackNavigationSaveButton: View {
         .alert("피드백을 저장하시겠습니까?", isPresented: $saveAlertShow) {
             Button("취소", role: .destructive) { saveAlertShow = false }
             Button("저장하기", role: .cancel) {
-                saveAlertShow = false
-                dataAlertShow = true
-            }
-        } // 저장 Alert
-        .alert(
-            "현재 시간 : \(getDate())\n작성자 : \(reviewerName)\n이미지 : \(image)\n핀 개수 : \(pins.count)",
-            isPresented: $dataAlertShow
-        ) {
-            Button("확인", role: .cancel) {
+                print("현재 시간 : \(getDate())\n작성자 : \(reviewerName)\n이미지 : \(image)\n핀 개수 : \(pins.count)")
                 saveData()
                 
-                dataAlertShow = false
+                saveAlertShow = false
                 showCameraView = false
             }
-        } // 확인 Alert
+        } // 저장 Alert
     }
 }
 
