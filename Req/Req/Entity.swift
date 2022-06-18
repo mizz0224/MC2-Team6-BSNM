@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Feedback {
+struct Feedback: Codable {
     let id : UUID
     let name : String
     let date : Date
@@ -15,7 +15,7 @@ struct Feedback {
     let pins : [Pin]
 }
 
-struct Pin : Hashable {
+struct Pin : Hashable, Codable {
     let id : UUID
     let x : Double
     let y : Double
