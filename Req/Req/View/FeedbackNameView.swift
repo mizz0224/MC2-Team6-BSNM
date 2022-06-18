@@ -60,6 +60,7 @@ struct FeedbackNameView: View {
             }
 
         }
+        .preferredColorScheme(.light)
     }
 }
 
