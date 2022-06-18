@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct EmptyHomeView: View {
+    @State private var showCameraView: Bool = false
+    
     //    let text: String
     // merge 이후에 색 지정하면 색깔 바꿔주기
     var body: some View {
@@ -50,6 +52,7 @@ struct EmptyHomeView: View {
             }
             Spacer()
             Button {
+                showCameraView = true
             } label: {
                 Text("사진 촬영하기")
                     .fontWeight(.bold)
@@ -57,7 +60,11 @@ struct EmptyHomeView: View {
                     .frame(width: 136, height: 46)
                     .background(Color.black)
                     .cornerRadius(25)
-            } //TODO: 카메라와 연결하기
+            }
+            .fullScreenCover(isPresented: $showCameraView) {
+                FeedbackNameView(showCameraView: $showCameraView)
+            }
+            
             Spacer().frame(height: 40)
         }
     }

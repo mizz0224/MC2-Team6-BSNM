@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TopMenuView : View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var userData: UserDataManager
+    
     @State private var showingAlert : Bool = false //alert 띄워주기 위한 변수
     @State var navigateNext = false
     let MenuFont : Font = Font.system(size:20).bold() //메뉴(뒤로가기,삭제) 버튼 폰트
@@ -15,6 +18,8 @@ struct TopMenuView : View {
     //let TopMenuIconColor : Color = Color(red: 13, green: 13, blue: 14)//상단메뉴 아이콘 색깔 : reqBlack : 0d0de
     //let TopMenuBgColor : Color = Color(red: 251, green: 251, blue: 255)//상단메뉴 배경 색깔 : reqWhite : fdfdff
     let TopMenuIconColor : Color = Color.black
+    let feedback: Feedback
+    
     var body : some View {
         
         VStack(alignment: .center, spacing: 0){
@@ -37,7 +42,10 @@ struct TopMenuView : View {
                             Alert(
                                 title: Text("확인"),
                                 message: Text("정말 삭제하시겠습니까?"),
-                                primaryButton: .destructive(Text("예"), action: {deleteFeedback(targetUUID: idToDelete)}),
+                                primaryButton: .destructive(Text("예"), action: {
+                                    deleteFeedback(targetUUID: idToDelete)
+                                    
+                                }),
                                 secondaryButton: .cancel(Text("아니오")))
                             //예, 아니오 버튼
                         }//alert
@@ -54,15 +62,13 @@ struct TopMenuView : View {
         print(navigateNext)
     }
     func deleteFeedback(targetUUID : UUID)->Void {
+        userData.deleteFeedback(feedbackID: feedback.id)
+        self.presentationMode.wrappedValue.dismiss()
+        
         //delete feedback
         //go to homeview
         print("delete feedback")
         print("go to home")
-    }
-    struct TopMenuView_Previews : PreviewProvider {
-        static var previews : some View {
-            TopMenuView(idToDelete: UUID())
-        }
     }
     
 }

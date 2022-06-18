@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct ReqApp: App {
     let persistenceController = PersistenceController.shared
+    var userData = UserDataManager()
 
     var body: some Scene {
         WindowGroup {
@@ -18,7 +19,8 @@ struct ReqApp: App {
 //            OnboardingCheckView()
 //             HomeView()
 //            DetailView(getFeedback: testData)
-            HomeView()
+            OnboardingCheckView()
+                .environmentObject(userData)
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
         }
