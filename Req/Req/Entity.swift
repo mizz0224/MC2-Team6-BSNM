@@ -19,8 +19,8 @@ struct Pin : Hashable {
     let id : UUID
     let x : Double
     let y : Double
-    let title : String
-    let description : String
+    var title : String?
+    var description : String?
 }
 //var pin0 = Pin(id: UUID(), x: 0, y: 0, title: "테스트타이틀1", description: "테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명")
 //var pin1 = Pin(id: UUID(), x: 200, y: 200, title: "테스트타이틀2", description: "테스트설명테스트설명테스트설명테스트설명테스트설테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명테스트설명")

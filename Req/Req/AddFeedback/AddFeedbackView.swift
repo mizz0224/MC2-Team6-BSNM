@@ -16,7 +16,7 @@ struct AddFeedbackView: View {
     @State private var description: String = ""
     @State private var pins: [Pin] = []
     @State private var idCount: Int = 0
-    @State private var currentPin: Pin = Pin(id: 0, x: 0.0, y: 0.0, title: nil, description: nil)
+    @State private var currentPin: Pin = Pin(id: UUID(), x: 0.0, y: 0.0, title: nil, description: nil)
     
     @Binding var reviewerName: String
     @Binding var image: UIImage?
