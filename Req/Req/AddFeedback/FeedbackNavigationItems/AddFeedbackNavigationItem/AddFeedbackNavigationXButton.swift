@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddFeedbackNavigationXButton: View {
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Binding var showCameraView: Bool
     
     var body: some View {
         Button {
@@ -25,7 +25,7 @@ struct AddFeedbackNavigationXButton: View {
 extension AddFeedbackNavigationXButton {
     
     func popToRootView() {
-        self.presentationMode.wrappedValue.dismiss()
+        showCameraView = false
     }
     //출처 : https://sweetdev.tistory.com/695
     

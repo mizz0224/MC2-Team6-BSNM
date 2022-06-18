@@ -104,6 +104,6 @@ extension FeedbackImage {
     
     // 터치한 location 데이터를 Pin에 입력한 후 pins 배열에 넣기 위한 함수
     func appendPinLocation(location: CGPoint) {
-        pins.append(Pin(id: idCount, x: location.x, y: location.y, title: nil, description: nil))
+        pins.append(Pin(id: UUID(), x: location.x, y: location.y, title: nil, description: nil))
     }
 }

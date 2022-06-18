@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddFeedbackNavigationItem: View {
     @Binding var pins: [Pin]
+    @Binding var showCameraView: Bool
     
     let reviewerName: String
     let image: UIImage
@@ -18,12 +19,12 @@ struct AddFeedbackNavigationItem: View {
             Spacer()
                 .frame(width: 16.0)
             
-            AddFeedbackNavigationXButton()
+            AddFeedbackNavigationXButton(showCameraView: $showCameraView)
             
             Spacer()
             
             if !pins.isEmpty {
-                AddFeedbackNavigationSaveButton(pins: $pins, reviewerName: reviewerName, image: image)
+                AddFeedbackNavigationSaveButton(pins: $pins, showCameraView: $showCameraView, reviewerName: reviewerName, image: image)
                 Spacer()
                     .frame(width: 16.0)
             }

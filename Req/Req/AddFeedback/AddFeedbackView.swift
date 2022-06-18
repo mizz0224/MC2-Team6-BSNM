@@ -16,27 +16,30 @@ struct AddFeedbackView: View {
     @State private var description: String = ""
     @State private var pins: [Pin] = []
     @State private var idCount: Int = 0
-    @State private var currentPin: Pin = Pin(id: 0, x: 0.0, y: 0.0, title: nil, description: nil)
+    @State private var currentPin: Pin = Pin(id: UUID(), x: 0.0, y: 0.0, title: nil, description: nil)
     
     @Binding var reviewerName: String
     @Binding var image: UIImage?
+    @Binding var showCameraView: Bool
+    
     
     var body: some View {
         ZStack {
             VStack {
-                if self.keyboardHeightHelper.keyboardHeight == 0 { Spacer().frame(height: 99.0) }
+                    Spacer().frame(height: 99.0)
                 VStack {
-                    FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin, image: image!)
+                    FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin, image: image ?? UIImage())
                     FeedbackBottomView(keyboardHeightHelper: keyboardHeightHelper, changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
-                }
-                .frame(height: self.keyboardHeightHelper.keyboardHeight == 0 ? 224.0 : 220.0)
-                if self.keyboardHeightHelper.keyboardHeight != 0 { Spacer() }
-            }
+                } // FeedbackImage, BottomView를 묶은 VStack
+                .frame(height: 224.0)
+            } // 네비게이션바 Spacer를 포함한 VStack
+            .offset(y: -(self.keyboardHeightHelper.keyboardHeight))
+            
             VStack {
-                FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin, reviewerName: reviewerName, image: image!)
+                FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin, showCameraView: $showCameraView, reviewerName: reviewerName, image: image!)
                 Spacer()
-            }
-        }
+            } // 네비게이션 바를 고정시키는 VStack
+        } // 전체 VStack
         .ignoresSafeArea()
         .navigationBarHidden(true)
     }

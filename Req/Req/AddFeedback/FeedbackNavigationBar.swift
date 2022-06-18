@@ -14,6 +14,7 @@ struct FeedbackNavigationBar: View {
     @Binding var pins: [Pin]
     @Binding var idCount: Int
     @Binding var currentPin: Pin
+    @Binding var showCameraView: Bool
     
     let reviewerName: String
     let image: UIImage
@@ -25,7 +26,7 @@ struct FeedbackNavigationBar: View {
 
             switch changeFeedbackBottomView {
             case .addFeedback:
-                AddFeedbackNavigationItem(pins: $pins, reviewerName: reviewerName, image: image)
+                AddFeedbackNavigationItem(pins: $pins, showCameraView: $showCameraView, reviewerName: reviewerName, image: image)
             case .beforeAdjustFeedback:
                 AdjustFeedbackNavigationItem(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, currentPin: $currentPin)
             default:

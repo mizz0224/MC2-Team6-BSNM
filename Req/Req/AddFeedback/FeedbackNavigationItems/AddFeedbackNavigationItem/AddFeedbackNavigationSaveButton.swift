@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct AddFeedbackNavigationSaveButton: View {
+    @EnvironmentObject var userData: UserDataManager
+    
     @State private var saveAlertShow: Bool = false
     @State private var dataAlertShow: Bool = false
     
     @Binding var pins: [Pin]
+    @Binding var showCameraView: Bool
     
     let reviewerName: String
     let image: UIImage
@@ -28,18 +31,13 @@ struct AddFeedbackNavigationSaveButton: View {
         .alert("피드백을 저장하시겠습니까?", isPresented: $saveAlertShow) {
             Button("취소", role: .destructive) { saveAlertShow = false }
             Button("저장하기", role: .cancel) {
+                print("현재 시간 : \(getDate())\n작성자 : \(reviewerName)\n이미지 : \(image)\n핀 개수 : \(pins.count)")
+                saveData()
+                
                 saveAlertShow = false
-                dataAlertShow = true
+                showCameraView = false
             }
         } // 저장 Alert
-        .alert(
-            "현재 시간 : \(getDate())\n작성자 : \(reviewerName)\n이미지 : \(image)\n핀 개수 : \(pins.count)",
-            isPresented: $dataAlertShow
-        ) {
-            Button("확인", role: .cancel) {
-                dataAlertShow = false
-            }
-        } // 확인 Alert
     }
 }
 
@@ -64,6 +62,12 @@ extension AddFeedbackNavigationSaveButton {
         }()
         
         return "\(dateFormatter.string(from: date))"
+    }
+    
+    func saveData() {
+        let Feedback = Feedback(id: UUID() ,name: reviewerName, date: Date(), image: image.jpegData(compressionQuality: 1) ?? Data(), pins: pins)
+        
+        userData.addFeedbackArray(addedFeedback: Feedback)
     }
     
 }
