@@ -18,6 +18,7 @@ struct ReqApp: App {
             FeedbackNameView()
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
+            
         }
     }
 }

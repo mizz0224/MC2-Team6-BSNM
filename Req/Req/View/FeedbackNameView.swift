@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FeedbackNameView: View {
     @State var name: String = ""
-
+    
     var body: some View {
         //TODO: 네비게이션 바로 진행할 것인지 커스텀 바로 진행할 것인지 정할 것
         NavigationView {

@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct FeedbackCameraView: View {
-    @ObservedObject var viewModel = CameraViewModel()
-    @State var image: UIImage = UIImage()
+    @State var image: UIImage? = nil
     @Binding var name: String
     //TODO: 카메라 취소 버튼 누르면 홈으로 돌아가는 로직 만들 것
+    @State var didTapCapture: Bool = false
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -20,22 +21,21 @@ struct FeedbackCameraView: View {
                     .frame(height: 100)
                     .foregroundColor(.black)
 
-                if viewModel.recentImage == nil {
+                if self.image == nil {
                     ZStack {
-                        viewModel.cameraPreview
-                            .onAppear {
-                            viewModel.configure()
-                        }
+                        CustomCameraRepresentable(image: self.$image, didTapCapture: $didTapCapture)
+                            
                         
                         Image("silhouette")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 520)
                     }
+                    .frame(height: 520)
                   
                 }
                 else {
-                    Image(uiImage: viewModel.recentImage!)
+                    Image(uiImage: self.image!)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(height: UIScreen.main.bounds.height * (520 / 844))
@@ -45,7 +45,7 @@ struct FeedbackCameraView: View {
                     Rectangle()
                         .foregroundColor(.black)
 
-                    if viewModel.recentImage == nil {
+                    if self.image == nil {
                         VStack {
                             Text("얼굴을 제외하고 사진을 찍어주세요.")
                                 .font(.custom("Apple SD Gothic Neo Regular", size: 15))
@@ -54,7 +54,8 @@ struct FeedbackCameraView: View {
 
                             Spacer(minLength: 52)
 
-                            Button(action: { viewModel.capturePhoto()
+                            Button(action: {
+                                self.didTapCapture = true
                             }) {
                                 Image("cameraButton")
                             }
@@ -65,7 +66,10 @@ struct FeedbackCameraView: View {
                             Spacer()
 
                             HStack {
-                                Button(action: { viewModel.recentImage = nil }) {
+                                Button(action: {
+                                    self.image = nil
+                                    self.didTapCapture = false
+                                }) {
                                     Text("다시 찍기")
                                         .font(.custom("Apple SD Gothic Neo Bold", size: 18))
                                         .foregroundColor(.white)
@@ -75,7 +79,7 @@ struct FeedbackCameraView: View {
                                 NavigationLink(destination: {
                                     AddFeedbackView(
                                         reviewerName: self.$name,
-                                        image: $viewModel.recentImage
+                                        image: self.$image
                                     )
                                     
                                 }) {
