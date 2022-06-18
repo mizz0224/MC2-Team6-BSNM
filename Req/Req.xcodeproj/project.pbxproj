@@ -83,9 +83,8 @@
 		D9A7D6AB285A7AC20051FA12 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7D6AA285A7AC20051FA12 /* LottieView.swift */; };
 		D9A7D6BF285B1BA50051FA12 /* LottieLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */; };
 		F509D63B2858E59400D81AC3 /* FeedbackNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */; };
-		F5117C23285857F100FA29C3 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C22285857F100FA29C3 /* CameraViewModel.swift */; };
-		F5117C29285857FA00FA29C3 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C26285857FA00FA29C3 /* Camera.swift */; };
 		F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */; };
+		F56D83D6285DDAE000BF6907 /* LightCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D83D5285DDAE000BF6907 /* LightCamera.swift */; };
 		F5117C2F2858C59700FA29C3 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2E2858C59700FA29C3 /* CameraView.swift */; };
 		F5AEC47E285C4C5D007C330C /* Req_Onboarding_Lottie2.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */; };
 		F5AEC47F285C4C5D007C330C /* Req_Onboarding_Lottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */; };
@@ -172,9 +171,8 @@
 		D9A7D6AA285A7AC20051FA12 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLoopView.swift; sourceTree = "<group>"; };
 		F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackNameView.swift; sourceTree = "<group>"; };
-		F5117C22285857F100FA29C3 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
-		F5117C26285857FA00FA29C3 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCameraView.swift; sourceTree = "<group>"; };
+		F56D83D5285DDAE000BF6907 /* LightCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightCamera.swift; sourceTree = "<group>"; };
 		F5117C2E2858C59700FA29C3 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie2.json; sourceTree = "<group>"; };
 		F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie1.json; sourceTree = "<group>"; };
@@ -456,9 +454,7 @@
 		F5FE1B7A285718A200A3B5BE /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				F5117C26285857FA00FA29C3 /* Camera.swift */,
-				F5117C2E2858C59700FA29C3 /* CameraView.swift */,
-				F5117C22285857F100FA29C3 /* CameraViewModel.swift */,
+				F56D83D5285DDAE000BF6907 /* LightCamera.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -617,13 +613,11 @@
 				55113C9A2858619500B2AE5D /* AdjustFeedbackNavigationAdjustButton.swift in Sources */,
 				55113C492855004E00B2AE5D /* AfterAddFeedbackText.swift in Sources */,
 				55113C3B2854C18500B2AE5D /* FeedbackBottomView.swift in Sources */,
+				F56D83D6285DDAE000BF6907 /* LightCamera.swift in Sources */,
 				55113C9028585A3900B2AE5D /* AddFeedbackNavigationSaveButton.swift in Sources */,
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
 				F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */,
-				F5117C23285857F100FA29C3 /* CameraViewModel.swift in Sources */,
-				F5117C29285857FA00FA29C3 /* Camera.swift in Sources */,
 				F509D63B2858E59400D81AC3 /* FeedbackNameView.swift in Sources */,
-				F5117C2F2858C59700FA29C3 /* CameraView.swift in Sources */,
 				55113C562855CBCE00B2AE5D /* EditFeedbackBottomView.swift in Sources */,
 				55113C522855B19700B2AE5D /* FeedbackTitleTextField.swift in Sources */,
 			);

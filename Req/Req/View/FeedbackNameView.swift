@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FeedbackNameView: View {
     @State var name: String = ""
-    
     @Binding var showCameraView: Bool
 
     var body: some View {
