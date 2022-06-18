@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PinImage: View {
+struct DetailViewPinImage: View {
     let pinX : CGFloat
     let pinY : CGFloat
     let pinWidth : CGFloat = 88

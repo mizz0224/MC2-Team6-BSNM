@@ -33,7 +33,7 @@ struct DetailViewDescription : View {
                 .font(FeedbackUserNameFont)//피드백 해준 유저 이름 폰트
             }//Hstack
             Spacer().frame(height:64)//공백
-            DivisionLine()//구분선
+            DivideLine()//구분선
             Spacer().frame(height:16)//공백
             HStack(alignment: .center) {
                 Text(feedbackDateString)//String 타입이고 형식으로 변환한 피드백 날짜

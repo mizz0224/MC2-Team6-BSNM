@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-struct DivisionLine : View{
+struct DivideLine : View{
     let lineColor : Color = Color(red: 215/255, green: 218/255, blue: 220/255)//구분선 색깔
     let lineWidth : CGFloat = 358//구분선 길이
     let lineHeigh : CGFloat = 1//구분선 두께

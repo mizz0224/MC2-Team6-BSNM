@@ -23,7 +23,7 @@ struct DetailViewFeedback : View {
                 Spacer().frame(width: 16)
             }//pinTitle 텍스트
             Spacer().frame(height:20)
-            DivisionLine()
+            DivideLine()
             Spacer().frame(height:20)
             HStack {
                 Spacer().frame(width: 16)
