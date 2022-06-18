@@ -20,6 +20,7 @@ struct AddFeedbackView: View {
     
     @Binding var reviewerName: String
     @Binding var image: UIImage?
+    @Binding var showCameraView: Bool
     
     
     var body: some View {
@@ -35,7 +36,7 @@ struct AddFeedbackView: View {
             .offset(y: -(self.keyboardHeightHelper.keyboardHeight))
             
             VStack {
-                FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin, reviewerName: reviewerName, image: image!)
+                FeedbackNavigationBar(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount, currentPin: $currentPin, showCameraView: $showCameraView, reviewerName: reviewerName, image: image!)
                 Spacer()
             } // 네비게이션 바를 고정시키는 VStack
         } // 전체 VStack

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FeedbackNameView: View {
     @State var name: String = ""
+    
+    @Binding var showCameraView: Bool
 
     var body: some View {
         //TODO: 네비게이션 바로 진행할 것인지 커스텀 바로 진행할 것인지 정할 것
@@ -40,7 +42,7 @@ struct FeedbackNameView: View {
 
                 if !self.name.isEmpty {
                     NavigationLink(
-                        destination: { FeedbackCameraView(name: self.$name)
+                        destination: { FeedbackCameraView(name: self.$name, showCameraView: $showCameraView)
                                 .navigationBarTitleDisplayMode(.inline)
                                 .navigationBarHidden(true)
                         }) {
@@ -58,12 +60,6 @@ struct FeedbackNameView: View {
             }
 
         }
-    }
-}
-
-struct FeedbackNameView_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedbackNameView()
     }
 }
 

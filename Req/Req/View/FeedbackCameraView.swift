@@ -10,7 +10,10 @@ import SwiftUI
 struct FeedbackCameraView: View {
     @ObservedObject var viewModel = CameraViewModel()
     @State var image: UIImage = UIImage()
+    
     @Binding var name: String
+    @Binding var showCameraView: Bool
+    
     //TODO: 카메라 취소 버튼 누르면 홈으로 돌아가는 로직 만들 것
     var body: some View {
         NavigationView {
@@ -75,7 +78,7 @@ struct FeedbackCameraView: View {
                                 NavigationLink(destination: {
                                     AddFeedbackView(
                                         reviewerName: self.$name,
-                                        image: $viewModel.recentImage
+                                        image: $viewModel.recentImage, showCameraView: $showCameraView
                                     )
                                     
                                 }) {
@@ -91,11 +94,5 @@ struct FeedbackCameraView: View {
             }
                 .ignoresSafeArea()
         }
-    }
-}
-
-struct FeedbackCameraView_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedbackCameraView(name: .constant("홍길동"))
     }
 }

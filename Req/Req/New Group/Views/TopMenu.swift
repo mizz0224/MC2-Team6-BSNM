@@ -13,13 +13,14 @@ struct TopMenu: View {
     @Binding var isSearching: Bool
     @Binding var showResults: Bool
     @Binding var loadSearch: Bool
+    @Binding var showCameraView: Bool
     
     var body: some View {
         VStack(spacing:0){
             if getisSearch {
                 SearchBar(getisSearch: $getisSearch, searchText: $searchText, isSearching: $isSearching, showResults: $showResults)
             }   else    {
-                Header(getisSearch: $getisSearch)
+                Header(getisSearch: $getisSearch, showCameraView: $showCameraView)
             }
         }.background(Color.black).frame(height:52)
     }

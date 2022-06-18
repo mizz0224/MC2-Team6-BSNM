@@ -12,6 +12,7 @@ struct AddFeedbackNavigationSaveButton: View {
     @State private var dataAlertShow: Bool = false
     
     @Binding var pins: [Pin]
+    @Binding var showCameraView: Bool
     
     let reviewerName: String
     let image: UIImage

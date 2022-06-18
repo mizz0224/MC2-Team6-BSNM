@@ -13,10 +13,12 @@ struct HomeView: View {
     @State var isSearching = false
     @State var showResults = false
     @State var loadSearch = false
+    @State private var showCameraView: Bool = false
+    
     var body: some View {
         NavigationView {
             VStack {
-                TopMenu(searchText: $searchText, isSearching: $isSearching, showResults: $showResults, loadSearch: $loadSearch)
+                TopMenu(searchText: $searchText, isSearching: $isSearching, showResults: $showResults, loadSearch: $loadSearch, showCameraView: $showCameraView)
                 ScrollView {
                     VStack(alignment: .leading) {
                         Slogan()
