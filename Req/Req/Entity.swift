@@ -2,7 +2,7 @@
 //  Entity.swift
 //  Req
 //
-//  Created by heojaenyeong on 2022/06/13.
+//  Created by 이재웅 on 2022/06/10.
 //
 
 import Foundation
@@ -34,3 +34,18 @@ let testData : Feedback = Feedback(id: UUID(), name: "커리", date: Date.now, i
 
 
 
+// =======
+//     let name: String?
+//     let date: String?
+//     let image: String?
+//     let pins: [Pin?]
+// }
+
+// struct Pin: Hashable {
+//     let id: Int
+//     let x: Double
+//     let y: Double
+//     var title: String?
+//     var description: String?
+// }
+// >>>>>>> merge-branch-1,3

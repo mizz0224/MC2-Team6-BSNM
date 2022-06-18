@@ -16,8 +16,11 @@ struct ReqApp: App {
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
 //            OnboardingCheckView()
-            HomeView()
+//             HomeView()
 //            DetailView(getFeedback: testData)
+            FeedbackNameView()
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
         }
     }
 }
