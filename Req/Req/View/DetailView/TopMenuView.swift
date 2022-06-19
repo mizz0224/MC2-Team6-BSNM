@@ -15,9 +15,8 @@ struct TopMenuView : View {
     @State var navigateNext = false
     let MenuFont : Font = Font.system(size:20).bold() //메뉴(뒤로가기,삭제) 버튼 폰트
     let idToDelete : UUID //삭제될 피드백의 아이디(UUID)
-    //let TopMenuIconColor : Color = Color(red: 13, green: 13, blue: 14)//상단메뉴 아이콘 색깔 : reqBlack : 0d0de
-    //let TopMenuBgColor : Color = Color(red: 251, green: 251, blue: 255)//상단메뉴 배경 색깔 : reqWhite : fdfdff
-    let TopMenuIconColor : Color = Color.black
+    let TopMenuIconColor : Color = Color(red: 13/255, green: 13/255, blue: 14/255)//상단메뉴 아이콘 색깔 : reqBlack : 0d0de
+    let TopMenuBgColor : Color = Color(red: 251/255, green: 251/255, blue: 255/255)//상단메뉴 배경 색깔 : reqWhite : fdfdff
     let feedback: Feedback
     
     var body : some View {
@@ -51,24 +50,16 @@ struct TopMenuView : View {
                         }//alert
                 }//삭제 버튼
             }//Hstack
-        }.frame(height: 52)// Vstack
+        }.frame(height: 52).background(TopMenuBgColor)// Vstack
     }//TopMenuView
     
     
     func gotoHome()->Void {
-        //go to home
-        print("go to home")
-        navigateNext.toggle()
-        print(navigateNext)
+        self.presentationMode.wrappedValue.dismiss()
     }
     func deleteFeedback(targetUUID : UUID)->Void {
         userData.deleteFeedback(feedbackID: feedback.id)
         self.presentationMode.wrappedValue.dismiss()
-        
-        //delete feedback
-        //go to homeview
-        print("delete feedback")
-        print("go to home")
     }
     
 }
