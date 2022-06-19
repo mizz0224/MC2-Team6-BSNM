@@ -23,6 +23,7 @@ struct OnboardingCheckView: View {
                 .fullScreenCover(isPresented: $isFirstLaunching) {
                     OnboardingTabView(isFirstLaunching: $isFirstLaunching)
                 }
+                .preferredColorScheme(.dark)
         } else {
             MainView()
         }

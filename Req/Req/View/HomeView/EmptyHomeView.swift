@@ -26,46 +26,54 @@ struct EmptyHomeView: View {
                     Spacer()
                 }
             }
-            Spacer().frame(height: 50 - 32)
-            HStack{
-                Spacer().frame(width: 32)
-                ZStack(alignment: .leading){
-                    VStack(alignment: .leading, spacing: 4){
-                        GradientStyle3(textString: "Take")
-                        GradientStyle3(textString: "A")
-                        GradientStyle3(textString: "Picture")
-                        GradientStyle3(textString: "And")
-                        GradientStyle3(textString: "Get")
-                        GradientStyle3(textString: "Feedback")
-                    }
-                    VStack(alignment: .leading, spacing: 12){
-                        GradientStyle(textString: "Take")
-                        GradientStyle(textString: "A")
-                        GradientStyle2(textString: "Picture")
-                        GradientStyle(textString: "And")
-                        GradientStyle(textString: "Get")
-                        GradientStyle2(textString: "Feedback")
-                        
-                    }
-                }
-                Spacer()
-            }
-            Spacer()
-            Button {
-                showCameraView = true
-            } label: {
-                Text("사진 촬영하기")
-                    .fontWeight(.bold)
+            ZStack {
+                Rectangle()
                     .foregroundColor(.white)
-                    .frame(width: 136, height: 46)
-                    .background(Color.black)
-                    .cornerRadius(25)
+                    .ignoresSafeArea()
+                VStack {
+                    Spacer().frame(height: 50 - 32)
+                    HStack{
+                        Spacer().frame(width: 32)
+                        ZStack(alignment: .leading){
+                            VStack(alignment: .leading, spacing: 4){
+                                GradientStyle3(textString: "Take")
+                                GradientStyle3(textString: "A")
+                                GradientStyle3(textString: "Picture")
+                                GradientStyle3(textString: "And")
+                                GradientStyle3(textString: "Get")
+                                GradientStyle3(textString: "Feedback")
+                            }
+                            VStack(alignment: .leading, spacing: 12){
+                                GradientStyle(textString: "Take")
+                                GradientStyle(textString: "A")
+                                GradientStyle2(textString: "Picture")
+                                GradientStyle(textString: "And")
+                                GradientStyle(textString: "Get")
+                                GradientStyle2(textString: "Feedback")
+                                
+                            }
+                        }
+                        Spacer()
+                    }
+                    Spacer()
+                        .foregroundColor(.clear)
+                    Button {
+                        showCameraView = true
+                    } label: {
+                        Text("사진 촬영하기")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .frame(width: 136, height: 46)
+                            .background(Color.black)
+                            .cornerRadius(25)
+                    }
+                    .fullScreenCover(isPresented: $showCameraView) {
+                        FeedbackNameView(showCameraView: $showCameraView)
+                    }
+                    
+                    Spacer().frame(height: 40)
+                }
             }
-            .fullScreenCover(isPresented: $showCameraView) {
-                FeedbackNameView(showCameraView: $showCameraView)
-            }
-            
-            Spacer().frame(height: 40)
         }
     }
 }
