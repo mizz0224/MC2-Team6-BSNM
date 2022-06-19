@@ -21,14 +21,6 @@ struct PinImage: View {
             return false
         }
     }
-    var pinColor: Color {
-        switch changeFeedbackBottomView {
-        case .addFeedback, .touchPin:
-            return .gray
-        default:
-            return pin == currentPin ? .purple : .gray
-        }
-    }
     var pinFrame: CGFloat {
         switch changeFeedbackBottomView {
         case .addFeedback, .touchPin:
@@ -39,15 +31,47 @@ struct PinImage: View {
     }
     
     var body: some View {
-        Image(systemName: "text.bubble.fill")
-            .resizable()
-            .foregroundColor(pinColor)
-            .frame(width: pinFrame, height: pinFrame)
-            .position(x: pin.x, y: pin.y)
-            .onTapGesture {
-                currentPin = pin
-                changeFeedbackBottomView = .beforeAdjustFeedback
+        if pin == currentPin {
+            switch changeFeedbackBottomView {
+            case .addFeedback, .touchPin:
+                LottieView(filename: "FeedbackUnselectPinLottie")
+                    .frame(width: 50.0, height: 50.0)
+                    .position(x: pin.x, y: pin.y)
+                    .onTapGesture {
+                        currentPin = pin
+                        changeFeedbackBottomView = .beforeAdjustFeedback
+                    }
+                    .disabled(!isAbleTouched)
+                
+            case .beforeAdjustFeedback:
+                LottieView(filename: "FeedbackExistPinLottie")
+                    .frame(width: 50.0, height: 50.0)
+                    .position(x: pin.x, y: pin.y)
+                    .onTapGesture {
+                        currentPin = pin
+                        changeFeedbackBottomView = .beforeAdjustFeedback
+                    }
+            default:
+                LottieView(filename: "FeedbackPinLottie")
+                    .frame(width: 50.0, height: 50.0)
+                    .position(x: pin.x, y: pin.y)
+                    .onTapGesture {
+                        currentPin = pin
+                        changeFeedbackBottomView = .beforeAdjustFeedback
+                    }
+                    .disabled(!isAbleTouched)
             }
-            .disabled(!isAbleTouched)
+        } else {
+            Image(systemName: "text.bubble.fill")
+                .resizable()
+                .foregroundColor(.gray)
+                .frame(width: pinFrame, height: pinFrame)
+                .position(x: pin.x, y: pin.y)
+                .onTapGesture {
+                    currentPin = pin
+                    changeFeedbackBottomView = .beforeAdjustFeedback
+                }
+                .disabled(!isAbleTouched)
+        }
     }
 }

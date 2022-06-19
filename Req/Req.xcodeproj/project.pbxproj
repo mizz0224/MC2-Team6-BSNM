@@ -72,6 +72,9 @@
 		55113C9A2858619500B2AE5D /* AdjustFeedbackNavigationAdjustButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C992858619500B2AE5D /* AdjustFeedbackNavigationAdjustButton.swift */; };
 		55113C9C2858630C00B2AE5D /* AdjustFeedbackNavigationDeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55113C9B2858630C00B2AE5D /* AdjustFeedbackNavigationDeleteButton.swift */; };
 		558F3020285DDD38008D5622 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F301F285DDD38008D5622 /* UserDataManager.swift */; };
+		558F3022285EF5E1008D5622 /* FeedbackPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 558F3021285EF5E1008D5622 /* FeedbackPinLottie.json */; };
+		558F3024285EF625008D5622 /* FeedbackExistPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 558F3023285EF625008D5622 /* FeedbackExistPinLottie.json */; };
+		558F3026285EF663008D5622 /* FeedbackUnselectPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 558F3025285EF663008D5622 /* FeedbackUnselectPinLottie.json */; };
 		D98C3CDD2858660C0081C153 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98C3CDC2858660C0081C153 /* OnboardingPageView.swift */; };
 		D98C3CDF285866200081C153 /* OnboardingLastPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98C3CDE285866200081C153 /* OnboardingLastPageView.swift */; };
 		D98C3CE128587F4F0081C153 /* OnboardingCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98C3CE028587F4F0081C153 /* OnboardingCheckView.swift */; };
@@ -160,6 +163,9 @@
 		55113C992858619500B2AE5D /* AdjustFeedbackNavigationAdjustButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackNavigationAdjustButton.swift; sourceTree = "<group>"; };
 		55113C9B2858630C00B2AE5D /* AdjustFeedbackNavigationDeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFeedbackNavigationDeleteButton.swift; sourceTree = "<group>"; };
 		558F301F285DDD38008D5622 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		558F3021285EF5E1008D5622 /* FeedbackPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedbackPinLottie.json; sourceTree = "<group>"; };
+		558F3023285EF625008D5622 /* FeedbackExistPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedbackExistPinLottie.json; sourceTree = "<group>"; };
+		558F3025285EF663008D5622 /* FeedbackUnselectPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedbackUnselectPinLottie.json; sourceTree = "<group>"; };
 		D98C3CDC2858660C0081C153 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		D98C3CDE285866200081C153 /* OnboardingLastPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLastPageView.swift; sourceTree = "<group>"; };
 		D98C3CE028587F4F0081C153 /* OnboardingCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCheckView.swift; sourceTree = "<group>"; };
@@ -447,6 +453,9 @@
 				4287D006285B8FC7004486AC /* createPinLottie.json */,
 				4287D009285B98F5004486AC /* selectPinLottie.json */,
 				4287D00B285BA3F6004486AC /* unSelectPinLottie.json */,
+				558F3021285EF5E1008D5622 /* FeedbackPinLottie.json */,
+				558F3023285EF625008D5622 /* FeedbackExistPinLottie.json */,
+				558F3025285EF663008D5622 /* FeedbackUnselectPinLottie.json */,
 				F5AEC47C285C4C5D007C330C /* Req_Onboarding_Lottie1.json */,
 				F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */,
 				F5AEC481285C4C87007C330C /* Req_Onboarding_Star.json */,
@@ -549,6 +558,7 @@
 				42ED1F84285AF9350016F86E /* Ubuntu-Regular.ttf in Resources */,
 				42ED1F87285AF9350016F86E /* Ubuntu-Medium.ttf in Resources */,
 				42ED1F88285AF9350016F86E /* Ubuntu-Italic.ttf in Resources */,
+				558F3024285EF625008D5622 /* FeedbackExistPinLottie.json in Resources */,
 				42ED1F82285AF9350016F86E /* Ubuntu-LightItalic.ttf in Resources */,
 				55113C17285325B400B2AE5D /* Preview Assets.xcassets in Resources */,
 				42ED1F83285AF9350016F86E /* Ubuntu-MediumItalic.ttf in Resources */,
@@ -558,6 +568,8 @@
 				42ED1F85285AF9350016F86E /* Ubuntu-Bold.ttf in Resources */,
 				42ED1F81285AF9350016F86E /* Ubuntu-Light.ttf in Resources */,
 				55113C14285325B400B2AE5D /* Assets.xcassets in Resources */,
+				558F3026285EF663008D5622 /* FeedbackUnselectPinLottie.json in Resources */,
+				558F3022285EF5E1008D5622 /* FeedbackPinLottie.json in Resources */,
 				F5AEC480285C4C5D007C330C /* Req_Onboarding_Lottie3.json in Resources */,
 				F5AEC482285C4C87007C330C /* Req_Onboarding_Star.json in Resources */,
 				F5AEC47F285C4C5D007C330C /* Req_Onboarding_Lottie1.json in Resources */,
@@ -770,7 +782,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Req/Preview Content\"";
-				DEVELOPMENT_TEAM = 59HAHH5VLW;
+				DEVELOPMENT_TEAM = 8B3RT7D582;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Req/Info.plist;
@@ -804,7 +816,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Req/Preview Content\"";
-				DEVELOPMENT_TEAM = 59HAHH5VLW;
+				DEVELOPMENT_TEAM = 8B3RT7D582;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Req/Info.plist;
