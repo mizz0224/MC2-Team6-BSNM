@@ -47,6 +47,7 @@ struct Header: View {
                 }
                 .fullScreenCover(isPresented: $showCameraView) {
                     FeedbackNameView(showCameraView: $showCameraView)
+                        .preferredColorScheme(.light)
                 }
                 
                 //뒤로가기 버튼

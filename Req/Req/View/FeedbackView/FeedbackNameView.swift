@@ -53,6 +53,7 @@ struct FeedbackNameView: View {
                 if !self.name.isEmpty {
                     NavigationLink(
                         destination: { FeedbackCameraView(name: self.$name, showCameraView: $showCameraView)
+                                .preferredColorScheme(.dark)
                                 .navigationBarTitleDisplayMode(.inline)
                                 .navigationBarHidden(true)
                         }) {

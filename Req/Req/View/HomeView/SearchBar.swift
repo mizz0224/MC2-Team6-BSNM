@@ -40,7 +40,9 @@ struct SearchBar: View {
 
                 Spacer()
 
-                Button(action: { self.getisSearch = false }) { //홈으로 이동
+                Button(action: {
+                    self.searchText = ""
+                    self.getisSearch = false }) { //홈으로 이동
                     Image(systemName: "xmark.circle.fill")
                         .foregroundColor(.gray)
                 }//뒤로가기 버튼

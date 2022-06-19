@@ -69,6 +69,7 @@ struct EmptyHomeView: View {
                     }
                     .fullScreenCover(isPresented: $showCameraView) {
                         FeedbackNameView(showCameraView: $showCameraView)
+                            .preferredColorScheme(.light)
                     }
                     
                     Spacer().frame(height: 40)

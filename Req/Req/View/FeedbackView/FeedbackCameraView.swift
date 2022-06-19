@@ -29,10 +29,9 @@ struct FeedbackCameraView: View {
                         Image("silhouette")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(height: 520)
+                            .frame(height: UIScreen.main.bounds.height * (520 / 844))
                     }
                     .frame(height: 520)
-                  
                 }
                 else {
                     Image(uiImage: self.image!)
@@ -95,6 +94,7 @@ struct FeedbackCameraView: View {
                 }.frame(height: 224)
             }
                 .ignoresSafeArea()
+                .preferredColorScheme(.dark)
         }
     }
 }
