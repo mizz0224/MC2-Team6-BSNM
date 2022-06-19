@@ -28,9 +28,9 @@ struct PostView: View {
         VStack{
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.black)
-                .frame(width: 358, height: 1)
+                .frame(width: 330, height: 1)
             Text("\(releaseDate, formatter: Self.kDateFormat)")
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 200))
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 245))
                 .foregroundColor(.black)
             
             PostGridView(searchText: $searchText, data: userData.FeedbackArray, isDark: $isDark)

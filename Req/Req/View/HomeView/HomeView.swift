@@ -29,7 +29,7 @@ struct HomeView: View {
                 ScrollView {
                     VStack(alignment: .leading) {
                         Slogan()
-                            .padding(.init(top: 20, leading: 40, bottom: 16, trailing: 0))
+                            .padding(.init(top: 20, leading: 30, bottom: 16, trailing: 0))
                         PostView(searchText: $searchText, loadSearch: $loadSearch, isDark: $isDark)
                     }
                 }.background(.white)

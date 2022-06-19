@@ -18,7 +18,7 @@ struct SearchBar: View {
         VStack (spacing: 0) {
             Spacer()
             HStack(spacing: 0) {
-                Spacer().frame(width: 8)
+                Spacer().frame(width: 32)
                 
                 
                 
@@ -28,17 +28,17 @@ struct SearchBar: View {
                     
                     TextField("패션 아이템의 이름을 입력하세요", text: $searchText)
                 }
-                    .frame(height: 20)
+                .frame(width: 260, height: 24, alignment: .center)
                     .padding(.horizontal)
-                    .foregroundColor(.black)
-                    .background(Color(red: 238 / 255, green: 238 / 255, blue: 238 / 255, opacity: 1))
+                    .foregroundColor(.gray)
+                    .background(Color(red: 238 / 255, green: 238 / 255, blue: 238 / 255, opacity: 0.7))
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                     .onTapGesture(perform: {
                     isSearching = true
                     showResults = true
                 })
 
-                Spacer()
+                Spacer().frame(width: 5)
 
                 Button(action: {
                     self.searchText = ""
