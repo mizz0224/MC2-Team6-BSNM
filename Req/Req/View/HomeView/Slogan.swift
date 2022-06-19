@@ -10,7 +10,7 @@ import SwiftUI
 struct Slogan: View {
     var body: some View {
         Text("Take a Picture \nAnd Get Feedback")
-            .foregroundColor(.black)
+            .foregroundColor(.ReqBlack)
             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             .font(.title)
 

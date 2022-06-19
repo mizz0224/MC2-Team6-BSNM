@@ -27,7 +27,7 @@ struct PostView: View {
     var body: some View {
         VStack{
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.gray)
+                .fill(Color.DarkGrey)
                 .frame(width: 330, height: 1)
             Text("\(releaseDate, formatter: Self.kDateFormat)")
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 245))

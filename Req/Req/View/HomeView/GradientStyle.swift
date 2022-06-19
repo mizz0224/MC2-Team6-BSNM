@@ -15,7 +15,7 @@ struct GradientStyle: View {
                 .font(.system(size: 60, weight: .bold))
                 .overlay{
                     LinearGradient(
-                        colors: [Color.gray, Color.black],
+                        colors: [Color.DarkGrey, Color.ReqBlack],
                         startPoint: .leading,
                         endPoint: .trailing
                     )
@@ -35,7 +35,7 @@ struct GradientStyle2: View {
             .font(.system(size: 60, weight: .bold))
             .overlay{
                 LinearGradient(
-                    colors: [Color.blue, Color.purple],
+                    colors: [Color.ReqGradientBlue, Color.ReqPurple],
                     startPoint: .leading,
                     endPoint: .trailing
                 )
@@ -54,7 +54,7 @@ struct GradientStyle3: View {
             .font(.system(size: 76, weight: .bold))
             .overlay{
                 LinearGradient(
-                    colors: [Color.purple.opacity(0.15), Color.purple.opacity(0)],
+                    colors: [Color.ReqPurple.opacity(0.15), Color.ReqPurple.opacity(0)],
                     startPoint: .leading,
                     endPoint: .trailing
                 )

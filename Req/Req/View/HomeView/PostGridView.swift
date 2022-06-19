@@ -16,36 +16,41 @@ struct PostGridView: View {
         
         return userData.FeedbackArray
     }
-
-
+    
+    
     let gridLayout: [GridItem] = Array(repeating: .init(.fixed(160), spacing: 6), count: 2)
     let data: [Feedback]
     @Binding var isDark : Bool
-
-
+    
+    
     var body: some View {
         //그리드
         LazyVGrid(columns: gridLayout, alignment: .center, spacing: 0) {
-
-                ForEach(data.filter({ "\($0)".contains(searchText.lowercased()) || searchText.isEmpty}), id: \.id) { item in
-                    ZStack(alignment: .center) {
-                        NavigationLink(destination: { DetailView(getFeedback: item,isDark: $isDark)
-                                .navigationBarHidden(true)
-                        }) {
+            
+            ForEach(data.filter({ "\($0)".contains(searchText.lowercased()) || searchText.isEmpty}), id: \.id) { item in
+                ZStack(alignment: .center) {
+                    NavigationLink(destination: { DetailView(getFeedback: item,isDark: $isDark)
+                            .navigationBarHidden(true)
+                    }) {
+                        ZStack{
                             Image(uiImage: UIImage(data: item.image) ?? UIImage(systemName: "exclamationmark.icloud")!)
                                 .resizable()
                                 .frame(width: 160, height: 213.3)
-//                                .clipped()
-                            LinearGradient(gradient: Gradient(colors: [Color.white, Color.black]),
-                                            startPoint: .top, endPoint: .bottom)
+                            //                                .clipped()
+                            LinearGradient(
+                                colors: [Color.ReqBlack.opacity(0.5), Color.ReqBlack.opacity(0)],
+                                startPoint: .bottom,
+                                endPoint: .top
+                            )
                         }
-                        Text("Feedback from \n\(item.name)")
-                            .padding(.init(top: 170, leading: 0, bottom: 7, trailing: 30))
-                            .foregroundColor(.white)
                     }
+                    Text("Feedback from \n\(item.name)")
+                        .padding(.init(top: 170, leading: 0, bottom: 7, trailing: 30))
+                        .foregroundColor(.LightGrey)
                 }
             }
-                .animation(.spring())
+        }
+        .animation(.spring())
     }
 }
 
