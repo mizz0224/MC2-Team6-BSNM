@@ -20,7 +20,7 @@ struct PostGridView: View {
 
     let gridLayout: [GridItem] = Array(repeating: .init(.fixed(160), spacing: 10), count: 2)
     let data: [Feedback]
-
+    @Binding var isDark : Bool//다크모드를 제어할 변수
 
     var body: some View {
         //그리드
@@ -28,7 +28,7 @@ struct PostGridView: View {
 
                 ForEach(data.filter({ "\($0)".contains(searchText.lowercased()) || searchText.isEmpty}), id: \.id) { item in
                     ZStack(alignment: .center) {
-                        NavigationLink(destination: { DetailView(getFeedback: item)
+                        NavigationLink(destination: { DetailView(getFeedback: item, isDark: $isDark)
                                 .navigationBarHidden(true)
                         }) {
                             Image(uiImage: UIImage(data: item.image) ?? UIImage(systemName: "exclamationmark.icloud")!)

@@ -20,7 +20,7 @@ struct HomeView: View {
     @State var showResults = false
     @State var loadSearch = false
     @State private var showCameraView: Bool = false
-    
+    @State var isDark : Bool = true//다크모드를 제어할 변수
     var body: some View {
         NavigationView {
             VStack {
@@ -29,11 +29,11 @@ struct HomeView: View {
                     VStack(alignment: .leading) {
                         Slogan()
                             .padding(.init(top: 20, leading: 40, bottom: 16, trailing: 0))
-                        PostView(searchText: $searchText, loadSearch: $loadSearch)
+                        PostView(searchText: $searchText, loadSearch: $loadSearch, isDark: $isDark)
                     }
                 }.background(.white)
             }
-                .preferredColorScheme(.dark)
+            .preferredColorScheme(isDark ? .dark : .light)//다크모드를 제어하는 변수가 true면 다크모드 false 이면 라이트모드 적용
                 .onAppear(perform: {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                     loadSearch = true

@@ -21,7 +21,8 @@ struct PostView: View {
     @Binding var searchText: String
 
     @Binding var loadSearch: Bool
-
+    
+    @Binding var isDark : Bool//다크모드를 제어할 변수
 
     var body: some View {
         VStack{
@@ -32,7 +33,7 @@ struct PostView: View {
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 200))
                 .foregroundColor(.black)
             
-            PostGridView(searchText: $searchText, data: userData.FeedbackArray)
+            PostGridView(searchText: $searchText, data: userData.FeedbackArray, isDark: $isDark)
         }
         .onAppear(perform: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
