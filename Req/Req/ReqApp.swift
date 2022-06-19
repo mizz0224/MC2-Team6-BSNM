@@ -19,10 +19,13 @@ struct ReqApp: App {
 //            OnboardingCheckView()
 //             HomeView()
 //            DetailView(getFeedback: testData)
-            OnboardingCheckView()
+//            OnboardingCheckView()
+//                .environmentObject(userData)
+//                .navigationBarHidden(true)
+//                .navigationBarBackButtonHidden(true)
+            
+            SplashView()
                 .environmentObject(userData)
-                .navigationBarHidden(true)
-                .navigationBarBackButtonHidden(true)
             
         }
     }

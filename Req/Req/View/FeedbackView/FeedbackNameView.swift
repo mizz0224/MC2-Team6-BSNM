@@ -12,7 +12,6 @@ struct FeedbackNameView: View {
     @Binding var showCameraView: Bool
 
     var body: some View {
-        //TODO: 네비게이션 바로 진행할 것인지 커스텀 바로 진행할 것인지 정할 것
         NavigationView {
             VStack(spacing: 0) {
                 HStack {
