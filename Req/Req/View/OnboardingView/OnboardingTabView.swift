@@ -6,15 +6,18 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct OnboardingTabView: View {
     @State var pageIndex = 1
     @Binding var isFirstLaunching: Bool
-    
+    @State var pageNum = [1, 2, 3]
+    @State var offset: CGFloat = 0
+
+
     var body: some View {
-        VStack{
+        VStack {
             TabView(selection: $pageIndex) {
-                
                 OnboardingPageView(
                     title: "Take",
                     title2: "A Picture",
@@ -22,8 +25,8 @@ struct OnboardingTabView: View {
                     subtitle2: "통해 기록하세요",
                     LottieName: "Req_Onboarding_Lottie1"
                 )
-                .tag(1)
-                
+                    .tag(1)
+
                 OnboardingPageView(
                     title: "Get",
                     title2: "Feedback",
@@ -31,8 +34,9 @@ struct OnboardingTabView: View {
                     subtitle2: "새로운 시선을 확인하세요",
                     LottieName: "Req_Onboarding_Lottie2"
                 )
-                .tag(2)
-                
+                    .tag(2)
+
+
                 OnboardingLastPageView(
                     title: "Grow Up!",
                     imageName: "온보딩이미지3",
@@ -42,17 +46,17 @@ struct OnboardingTabView: View {
                     LottieName2: "Req_Onboarding_Star",
                     isFirstLaunching: $isFirstLaunching
                 )
-                .tag(3)
+                    .tag(3)
             }
-            .tabViewStyle(
+                .tabViewStyle(
                 PageTabViewStyle(indexDisplayMode: .always)
             )
-            
-            
+
+
             //온보딩 마지막 페이지에서 앱 시작하기 버튼
             if pageIndex == 3
             {
-                HStack{
+                HStack {
                     Spacer().frame(height: 100)
                     Button {
                         isFirstLaunching.toggle()
@@ -68,9 +72,9 @@ struct OnboardingTabView: View {
                 }
             }
             //온보딩 1,2 페이지에서는 스킵 버튼
-            else
+                else
             {
-                HStack{
+                HStack {
                     Spacer().frame(width: 32)
                     Button {
                         isFirstLaunching.toggle()
@@ -81,8 +85,11 @@ struct OnboardingTabView: View {
                     }
                     Spacer().frame(height: 100)
                 }
-                
+
             }
+        }.onAppear {
+            UIPageControl.appearance().currentPageIndicatorTintColor = UIColor(red: 103 / 255, green: 69 / 255, blue: 255 / 255, alpha: 1)
+            UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
         }
     }
 }
@@ -92,3 +99,4 @@ struct OnboardingTabView: View {
 //        OnboardingTabView(isFirstLaunching: <#T##Binding<Bool>#>)
 //    }
 //}
+
