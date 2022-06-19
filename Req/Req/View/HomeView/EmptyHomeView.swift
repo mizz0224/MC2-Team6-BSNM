@@ -43,7 +43,7 @@ struct EmptyHomeView: View {
                                 GradientStyle3(textString: "Get")
                                 GradientStyle3(textString: "Feedback")
                             }
-                            VStack(alignment: .leading, spacing: 12){
+                            VStack(alignment: .leading, spacing: 10){
                                 GradientStyle(textString: "Take")
                                 GradientStyle(textString: "A")
                                 GradientStyle2(textString: "Picture")
