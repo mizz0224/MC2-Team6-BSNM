@@ -41,7 +41,7 @@ struct OnboardingPageView: View {
                     Spacer().frame(height:160)
                     Rectangle()
                         .frame(width: 390, height: 165)
-                        .foregroundColor(Color.purple)
+                        .foregroundColor(Color.ReqPurple)
                 }
                 LottieView(filename: LottieName)
             }
