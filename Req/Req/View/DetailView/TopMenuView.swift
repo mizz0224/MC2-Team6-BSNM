@@ -39,13 +39,12 @@ struct TopMenuView : View {
                         .padding(EdgeInsets(top: 10, leading: 0, bottom: 18, trailing: 16))
                         .alert(isPresented: $showingAlert) {
                             Alert(
-                                title: Text("확인"),
-                                message: Text("정말 삭제하시겠습니까?"),
-                                primaryButton: .destructive(Text("예"), action: {
+                                title: Text("해당 기록을 정말 삭제하시겠습니까?"),
+                                primaryButton: .destructive(Text("삭제"), action: {
                                     deleteFeedback(targetUUID: idToDelete)
                                     
                                 }),
-                                secondaryButton: .cancel(Text("아니오")))
+                                secondaryButton: .cancel(Text("취소")))
                             //예, 아니오 버튼
                         }//alert
                 }//삭제 버튼

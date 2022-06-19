@@ -33,12 +33,12 @@ struct FeedbackNameView: View {
 
                         Text("피드백하는 사람의 이름이")
                             .font(.custom("Apple SD Gothic Neo Bold", size: 18))
-                            .foregroundColor(.black)
+                            .foregroundColor(.ReqBlack)
                             .padding(.bottom, 4)
 
                         Text("무엇인가요?")
                             .font(.custom("Apple SD Gothic Neo Bold", size: 18))
-                            .foregroundColor(.black)
+                            .foregroundColor(.ReqBlack)
                     }
                         .padding(EdgeInsets(top: 32, leading: 0, bottom: 32, trailing: 0))
 

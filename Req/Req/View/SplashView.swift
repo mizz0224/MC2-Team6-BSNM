@@ -37,8 +37,7 @@ struct SplashView_Previews: PreviewProvider {
 }
 
 struct Splash: View {
-    private let darkGray: Color = Color(.sRGB, red: 70 / 255, green: 70 / 255, blue: 70 / 255, opacity: 1)
-    private let gray: Color = Color(.sRGB, red: 168 / 255, green: 169 / 255, blue: 172 / 255, opacity: 1)
+
 
     var body: some View {
         ZStack {
@@ -50,7 +49,7 @@ struct Splash: View {
             Rectangle()
                 .background(.clear)
                 .foregroundColor(.clear)
-                .border(darkGray, width: 1)
+                .border(Color.LightGrey, width: 1)
                 .padding(EdgeInsets(top: 60, leading: 20, bottom: 28, trailing: 20))
                 .ignoresSafeArea()
 
@@ -64,16 +63,16 @@ struct Splash: View {
                     .padding(.bottom, 42)
 
                 Divider()
-                    .background(darkGray)
+                    .background(Color.Grey)
                     .frame(width: 313)
 
                 Text("REQ로 패션을 기록하다")
-                    .foregroundColor(gray)
+                    .foregroundColor(Color.DarkGrey)
                     .font(.custom("Apple SD Gothic Neo Bold", size: 18))
                     .padding(11)
 
                 Divider()
-                    .background(darkGray)
+                    .background(Color.Grey)
                     .frame(width: 313)
 
                 Spacer()
@@ -81,7 +80,7 @@ struct Splash: View {
 
                 Text("BSNM")
                     .font(.custom("Apple SD Gothic Neo Bold", size: 18))
-                    .foregroundColor(darkGray)
+                    .foregroundColor(Color.Grey)
                     .padding(.bottom, 13)
             }
         }

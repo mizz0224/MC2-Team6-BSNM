@@ -12,7 +12,7 @@ struct Header: View {
     @Binding var showCameraView: Bool
     
     let menuFont : Font = Font.system(size:20).bold()//메뉴 폰트 설정 SF Display Font Pro Bold, 20사이즈
-    let iconColor : Color = Color(.white)//아이콘컬러
+    let iconColor : Color = Color.ReqWhite //아이콘컬러
     var body: some View {
         HStack(alignment: .center) {
             Spacer().frame(width: 32)

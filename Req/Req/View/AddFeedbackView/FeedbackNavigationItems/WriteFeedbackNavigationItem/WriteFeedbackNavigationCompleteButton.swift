@@ -29,7 +29,7 @@ struct WriteFeedbackNavigationCompleteButton: View {
         } label: {
             Text("확인")
                 .font(.system(size: 18.0, weight: .semibold))
-                .foregroundColor(isWritten ? .black : .gray)
+                .foregroundColor(isWritten ? .black : .LightGrey)
         }
         .disabled(!isWritten)
     }

@@ -11,7 +11,7 @@ struct DivisionLine: View {
     var body: some View {
         Rectangle()
             .frame(width: 358.0, height: 1.0, alignment: .center)
-            .foregroundColor(.gray)
+            .foregroundColor(Color.LightGrey)
     }
 }
 

@@ -61,7 +61,7 @@ struct EmptyHomeView: View {
                         showCameraView = true
                     } label: {
                         Text("사진 촬영하기")
-                            .fontWeight(.bold)
+                            .fontWeight(.semibold)
                             .foregroundColor(.white)
                             .frame(width: 136, height: 46)
                             .background(Color.black)

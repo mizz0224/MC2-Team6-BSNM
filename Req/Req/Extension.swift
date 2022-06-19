@@ -15,5 +15,6 @@ extension Color {
     static let LightGrey = Color("LightGrey")
     static let Grey = Color("Grey")
     static let DarkGrey = Color("DarkGrey")
+    static let ReqGradientBlue = Color("ReqGradientBlue")
     
 }
