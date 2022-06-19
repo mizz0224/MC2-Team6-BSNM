@@ -24,6 +24,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
+                //Spacer().frame(height:48)
                 TopMenu(searchText: $searchText, isSearching: $isSearching, showResults: $showResults, loadSearch: $loadSearch, showCameraView: $showCameraView)
                 ScrollView {
                     VStack(alignment: .leading) {
@@ -35,6 +36,7 @@ struct HomeView: View {
             }
             .preferredColorScheme(isDark ? .dark : .light)//다크모드를 제어하는 변수가 true면 다크모드 false 이면 라이트모드 적용
                 .onAppear(perform: {
+                    isDark = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                     loadSearch = true
                 } })
@@ -43,6 +45,7 @@ struct HomeView: View {
         .onAppear {
             userData.requestFeedbackArray()
         }
+        .ignoresSafeArea()
         
     }
 

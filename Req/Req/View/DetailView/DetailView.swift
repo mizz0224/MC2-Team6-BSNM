@@ -38,8 +38,6 @@ struct DetailView: View {
         }.frame(height:totalFrameHeight)
         .onAppear(){
             isDark = false//상세 페이지가 등장 할때 다크모드 해제
-        }.onDisappear(){
-            isDark = true//상세 페이지 가 사라질때 다크모드 선택
         }.ignoresSafeArea().background(detailViewBgColor)//VStack
     }//body
 //    struct DetailView_Previews: PreviewProvider {
