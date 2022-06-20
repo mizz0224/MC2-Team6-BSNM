@@ -46,16 +46,19 @@ struct PostGridView: View {
                         }
                     }
                     Text("Feedback from")
-                        .padding(.init(top: 150, leading: 0, bottom: 10, trailing: 30))
-                        .padding(EdgeInsets(top: 0, leading: 7, bottom: 0, trailing: 10))
+                        .font(.system(size: 10))
+                        .padding(.init(top: 150, leading: 0, bottom: 5, trailing: 30))
+                        .padding(EdgeInsets(top: 4, leading: 7, bottom: 0, trailing: 50))
 
                         .foregroundColor(.Grey)
                     Text("\(item.name)")
+                        .kerning(1.5)
                         .frame(width: 200, alignment: .leading)
                         .lineLimit(1)
-                        .padding(.init(top: 180, leading: 5, bottom: 7, trailing: 0))
+                        .padding(.init(top: 180, leading: 5, bottom: 6, trailing: 0))
                         .foregroundColor(.ReqWhite)
-                        .padding(EdgeInsets(top: 10, leading: 49, bottom: 2, trailing: 0))
+                        .padding(EdgeInsets(top: 10, leading: 49, bottom: 3, trailing: 0))
+                        
                 }
             }
         }
