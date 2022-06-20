@@ -47,7 +47,7 @@ struct PostGridView: View {
                     }
                     Text("Feedback from")
                         .padding(.init(top: 150, leading: 0, bottom: 10, trailing: 30))
-                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
+                        .padding(EdgeInsets(top: 0, leading: 7, bottom: 0, trailing: 10))
 
                         .foregroundColor(.Grey)
                     Text("\(item.name)")
@@ -55,7 +55,7 @@ struct PostGridView: View {
                         .lineLimit(1)
                         .padding(.init(top: 180, leading: 5, bottom: 7, trailing: 0))
                         .foregroundColor(.ReqWhite)
-                        .padding(EdgeInsets(top: 10, leading: 50, bottom: 2, trailing: 0))
+                        .padding(EdgeInsets(top: 10, leading: 49, bottom: 2, trailing: 0))
                 }
             }
         }
