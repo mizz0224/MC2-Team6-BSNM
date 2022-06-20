@@ -42,11 +42,12 @@ struct PostGridView: View {
                                 startPoint: .bottom,
                                 endPoint: .top
                             )
+                            .frame(width: 160, height: 213.3)
                         }
                     }
                     Text("Feedback from \n\(item.name)")
                         .padding(.init(top: 170, leading: 0, bottom: 7, trailing: 30))
-                        .foregroundColor(.LightGrey)
+                        .foregroundColor(.Grey)
                 }
             }
         }
