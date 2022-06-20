@@ -45,9 +45,17 @@ struct PostGridView: View {
                             .frame(width: 160, height: 213.3)
                         }
                     }
-                    Text("Feedback from \n\(item.name)")
-                        .padding(.init(top: 170, leading: 0, bottom: 7, trailing: 30))
+                    Text("Feedback from")
+                        .padding(.init(top: 150, leading: 0, bottom: 10, trailing: 30))
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
+
                         .foregroundColor(.Grey)
+                    Text("\(item.name)")
+                        .frame(width: 200, alignment: .leading)
+                        .lineLimit(1)
+                        .padding(.init(top: 180, leading: 5, bottom: 7, trailing: 0))
+                        .foregroundColor(.ReqWhite)
+                        .padding(EdgeInsets(top: 10, leading: 50, bottom: 2, trailing: 0))
                 }
             }
         }
