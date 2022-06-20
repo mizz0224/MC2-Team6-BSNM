@@ -29,8 +29,8 @@ struct AddFeedbackNavigationSaveButton: View {
                 .foregroundColor(.black)
         } // Button
         .alert("피드백을 저장하시겠습니까?", isPresented: $saveAlertShow) {
-            Button("취소", role: .destructive) { saveAlertShow = false }
-            Button("저장하기", role: .cancel) {
+            Button("취소", role: .cancel) { saveAlertShow = false }
+            Button("저장하기", role: .none) {
                 print("현재 시간 : \(getDate())\n작성자 : \(reviewerName)\n이미지 : \(image)\n핀 개수 : \(pins.count)")
                 saveData()
                 
