@@ -62,10 +62,10 @@ struct PinImage: View {
                     .disabled(!isAbleTouched)
             }
         } else {
-            Image(systemName: "text.bubble.fill")
+            Image("FeedbackViewPinImage")
                 .resizable()
                 .foregroundColor(.gray)
-                .frame(width: pinFrame, height: pinFrame)
+                .frame(width: 50.0, height: 50.0)
                 .position(x: pin.x, y: pin.y)
                 .onTapGesture {
                     currentPin = pin
