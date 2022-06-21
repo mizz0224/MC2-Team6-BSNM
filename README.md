@@ -12,3 +12,8 @@
 |David|Toby|Curry|Sasha|San|Mizz|
 
 ## View
+
+## Framework
+|Sketch|Lottie|
+|-|-|
+|![Sketch](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/icon/sketch_icon.png)|![Lottie](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/icon/lottie_icon.png)|
