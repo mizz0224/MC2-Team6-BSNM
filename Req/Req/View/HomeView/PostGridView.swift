@@ -27,7 +27,7 @@ struct PostGridView: View {
         //그리드
         LazyVGrid(columns: gridLayout, alignment: .center, spacing: 0) {
             
-            ForEach(data.filter({ "\($0)".contains(searchText.lowercased()) || searchText.isEmpty}), id: \.id) { item in
+            ForEach(data.filter({ "\($0)".contains(searchText.lowercased()) || searchText.isEmpty}).reversed(), id: \.id) { item in
                 ZStack(alignment: .center) {
                     NavigationLink(destination: { DetailView(getFeedback: item,isDark: $isDark)
                             .navigationBarHidden(true)
