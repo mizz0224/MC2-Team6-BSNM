@@ -23,29 +23,28 @@
 //}
 import SwiftUI
 struct DetailView: View {
-    
-    
-    let MenuFont : Font = Font.system(size:20) //메뉴 폰트 사이즈
-    let totalFrameHeight : CGFloat = 796
-    let getFeedback : Feedback//받아온 피드백 데이터
-    let detailViewBgColor : Color = Color(red: 251/255, green: 251/255, blue: 255/255)//상세페이지 배경 색깔 : reqWhite : fdfdff
-    @Binding var isDark : Bool//다크모드를 제어할 변수
+
+
+    let MenuFont: Font = Font.system(size: 20) //메뉴 폰트 사이즈
+    let totalFrameHeight: CGFloat = 796
+    let getFeedback: Feedback//받아온 피드백 데이터
+    let detailViewBgColor: Color = Color(red: 251 / 255, green: 251 / 255, blue: 255 / 255)//상세페이지 배경 색깔 : reqWhite : fdfdff
+    @Binding var isDark: Bool//다크모드를 제어할 변수
     var body: some View {
-        VStack(spacing:0) {
-            Spacer().frame(height:100)//상단 공백
+        VStack(spacing: 0) {
+            Spacer()
+                .frameRatio(height: 100)//상단 공백
+            
             TopMenuView(idToDelete: getFeedback.id, feedback: getFeedback)//뒤로가기, 삭제 버튼 있는 뷰
             ImageView(getFeedback: getFeedback)//이미지 뷰, 하단 설명뷰는 이미지 뷰에서 구현
-        }.frame(height:totalFrameHeight)
-        .onAppear(){
-            isDark = false//상세 페이지가 등장 할때 다크모드 해제
-        }.ignoresSafeArea().background(detailViewBgColor)//VStack
+        }
+            .frameRatio(height: totalFrameHeight)
+            .onAppear() {
+                isDark = false//상세 페이지가 등장 할때 다크모드 해제
+            }
+            .ignoresSafeArea()
+            .background(detailViewBgColor)//VStack
     }//body
-//    struct DetailView_Previews: PreviewProvider {
-//        static var previews: some View {
-//            DetailView(getFeedback: testData)
-//        }
-//    }
-    
 }
 
 extension UINavigationController: UIGestureRecognizerDelegate {
