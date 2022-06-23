@@ -40,5 +40,30 @@ extension View {
             }
         }
     }
+
+    @ViewBuilder
+    func paddingRatio(_ edge: Edge.Set, _ size: CGFloat) -> some View {
+        if edge == .leading || edge == .trailing {
+            self.padding(edge, UIScreen.main.bounds.width * size / 390)
+        } else if edge == .top || edge == .bottom {
+            self.padding(edge, UIScreen.main.bounds.height * size / 844)
+        } else {
+            self.padding(edge)
+        }
+    }
+
+    @ViewBuilder
+    func paddingRatio(_ length: CGFloat? = nil) -> some View {
+        if length != nil {
+            self.padding(length!)
+        } else {
+            self.padding()
+        }
+    }
+
+    @ViewBuilder
+    func paddingRatio(_ insets: EdgeInsets) -> some View {
+        self.padding(insets)
+    }
 }
 

@@ -21,6 +21,7 @@ struct EmptyHomeView: View {
                 HStack {
                     Image("ReqLogo")
                         .resizable()
+                        .aspectRatio(contentMode: .fit)
                         .frameRatio(width: 72, height: 32)
                         .padding()
                     Spacer()
@@ -37,7 +38,7 @@ struct EmptyHomeView: View {
                         Spacer()
                             .frameRatio(width: 32)
                         ZStack(alignment: .leading) {
-                            VStack(alignment: .leading, spacing: 4) {
+                            VStack(alignment: .leading, spacing: UIScreen.main.bounds.height * 4 / 844) {
                                 GradientStyle3(textString: "Take")
                                 GradientStyle3(textString: "A")
                                 GradientStyle3(textString: "Picture")
@@ -45,7 +46,7 @@ struct EmptyHomeView: View {
                                 GradientStyle3(textString: "Get")
                                 GradientStyle3(textString: "Feedback")
                             }
-                            VStack(alignment: .leading, spacing: 10) {
+                            VStack(alignment: .leading, spacing: UIScreen.main.bounds.height * 10 / 844) {
                                 GradientStyle(textString: "Take")
                                 GradientStyle(textString: "A")
                                 GradientStyle2(textString: "Picture")

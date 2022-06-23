@@ -47,17 +47,17 @@ struct PostGridView: View {
                     }
                     Text("Feedback from")
                         .font(.custom("Ubuntu-Light", size: 12))
-                        .padding(.init(top: 150, leading: 0, bottom: 10, trailing: 35))
-                        .padding(EdgeInsets(top: 4, leading: 7, bottom: 2, trailing: 40))
+                        .paddingRatio(.init(top: 150, leading: 0, bottom: 10, trailing: 35))
+                        .paddingRatio(EdgeInsets(top: 4, leading: 7, bottom: 2, trailing: 40))
 
                         .foregroundColor(.Grey)
                     Text("\(item.name)")
                         .kerning(1.5)
                         .frameRatio(width: 200, alignment: .leading)
                         .lineLimit(1)
-                        .padding(.init(top: 180, leading: 5, bottom: 6, trailing: 0))
+                        .paddingRatio(.init(top: 180, leading: 5, bottom: 6, trailing: 0))
                         .foregroundColor(.ReqWhite)
-                        .padding(EdgeInsets(top: 10, leading: 49, bottom: 3, trailing: 0))
+                        .paddingRatio(EdgeInsets(top: 10, leading: 49, bottom: 3, trailing: 0))
 
                 }
             }

@@ -30,7 +30,7 @@ struct PostView: View {
                 .fill(Color.LightGrey)
                 .frameRatio(width: 330, height: 1)
             Text("\(releaseDate, formatter: Self.kDateFormat)")
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 245))
+                .paddingRatio(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 245))
                 .foregroundColor(.gray)
 
             PostGridView(searchText: $searchText, data: userData.FeedbackArray, isDark: $isDark)

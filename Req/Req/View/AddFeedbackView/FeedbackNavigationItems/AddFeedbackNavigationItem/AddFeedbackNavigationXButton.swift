@@ -12,7 +12,8 @@ struct AddFeedbackNavigationXButton: View {
     
     var body: some View {
         Button {
-            popToRootView()
+            self.showCameraView.toggle()
+//            popToRootView()
         } label: {
             Image(systemName: "xmark")
                 .resizable()
@@ -20,13 +21,4 @@ struct AddFeedbackNavigationXButton: View {
                 .foregroundColor(.black)
         }
     }
-}
-
-extension AddFeedbackNavigationXButton {
-    
-    func popToRootView() {
-        showCameraView = false
-    }
-    //출처 : https://sweetdev.tistory.com/695
-    
 }

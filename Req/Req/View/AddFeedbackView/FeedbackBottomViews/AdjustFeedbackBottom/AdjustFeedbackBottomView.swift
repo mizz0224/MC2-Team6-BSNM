@@ -31,7 +31,7 @@ struct AdjustFeedbackBottomView: View {
             Spacer()
                 .frameRatio(height: 20.0)
             AdjustFeedbackDescription(description: description)
-                .frameRatio(maxHeight: 130.0)
+                .frame(maxHeight: 130.0)
         }
     }
 }

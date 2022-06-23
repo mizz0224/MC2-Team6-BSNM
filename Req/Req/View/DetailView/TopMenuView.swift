@@ -28,7 +28,7 @@ struct TopMenuView: View {
                         .font(MenuFont)
                         .frameRatio(height: 24)
                         .foregroundColor(TopMenuIconColor)
-                        .padding(EdgeInsets(top: 10, leading: 16, bottom: 18, trailing: 0))
+                        .paddingRatio(EdgeInsets(top: 10, leading: 16, bottom: 18, trailing: 0))
                 }//뒤로가기 버튼
                 Spacer()//좌우 구분을 위한 공백
                 Button(action: { self.showingAlert.toggle() }) {
@@ -36,7 +36,7 @@ struct TopMenuView: View {
                         .font(MenuFont)
                         .frameRatio(height: 24)
                         .foregroundColor(TopMenuIconColor)
-                        .padding(EdgeInsets(top: 10, leading: 0, bottom: 18, trailing: 16))
+                        .paddingRatio(EdgeInsets(top: 10, leading: 0, bottom: 18, trailing: 16))
                         .alert(isPresented: $showingAlert) { Alert(
                             title: Text("해당 기록을 정말 삭제하시겠습니까?"),
                             primaryButton: .destructive(Text("삭제"), action: { deleteFeedback(targetUUID: idToDelete) }),

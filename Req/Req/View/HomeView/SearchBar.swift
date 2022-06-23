@@ -25,11 +25,11 @@ struct SearchBar: View {
                 
                 HStack(alignment: .center, spacing: 0) {
                     Image(systemName: "magnifyingglass")
-                        .padding(.trailing, 4)
+                        .paddingRatio(.trailing, 4)
                     
                     TextField("패션 아이템의 이름을 입력하세요", text: $searchText)
                 }
-                .frameRatio(width: 260, height: 24)
+                    .frameRatio(width: 260, height: 24)
                     .padding(.horizontal)
                     .foregroundColor(.gray)
                     .background(Color(red: 238 / 255, green: 238 / 255, blue: 238 / 255, opacity: 0.7))
