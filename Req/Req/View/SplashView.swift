@@ -37,8 +37,6 @@ struct SplashView_Previews: PreviewProvider {
 }
 
 struct Splash: View {
-
-
     var body: some View {
         ZStack {
             Rectangle()
@@ -55,7 +53,7 @@ struct Splash: View {
 
             VStack {
                 Spacer()
-
+ 
                 Image("SplashImage")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -81,7 +79,7 @@ struct Splash: View {
                 Text("BSNM")
                     .font(.custom("Apple SD Gothic Neo Bold", size: 18))
                     .foregroundColor(Color.Grey)
-                    .paddingRatio(.bottom, 13)
+                    .paddingRatio(.bottom, 41)
             }
         }
     }

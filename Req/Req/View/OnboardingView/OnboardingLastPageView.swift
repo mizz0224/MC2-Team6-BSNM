@@ -16,15 +16,17 @@ struct OnboardingLastPageView: View {
     let LottieName2: String
     
     @State var startTimer: Int = 0
-    
     @Binding var isFirstLaunching: Bool
+    
     var body: some View {
         VStack {
-            Spacer().frameRatio(height: 130)
+            Spacer()
+                .frameRatio(height: 130)
             
             VStack{
                 HStack{
-                    Spacer().frameRatio(width:32)
+                    Spacer()
+                        .frameRatio(width:32)
                     Text(title)
                         .font(.system(size: 60, weight: .bold))
                     Spacer()
@@ -55,7 +57,8 @@ struct OnboardingLastPageView: View {
             VStack{
                 Text(subtitle)
                     .font(.system(size: 18, weight: .semibold))
-                Spacer().frameRatio(height:4)
+                Spacer()
+                    .frameRatio(height:4)
                 Text(subtitle2)
                     .font(.system(size: 18, weight: .semibold))
             }
