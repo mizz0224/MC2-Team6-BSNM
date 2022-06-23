@@ -18,17 +18,18 @@ struct SearchBar: View {
         VStack (spacing: 0) {
             Spacer()
             HStack(spacing: 0) {
-                Spacer().frame(width: 32)
+                Spacer()
+                    .frameRatio(width: 32)
                 
                 
                 
-                HStack(spacing: 0) {
+                HStack(alignment: .center, spacing: 0) {
                     Image(systemName: "magnifyingglass")
                         .padding(.trailing, 4)
                     
                     TextField("패션 아이템의 이름을 입력하세요", text: $searchText)
                 }
-                .frame(width: 260, height: 24, alignment: .center)
+                .frameRatio(width: 260, height: 24)
                     .padding(.horizontal)
                     .foregroundColor(.gray)
                     .background(Color(red: 238 / 255, green: 238 / 255, blue: 238 / 255, opacity: 0.7))
@@ -38,7 +39,8 @@ struct SearchBar: View {
                     showResults = true
                 })
 
-                Spacer().frame(width: 5)
+                Spacer()
+                    .frameRatio(width: 5)
 
                 Button(action: {
                     self.searchText = ""
@@ -47,9 +49,11 @@ struct SearchBar: View {
                         .foregroundColor(.gray)
                 }//뒤로가기 버튼
 
-                Spacer().frame(width: 32)
+                Spacer()
+                    .frameRatio(width: 32)
             }
-            Spacer().frame(height: 18)
+            Spacer()
+                .frameRatio(height: 18)
         }
     }
 

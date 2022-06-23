@@ -24,7 +24,6 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                //Spacer().frame(height:48)
                 TopMenu(searchText: $searchText, isSearching: $isSearching, showResults: $showResults, loadSearch: $loadSearch, showCameraView: $showCameraView)
                 ScrollView {
                     VStack(alignment: .leading) {
