@@ -24,7 +24,7 @@ struct EditFeedbackBottomView: View {
             Spacer()
                 .frameRatio(height: 20.0)
             FeedbackDescriptionTextEditor(keyboardHeightHelper: keyboardHeightHelper, description: $description)
-                .frame(maxHeight: 130.0)
+                .frameRatio(maxHeight: 130.0)
         }
     }
 }

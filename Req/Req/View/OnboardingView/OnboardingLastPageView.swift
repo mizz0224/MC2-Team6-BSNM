@@ -20,11 +20,11 @@ struct OnboardingLastPageView: View {
     @Binding var isFirstLaunching: Bool
     var body: some View {
         VStack {
-            Spacer().frame(height: 130)
+            Spacer().frameRatio(height: 130)
             
             VStack{
                 HStack{
-                    Spacer().frame(width:32)
+                    Spacer().frameRatio(width:32)
                     Text(title)
                         .font(.system(size: 60, weight: .bold))
                     Spacer()
@@ -32,12 +32,12 @@ struct OnboardingLastPageView: View {
             }
             //온보딩 타이틀
             
-            Spacer().frame(height: 6)
+            Spacer().frameRatio(height: 6)
             
             ZStack{
                 LottieView(filename: LottieName)
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 390)
+                    .frameRatio(width: 390)
                     .onAppear {
                         Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) { timer in
                             self.startTimer += 1
@@ -46,7 +46,7 @@ struct OnboardingLastPageView: View {
                 if self.startTimer >= 1 {
                     LottieLoopView(filename: LottieName2)
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 300)
+                        .frameRatio(width: 300)
                         .offset(y: 60)
                 }
             }
@@ -55,7 +55,7 @@ struct OnboardingLastPageView: View {
             VStack{
                 Text(subtitle)
                     .font(.system(size: 18, weight: .semibold))
-                Spacer().frame(height:4)
+                Spacer().frameRatio(height:4)
                 Text(subtitle2)
                     .font(.system(size: 18, weight: .semibold))
             }
@@ -65,7 +65,7 @@ struct OnboardingLastPageView: View {
             //여기가 페이지 인디케이터 자리
             //인디케이터 들어가면 Spacer height 수정해서 조정해야함
             
-            Spacer().frame(height: 100)
+            Spacer().frameRatio(height: 100)
             
         }
     }

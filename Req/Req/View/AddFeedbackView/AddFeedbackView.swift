@@ -26,12 +26,12 @@ struct AddFeedbackView: View {
     var body: some View {
         ZStack {
             VStack {
-                    Spacer().frame(height: 99.0)
+                    Spacer().frameRatio(height: 99.0)
                 VStack {
                     FeedbackImage(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, idCount: $idCount, currentPin: $currentPin, image: image ?? UIImage())
                     FeedbackBottomView(keyboardHeightHelper: keyboardHeightHelper, changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
                 } // FeedbackImage, BottomView를 묶은 VStack
-                .frame(height: 224.0)
+                .frameRatio(height: 224.0)
             } // 네비게이션바 Spacer를 포함한 VStack
             .offset(y: -(self.keyboardHeightHelper.keyboardHeight))
             

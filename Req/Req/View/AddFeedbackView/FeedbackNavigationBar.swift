@@ -22,7 +22,7 @@ struct FeedbackNavigationBar: View {
     var body: some View {
         VStack {
             Spacer()
-                .frame(height: 48.0)
+                .frameRatio(height: 48.0)
 
             switch changeFeedbackBottomView {
             case .addFeedback:

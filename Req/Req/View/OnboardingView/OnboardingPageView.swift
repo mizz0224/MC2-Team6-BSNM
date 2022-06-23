@@ -16,17 +16,17 @@ struct OnboardingPageView: View {
     
     var body: some View {
         VStack {
-            Spacer().frame(height: 100)
+            Spacer().frameRatio(height: 100)
             
             VStack{
                 HStack{
-                    Spacer().frame(width:32)
+                    Spacer().frameRatio(width:32)
                     Text(title)
                         .font(.system(size: 60, weight: .bold))
                     Spacer()
                 }
                 HStack{
-                    Spacer().frame(width:32)
+                    Spacer().frameRatio(width:32)
                     Text(title2)
                         .font(.system(size: 60, weight: .bold))
                     Spacer()
@@ -34,25 +34,25 @@ struct OnboardingPageView: View {
             }
             //온보딩 타이틀
             
-            Spacer().frame(height: 6)
+            Spacer().frameRatio(height: 6)
             
             ZStack {
                 VStack{
-                    Spacer().frame(height:160)
+                    Spacer().frameRatio(height:160)
                     Rectangle()
-                        .frame(width: 390, height: 165)
+                        .frameRatio(width: 390, height: 165)
                         .foregroundColor(Color.ReqPurple)
                 }
                 LottieView(filename: LottieName)
             }
             //온보딩 로티 애니메이션
             
-            Spacer().frame(height: 24)
+            Spacer().frameRatio(height: 24)
             
             VStack{
                 Text(subtitle)
                     .font(.system(size: 18, weight: .semibold))
-                Spacer().frame(height:4)
+                Spacer().frameRatio(height:4)
                 Text(subtitle2)
                     .font(.system(size: 18, weight: .semibold))
             }
@@ -62,7 +62,7 @@ struct OnboardingPageView: View {
             //여기가 페이지 인디케이터 자리
             //인디케이터 들어가면 Spacer height 수정해서 조정해야함
             
-            Spacer().frame(height: 100)
+            Spacer().frameRatio(height: 100)
             
         }
     }
