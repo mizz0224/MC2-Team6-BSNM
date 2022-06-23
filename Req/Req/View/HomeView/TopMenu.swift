@@ -23,7 +23,7 @@ struct TopMenu: View {
             }   else    {
                 Header(getisSearch: $getisSearch, showCameraView: $showCameraView)
             }
-        }.background(reqBlack).frame(height:52)
+        }.background(reqBlack).frame(height:47)
     }
 }
 

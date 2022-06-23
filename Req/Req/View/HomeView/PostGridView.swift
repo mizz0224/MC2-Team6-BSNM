@@ -46,8 +46,8 @@ struct PostGridView: View {
                         }
                     }
                     Text("Feedback from")
-                        .font(.system(size: 12))
-                        .padding(.init(top: 150, leading: 0, bottom: 10, trailing: 30))
+                        .font(.custom("Ubuntu-Light", size: 12))
+                        .padding(.init(top: 150, leading: 0, bottom: 10, trailing: 35))
                         .padding(EdgeInsets(top: 4, leading: 7, bottom: 2, trailing: 40))
 
                         .foregroundColor(.Grey)
