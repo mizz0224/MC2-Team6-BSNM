@@ -17,7 +17,7 @@ struct AddFeedbackNavigationItem: View {
     var body: some View {
         HStack {
             Spacer()
-                .frame(width: 16.0)
+                .frameRatio(width: 16.0)
             
             AddFeedbackNavigationXButton(showCameraView: $showCameraView)
             
@@ -26,9 +26,9 @@ struct AddFeedbackNavigationItem: View {
             if !pins.isEmpty {
                 AddFeedbackNavigationSaveButton(pins: $pins, showCameraView: $showCameraView, reviewerName: reviewerName, image: image)
                 Spacer()
-                    .frame(width: 16.0)
+                    .frameRatio(width: 16.0)
             }
         }
-        .frame(width: 390.0, height: 51.0)
+        .frameRatio(width: 390.0, height: 51.0)
     }
 }

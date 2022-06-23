@@ -13,13 +13,13 @@ struct AfterAddFeedbackBottomView: View {
     var body: some View {
         VStack {
             Spacer()
-                .frame(height: space)
+                .frameRatio(height: space)
             AfterAddFeedbackText()
             Spacer()
-                .frame(height: space)
+                .frameRatio(height: space)
             DivisionLine()
             Spacer()
-                .frame(height: 150.0)
+                .frameRatio(height: 150.0)
         }
     }
 }

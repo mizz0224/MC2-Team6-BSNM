@@ -15,7 +15,7 @@ struct AddFeedbackButton: View {
             touchAddFeedbackButton()
         } label: {
             RoundedRectangle(cornerRadius: 50.0)
-                .frame(width: 150.0, height: 46.0, alignment: .center)
+                .frameRatio(width: 150.0, height: 46.0, alignment: .center)
                 .foregroundColor(.black)
                 .overlay(
                     Text("피드백 추가하기")

@@ -18,7 +18,7 @@ struct WriteFeedbackNavigationItem: View {
     var body: some View {
         HStack {
             Spacer()
-                .frame(width: 16.0)
+                .frameRatio(width: 16.0)
             
             WriteFeedbackNavigationCancelButton(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, pins: $pins, idCount: $idCount)
             
@@ -32,9 +32,9 @@ struct WriteFeedbackNavigationItem: View {
             }
             
             Spacer()
-                .frame(width: 16.0)
+                .frameRatio(width: 16.0)
             
         } // HStack
-        .frame(width: 390.0, height: 51.0)
+        .frameRatio(width: 390.0, height: 51.0)
     }
 }

@@ -13,6 +13,6 @@ struct AdjustFeedbackTitle: View {
     var body: some View {
         Text(title)
             .font(.system(size: 24.0, weight: .bold))
-            .frame(width: 358.0, height: 24.0, alignment: .leading)
+            .frameRatio(width: 358.0, height: 24.0, alignment: .leading)
     }
 }

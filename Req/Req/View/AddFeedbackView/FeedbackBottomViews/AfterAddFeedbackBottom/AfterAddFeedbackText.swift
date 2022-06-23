@@ -11,7 +11,7 @@ struct AfterAddFeedbackText: View {
     var body: some View {
         Text("피드백을 하고 싶은 부분을 터치해주세요")
             .font(.system(size: 14.0))
-            .frame(height: 14.0)
+            .frameRatio(height: 14.0)
     }
 }
 

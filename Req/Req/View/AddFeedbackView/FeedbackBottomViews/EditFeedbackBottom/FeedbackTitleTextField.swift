@@ -19,7 +19,7 @@ struct FeedbackTitleTextField: View {
             .textFieldStyle(.plain)
             .disableAutocorrection(true)
             .font(.system(size: 24.0, weight: .bold))
-            .frame(width: 358.0, height: 24.0, alignment: .center)
+            .frameRatio(width: 358.0, height: 24.0, alignment: .center)
             
     }
 }

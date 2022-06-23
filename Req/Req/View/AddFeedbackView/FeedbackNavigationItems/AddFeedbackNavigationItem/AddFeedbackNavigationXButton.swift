@@ -16,7 +16,7 @@ struct AddFeedbackNavigationXButton: View {
         } label: {
             Image(systemName: "xmark")
                 .resizable()
-                .frame(width: 14.0, height: 14.0, alignment: .center)
+                .frameRatio(width: 14.0, height: 14.0, alignment: .center)
                 .foregroundColor(.black)
         }
     }
