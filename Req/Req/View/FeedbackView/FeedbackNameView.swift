@@ -24,7 +24,7 @@ struct FeedbackNameView: View {
                 }
 
                 Spacer()
-                    .frame(height: 44)
+                    .frameRatio(height: 44)
 
                 Group {
                     Divider()
@@ -65,7 +65,7 @@ struct FeedbackNameView: View {
                                 .font(.custom("Apple SD Gothic Neo Medium", size: 16))
                                 .foregroundColor(.white)
                         }
-                            .frame(height: 56)
+                            .frameRatio(height: 56)
                     }
                 }
             }

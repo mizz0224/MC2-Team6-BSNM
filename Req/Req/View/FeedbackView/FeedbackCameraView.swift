@@ -12,32 +12,32 @@ struct FeedbackCameraView: View {
     @Binding var name: String
     @Binding var showCameraView: Bool
     @State var didTapCapture: Bool = false
-    
+
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
 
                 Rectangle()
-                    .frame(height: 100)
+                    .frameRatio(height: 100)
                     .foregroundColor(.black)
 
                 if self.image == nil {
                     ZStack {
                         CustomCameraRepresentable(image: self.$image, didTapCapture: $didTapCapture)
-                            
-                        
+
+
                         Image("silhouette")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(height: UIScreen.main.bounds.height * (520 / 844))
+                            .frameRatio(height: 520)
                     }
-                    .frame(height: 520)
+                    .frameRatio(height: 520)
                 }
                 else {
                     Image(uiImage: self.image!)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(height: UIScreen.main.bounds.height * (520 / 844))
+                        .frameRatio(height: 520)
                 }
 
                 ZStack {
@@ -51,14 +51,16 @@ struct FeedbackCameraView: View {
                                 .foregroundColor(.white)
                                 .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
 
-                            Spacer(minLength: 52)
+                            Spacer()
+                                .frameRatio(height: 52)
 
                             Button(action: {
                                 self.didTapCapture = true
                             }) {
                                 Image("cameraButton")
                             }
-                            Spacer(minLength: 52)
+                            Spacer()
+                                .frameRatio(height: 52)
                         }
                     } else {
                         VStack {
@@ -81,7 +83,7 @@ struct FeedbackCameraView: View {
                                         image: self.$image,
                                         showCameraView: self.$showCameraView
                                     )
-                                    
+
                                 }) {
                                     Text("피드백 하기")
                                         .font(.custom("Apple SD Gothic Neo Bold", size: 18))
@@ -91,10 +93,11 @@ struct FeedbackCameraView: View {
                             }
                         }
                     }
-                }.frame(height: 224)
+                }
+                    .frameRatio(height: 224)
+                    .ignoresSafeArea()
+                    .preferredColorScheme(.dark)
             }
-                .ignoresSafeArea()
-                .preferredColorScheme(.dark)
         }
     }
 }
