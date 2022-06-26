@@ -37,8 +37,6 @@ struct SplashView_Previews: PreviewProvider {
 }
 
 struct Splash: View {
-
-
     var body: some View {
         ZStack {
             Rectangle()
@@ -50,38 +48,38 @@ struct Splash: View {
                 .background(.clear)
                 .foregroundColor(.clear)
                 .border(Color.LightGrey, width: 1)
-                .padding(EdgeInsets(top: 60, leading: 20, bottom: 28, trailing: 20))
+                .paddingRatio(EdgeInsets(top: 60, leading: 20, bottom: 28, trailing: 20))
                 .ignoresSafeArea()
 
             VStack {
                 Spacer()
-
+ 
                 Image("SplashImage")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 184.18, height: 126.62)
-                    .padding(.bottom, 42)
+                    .frameRatio(width: 184.18, height: 126.62)
+                    .paddingRatio(.bottom, 42)
 
                 Divider()
                     .background(Color.Grey)
-                    .frame(width: 313)
+                    .frameRatio(width: 313)
 
                 Text("REQ로 패션을 기록하다")
                     .foregroundColor(Color.DarkGrey)
                     .font(.custom("Apple SD Gothic Neo Bold", size: 18))
-                    .padding(11)
+                    .paddingRatio(11)
 
                 Divider()
                     .background(Color.Grey)
-                    .frame(width: 313)
+                    .frameRatio(width: 313)
 
                 Spacer()
-                    .frame(height: 253)
+                    .frameRatio(height: 253)
 
                 Text("BSNM")
                     .font(.custom("Apple SD Gothic Neo Bold", size: 18))
                     .foregroundColor(Color.Grey)
-                    .padding(.bottom, 13)
+                    .paddingRatio(.bottom, 41)
             }
         }
     }

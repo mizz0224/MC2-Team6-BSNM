@@ -12,89 +12,114 @@ struct FeedbackCameraView: View {
     @Binding var name: String
     @Binding var showCameraView: Bool
     @State var didTapCapture: Bool = false
-    
+
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
 
-                Rectangle()
-                    .frame(height: 100)
-                    .foregroundColor(.black)
+                ZStack(alignment: .leading) {
+                    Rectangle()
+                        .foregroundColor(.black)
+                        .ignoresSafeArea()
+                    Button(action: { self.showCameraView.toggle() }) {
+                        Image("x_button")
+                            .foregroundColor(.white)
+                            .paddingRatio(.leading, 16.5)
+                            .paddingRatio(.bottom, 20)
+                    }
+                }
 
                 if self.image == nil {
                     ZStack {
                         CustomCameraRepresentable(image: self.$image, didTapCapture: $didTapCapture)
-                            
-                        
+                            .frameRatio(height: 520)
+
                         Image("silhouette")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(height: UIScreen.main.bounds.height * (520 / 844))
+                            .frameRatio(height: 520)
                     }
-                    .frame(height: 520)
+                        .frameRatio(height: 520)
                 }
                 else {
                     Image(uiImage: self.image!)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(height: UIScreen.main.bounds.height * (520 / 844))
+                        .frameRatio(height: 520)
                 }
 
-                ZStack {
-                    Rectangle()
-                        .foregroundColor(.black)
+                FeedbackCameraBottomView(image: self.$image, name: self.$name, showCameraView: self.$showCameraView, didTapCapture: self.$didTapCapture)
+            }
+        }// NavigationView
+        .ignoresSafeArea()
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
+    }
+}
 
-                    if self.image == nil {
-                        VStack {
-                            Text("얼굴을 제외하고 사진을 찍어주세요.")
-                                .font(.custom("Apple SD Gothic Neo Regular", size: 15))
+struct FeedbackCameraBottomView: View {
+    @Binding var image: UIImage?
+    @Binding var name: String
+    @Binding var showCameraView: Bool
+    @Binding var didTapCapture: Bool
+
+    var body: some View {
+        ZStack {
+            Rectangle()
+                .foregroundColor(.black)
+
+            if self.image == nil {
+                VStack {
+                    Text("얼굴을 제외하고 사진을 찍어주세요.")
+                        .font(.custom("Apple SD Gothic Neo Regular", size: 15))
+                        .foregroundColor(.white)
+                        .paddingRatio(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
+
+                    Spacer()
+                        .frameRatio(height: 52)
+
+                    Button(action: {
+                        self.didTapCapture = true
+                    }) {
+                        Image("cameraButton")
+                    }
+                    Spacer()
+                        .frameRatio(height: 52)
+                }
+            } else {
+                VStack {
+                    Spacer()
+
+                    HStack {
+                        Button(action: {
+                            self.image = nil
+                            self.didTapCapture = false
+                        }) {
+                            Text("다시 찍기")
+                                .font(.custom("Apple SD Gothic Neo Bold", size: 18))
                                 .foregroundColor(.white)
-                                .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
-
-                            Spacer(minLength: 52)
-
-                            Button(action: {
-                                self.didTapCapture = true
-                            }) {
-                                Image("cameraButton")
-                            }
-                            Spacer(minLength: 52)
+                                .paddingRatio(EdgeInsets(top: 0, leading: 28, bottom: 60, trailing: 0))
                         }
-                    } else {
-                        VStack {
-                            Spacer()
-
-                            HStack {
-                                Button(action: {
-                                    self.image = nil
-                                    self.didTapCapture = false
-                                }) {
-                                    Text("다시 찍기")
-                                        .font(.custom("Apple SD Gothic Neo Bold", size: 18))
-                                        .foregroundColor(.white)
-                                        .padding(EdgeInsets(top: 0, leading: 28, bottom: 60, trailing: 0))
-                                }
-                                Spacer()
-                                NavigationLink(destination: {
-                                    AddFeedbackView(
-                                        reviewerName: self.$name,
-                                        image: self.$image,
-                                        showCameraView: self.$showCameraView
-                                    )
-                                    
-                                }) {
-                                    Text("피드백 하기")
-                                        .font(.custom("Apple SD Gothic Neo Bold", size: 18))
-                                        .foregroundColor(.white)
-                                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 60, trailing: 28))
-                                }
-                            }
+                        Spacer()
+                        NavigationLink(destination: {
+                            AddFeedbackView(
+                                reviewerName: self.$name,
+                                image: self.$image,
+                                showCameraView: self.$showCameraView
+                            )
+                        }) {
+                            Text("피드백 하기")
+                                .font(.custom("Apple SD Gothic Neo Bold", size: 18))
+                                .foregroundColor(.white)
+                                .paddingRatio(EdgeInsets(top: 0, leading: 0, bottom: 60, trailing: 28))
                         }
                     }
-                }.frame(height: 224)
+                }
             }
-                .ignoresSafeArea()
-                .preferredColorScheme(.dark)
         }
+            .frameRatio(height: 224)
+            .ignoresSafeArea()
+            .preferredColorScheme(.dark)
     }
 }

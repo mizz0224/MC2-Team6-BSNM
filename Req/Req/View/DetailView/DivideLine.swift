@@ -13,12 +13,11 @@ struct DivideLine : View{
     let lineHeigh : CGFloat = 1//구분선 두께
     
     var body: some View{
-        HStack(alignment: .center, spacing: 0){
-            Rectangle()
-                .fill(lineColor)
-                .frame(width: lineWidth, height: lineHeigh)//날찌위 출력선
-        }
+        Rectangle()
+            .fill(lineColor)
+            .frameRatio(width: lineWidth, height: lineHeigh)//날찌위 출력선
     }
+    
     struct DivisionLine_Previews : PreviewProvider{
         static var previews : some View{
             DivisionLine()

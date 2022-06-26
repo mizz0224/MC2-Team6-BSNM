@@ -24,12 +24,11 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                //Spacer().frame(height:48)
                 TopMenu(searchText: $searchText, isSearching: $isSearching, showResults: $showResults, loadSearch: $loadSearch, showCameraView: $showCameraView)
                 ScrollView {
                     VStack(alignment: .leading) {
                         Slogan()
-                            .padding(.init(top: 20, leading: 30, bottom: 16, trailing: 0))
+                            .paddingRatio(.init(top: 20, leading: 30, bottom: 16, trailing: 0))
                         PostView(searchText: $searchText, loadSearch: $loadSearch, isDark: $isDark)
                     }
                 }.background(.white)

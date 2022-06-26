@@ -9,10 +9,10 @@ import SwiftUI
 
 struct PostView: View {
     @EnvironmentObject var userData: UserDataManager
-    
+
     //날짜 모델
     let releaseDate = Date()
-    
+
     static let kDateFormat: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy년 M월"
@@ -21,21 +21,21 @@ struct PostView: View {
     @Binding var searchText: String
 
     @Binding var loadSearch: Bool
-    
-    @Binding var isDark : Bool//다크모드를 제어할 변수
+
+    @Binding var isDark: Bool//다크모드를 제어할 변수
 
     var body: some View {
-        VStack{
+        VStack {
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.LightGrey)
-                .frame(width: 330, height: 1)
+                .frameRatio(width: 330, height: 1)
             Text("\(releaseDate, formatter: Self.kDateFormat)")
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 245))
+                .paddingRatio(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 245))
                 .foregroundColor(.gray)
-            
+
             PostGridView(searchText: $searchText, data: userData.FeedbackArray, isDark: $isDark)
         }
-        .onAppear(perform: {
+            .onAppear(perform: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 loadSearch = true
             }

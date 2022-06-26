@@ -57,25 +57,25 @@ struct OnboardingTabView: View {
             if pageIndex == 3
             {
                 HStack {
-                    Spacer().frame(height: 100)
+                    Spacer().frameRatio(height: 100)
                     Button {
                         isFirstLaunching.toggle()
                     } label: {
                         Text("앱 시작하기")
                             .fontWeight(.bold)
                             .foregroundColor(.white)
-                            .frame(width: 122, height: 46)
+                            .frameRatio(width: 122, height: 46)
                             .background(Color.black)
                             .cornerRadius(25)
                     }
-                    Spacer().frame(height: 100)
+                    Spacer().frameRatio(height: 100)
                 }
             }
             //온보딩 1,2 페이지에서는 스킵 버튼
                 else
             {
                 HStack {
-                    Spacer().frame(width: 32)
+                    Spacer().frameRatio(width: 32)
                     Button {
                         isFirstLaunching.toggle()
                     } label: {
@@ -83,7 +83,7 @@ struct OnboardingTabView: View {
                             .foregroundColor(.gray)
                             .font(.system(size: 24, weight: .bold))
                     }
-                    Spacer().frame(height: 100)
+                    Spacer().frameRatio(height: 100)
                 }
 
             }

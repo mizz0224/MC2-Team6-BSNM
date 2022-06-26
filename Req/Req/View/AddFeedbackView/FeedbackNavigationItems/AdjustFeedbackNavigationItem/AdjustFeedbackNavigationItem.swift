@@ -20,7 +20,7 @@ struct AdjustFeedbackNavigationItem: View {
     var body: some View {
         HStack {
             Spacer()
-                .frame(width: 16.0)
+                .frameRatio(width: 16.0)
             
             AdjustFeedbackNavigationCancelButton(changeFeedbackBottomView: $changeFeedbackBottomView)
             
@@ -29,15 +29,15 @@ struct AdjustFeedbackNavigationItem: View {
             AdjustFeedbackNavigationAdjustButton(changeFeedbackBottomView: $changeFeedbackBottomView, title: $title, description: $description, currentPin: $currentPin)
             
             Spacer()
-                .frame(width: 28.0)
+                .frameRatio(width: 28.0)
             
             AdjustFeedbackNavigationDeleteButton(changeFeedbackBottomView: $changeFeedbackBottomView, pins: $pins, currentPin: $currentPin)
             
             Spacer()
-                .frame(width: 16.0)
+                .frameRatio(width: 16.0)
             
         } // HStack
-        .frame(width: 390.0, height: 51.0)
+        .frameRatio(width: 390.0, height: 51.0)
 
     }
 }

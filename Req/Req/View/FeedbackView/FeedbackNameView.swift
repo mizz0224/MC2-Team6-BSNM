@@ -15,7 +15,7 @@ struct FeedbackNameView: View {
         NavigationView {
             VStack(spacing: 0) {
                 HStack {
-                    Button(action: { self.showCameraView = false }) {
+                    Button(action: { self.showCameraView.toggle() }) {
                         Image(systemName: "chevron.backward")
                             .foregroundColor(.black)
                     }
@@ -24,26 +24,26 @@ struct FeedbackNameView: View {
                 }
 
                 Spacer()
-                    .frame(height: 44)
+                    .frameRatio(height: 44)
 
                 Group {
                     Divider()
-                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                        .paddingRatio(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                     VStack(alignment: .center, spacing: 0) {
 
                         Text("피드백하는 사람의 이름이")
                             .font(.custom("Apple SD Gothic Neo Bold", size: 18))
                             .foregroundColor(.ReqBlack)
-                            .padding(.bottom, 4)
+                            .paddingRatio(.bottom, 4)
 
                         Text("무엇인가요?")
                             .font(.custom("Apple SD Gothic Neo Bold", size: 18))
                             .foregroundColor(.ReqBlack)
                     }
-                        .padding(EdgeInsets(top: 32, leading: 0, bottom: 32, trailing: 0))
+                        .paddingRatio(EdgeInsets(top: 32, leading: 0, bottom: 32, trailing: 0))
 
                     Divider()
-                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 28, trailing: 16))
+                        .paddingRatio(EdgeInsets(top: 0, leading: 16, bottom: 28, trailing: 16))
 
                     CustomTextField(name: self.$name)
                 }
@@ -53,9 +53,8 @@ struct FeedbackNameView: View {
                 if !self.name.isEmpty {
                     NavigationLink(
                         destination: { FeedbackCameraView(name: self.$name, showCameraView: $showCameraView)
+                                .ignoresSafeArea()
                                 .preferredColorScheme(.dark)
-                                .navigationBarTitleDisplayMode(.inline)
-                                .navigationBarHidden(true)
                         }) {
                         ZStack {
                             Rectangle()
@@ -65,7 +64,7 @@ struct FeedbackNameView: View {
                                 .font(.custom("Apple SD Gothic Neo Medium", size: 16))
                                 .foregroundColor(.white)
                         }
-                            .frame(height: 56)
+                            .frameRatio(height: 56)
                     }
                 }
             }

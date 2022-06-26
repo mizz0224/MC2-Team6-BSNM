@@ -35,7 +35,7 @@ struct PinImage: View {
             switch changeFeedbackBottomView {
             case .addFeedback, .touchPin:
                 LottieView(filename: "FeedbackUnselectPinLottie")
-                    .frame(width: 50.0, height: 50.0)
+                    .frameRatio(width: 50.0, height: 50.0)
                     .position(x: pin.x, y: pin.y)
                     .onTapGesture {
                         currentPin = pin
@@ -45,7 +45,7 @@ struct PinImage: View {
                 
             case .beforeAdjustFeedback:
                 LottieView(filename: "FeedbackExistPinLottie")
-                    .frame(width: 50.0, height: 50.0)
+                    .frameRatio(width: 50.0, height: 50.0)
                     .position(x: pin.x, y: pin.y)
                     .onTapGesture {
                         currentPin = pin
@@ -53,7 +53,7 @@ struct PinImage: View {
                     }
             default:
                 LottieView(filename: "FeedbackPinLottie")
-                    .frame(width: 50.0, height: 50.0)
+                    .frameRatio(width: 50.0, height: 50.0)
                     .position(x: pin.x, y: pin.y)
                     .onTapGesture {
                         currentPin = pin
@@ -65,7 +65,7 @@ struct PinImage: View {
             Image("FeedbackViewPinImage")
                 .resizable()
                 .foregroundColor(.gray)
-                .frame(width: 50.0, height: 50.0)
+                .frameRatio(width: 50.0, height: 50.0)
                 .position(x: pin.x, y: pin.y)
                 .onTapGesture {
                     currentPin = pin

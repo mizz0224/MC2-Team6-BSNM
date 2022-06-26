@@ -13,7 +13,7 @@ struct AdjustFeedbackDescription: View {
     var body: some View {
         Text(description)
             .font(.system(size: 14.0))
-            .frame(width: 358.0, height: 130.0, alignment: .topLeading)
+            .frameRatio(width: 358.0, height: 130.0, alignment: .topLeading)
             //TextEditor와 Text의 텍스트위치 차이를 보정하기 위한 offset
             .offset(x: 5.0, y: 8.0)
     }

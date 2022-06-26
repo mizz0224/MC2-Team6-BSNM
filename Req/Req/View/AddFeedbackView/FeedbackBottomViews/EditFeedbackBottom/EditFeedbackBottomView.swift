@@ -16,13 +16,13 @@ struct EditFeedbackBottomView: View {
     var body: some View {
         VStack(alignment: .leading ,spacing: 0) {
             Spacer()
-                .frame(height: 24.0)
+                .frameRatio(height: 24.0)
             FeedbackTitleTextField(keyboardHeightHelper: keyboardHeightHelper, title: $title)
             Spacer()
-                .frame(height: 20.0)
+                .frameRatio(height: 20.0)
             DivisionLine()
             Spacer()
-                .frame(height: 20.0)
+                .frameRatio(height: 20.0)
             FeedbackDescriptionTextEditor(keyboardHeightHelper: keyboardHeightHelper, description: $description)
                 .frame(maxHeight: 130.0)
         }

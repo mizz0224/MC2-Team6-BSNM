@@ -88,6 +88,7 @@
 		D9A7D6BF285B1BA50051FA12 /* LottieLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */; };
 		F509D63B2858E59400D81AC3 /* FeedbackNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */; };
 		F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */; };
+		F537436828643BE300163BA0 /* ViewFrameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F537436728643BE300163BA0 /* ViewFrameController.swift */; };
 		F56D83D6285DDAE000BF6907 /* LightCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D83D5285DDAE000BF6907 /* LightCamera.swift */; };
 		F57666EF285EA04E00C2EF48 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57666EE285EA04E00C2EF48 /* SplashView.swift */; };
 		F5AEC47E285C4C5D007C330C /* Req_Onboarding_Lottie2.json in Resources */ = {isa = PBXBuildFile; fileRef = F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */; };
@@ -180,6 +181,7 @@
 		D9A7D6BE285B1BA50051FA12 /* LottieLoopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLoopView.swift; sourceTree = "<group>"; };
 		F509D63A2858E59400D81AC3 /* FeedbackNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackNameView.swift; sourceTree = "<group>"; };
 		F5117C2A28585FE100FA29C3 /* FeedbackCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCameraView.swift; sourceTree = "<group>"; };
+		F537436728643BE300163BA0 /* ViewFrameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFrameController.swift; sourceTree = "<group>"; };
 		F56D83D5285DDAE000BF6907 /* LightCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightCamera.swift; sourceTree = "<group>"; };
 		F57666EE285EA04E00C2EF48 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		F5AEC47B285C4C5D007C330C /* Req_Onboarding_Lottie2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Req_Onboarding_Lottie2.json; sourceTree = "<group>"; };
@@ -483,6 +485,7 @@
 		F56D83DB285E060900BF6907 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F537436728643BE300163BA0 /* ViewFrameController.swift */,
 				55113C6928578EC900B2AE5D /* KeyboardControl.swift */,
 			);
 			path = Controller;
@@ -613,6 +616,7 @@
 				558F3020285DDD38008D5622 /* UserDataManager.swift in Sources */,
 				D98C3CE32858845E0081C153 /* OnboardingTabView.swift in Sources */,
 				36DFB0AF285A3B1900D919FE /* Header.swift in Sources */,
+				F537436828643BE300163BA0 /* ViewFrameController.swift in Sources */,
 				55113C5B285713AC00B2AE5D /* AddFeedbackNavigationItem.swift in Sources */,
 				55113C1C285325B400B2AE5D /* Req.xcdatamodeld in Sources */,
 				36DFB0A9285A33C500D919FE /* PostModel.swift in Sources */,
@@ -790,7 +794,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Req/Preview Content\"";
-				DEVELOPMENT_TEAM = 8B3RT7D582;
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Req/Info.plist;
@@ -824,7 +828,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Req/Preview Content\"";
-				DEVELOPMENT_TEAM = 8B3RT7D582;
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Req/Info.plist;
