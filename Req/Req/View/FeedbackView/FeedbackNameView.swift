@@ -31,12 +31,12 @@ struct FeedbackNameView: View {
                         .paddingRatio(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                     VStack(alignment: .center, spacing: 0) {
 
-                        Text("피드백하는 사람의 이름이")
+                        Text("피드백하는 지인의 이름을 입력한 뒤에")
                             .font(.custom("Apple SD Gothic Neo Bold", size: 18))
                             .foregroundColor(.ReqBlack)
                             .paddingRatio(.bottom, 4)
 
-                        Text("무엇인가요?")
+                        Text("사진 촬영을 부탁하세요")
                             .font(.custom("Apple SD Gothic Neo Bold", size: 18))
                             .foregroundColor(.ReqBlack)
                     }
