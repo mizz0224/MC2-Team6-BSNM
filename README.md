@@ -1,7 +1,7 @@
 # MC2-Team6
 
 <img src="https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/OnePageSlide.jpeg">
-
+![ig](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/OnePageSlide.jpeg)
 ### 팀명 : 부드러운 산들바람을 느끼기엔 우리의 목표는 아직 남았다
 
 ## 기획의도
