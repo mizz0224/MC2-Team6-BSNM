@@ -9,7 +9,7 @@
 
 |![toby](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/emoji/toby.png)|![curry](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/emoji/curry.png)|![sasha](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/emoji/sasha.png)|![san](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/emoji/san.png)|![mizz](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/emoji/mizz.png)|
 |-|-|-|-|-|
-|David|Toby|Curry|Sasha|San|Mizz|
+|Toby|Curry|Sasha|San|Mizz|
 
 ## View
 
