@@ -12,7 +12,27 @@
 |Toby|Curry|Sasha|San|Mizz|
 
 ## View
-
+![img1](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.001.jpeg)
+![img2](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.002.jpeg)
+![img3](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.003.jpeg)
+![img4](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.004.jpeg)
+![img5](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.005.jpeg)
+![img6](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.006.jpeg)
+![img7](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.007.jpeg)
+![img8](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.008.jpeg)
+![img9](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.009.jpeg)
+![img10](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.010.jpeg)
+![img11](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.011.jpeg)
+![img12](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.012.jpeg)
+![img13](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.013.jpeg)
+![img14](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.014.jpeg)
+![img15](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.015.jpeg)
+![img16](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.016.jpeg)
+![img17](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.017.jpeg)
+![img18](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.018.jpeg)
+![img19](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.019.jpeg)
+![img20](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.020.jpeg)
+![img21](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_발표용.021.jpeg)
 ## Framework
 |Sketch|Lottie|
 |-|-|
