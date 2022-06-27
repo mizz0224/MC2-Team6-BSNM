@@ -27,8 +27,6 @@ struct FeedbackNameView: View {
                     .frameRatio(height: 44)
 
                 Group {
-                    Divider()
-                        .paddingRatio(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                     VStack(alignment: .center, spacing: 0) {
 
                         Text("피드백하는 지인의 이름을 입력한 뒤에")
@@ -39,8 +37,11 @@ struct FeedbackNameView: View {
                         Text("사진 촬영을 부탁하세요")
                             .font(.custom("Apple SD Gothic Neo Bold", size: 18))
                             .foregroundColor(.ReqBlack)
+                        
+                        Image("NameViewImage")
+                            .resizable()
+                            .frame(width: UIScreen.main.bounds.width - 10, height: (UIScreen.main.bounds.width - 10) / 2, alignment: .center)
                     }
-                        .paddingRatio(EdgeInsets(top: 32, leading: 0, bottom: 32, trailing: 0))
 
                     Divider()
                         .paddingRatio(EdgeInsets(top: 0, leading: 16, bottom: 28, trailing: 16))
