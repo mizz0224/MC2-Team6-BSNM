@@ -2,10 +2,6 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=xcode,swift
 
 
-# My
-*.DS_Store
-Nogit*
-REQ_Reedme_Img/
 
 ### Swift ###
 # Xcode
