@@ -24,7 +24,6 @@
 		4249EE8A285513B300F63F11 /* TopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249EE89285513B300F63F11 /* TopMenuView.swift */; };
 		4249EE8C285515C600F63F11 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249EE8B285515C600F63F11 /* ImageView.swift */; };
 		42695E1328574490005D18A8 /* DetailViewPinImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42695E1228574490005D18A8 /* DetailViewPinImage.swift */; };
-		426A44A72869CE76000E0F6B /* OpenSourceLicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426A44A62869CE76000E0F6B /* OpenSourceLicenseView.swift */; };
 		426A44A9286A0DD4000E0F6B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 426A44A8286A0DD4000E0F6B /* Settings.bundle */; };
 		4287D007285B8FC7004486AC /* createPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4287D006285B8FC7004486AC /* createPinLottie.json */; };
 		4287D00A285B98F5004486AC /* selectPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4287D009285B98F5004486AC /* selectPinLottie.json */; };
@@ -118,7 +117,6 @@
 		4249EE89285513B300F63F11 /* TopMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuView.swift; sourceTree = "<group>"; };
 		4249EE8B285515C600F63F11 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		42695E1228574490005D18A8 /* DetailViewPinImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPinImage.swift; sourceTree = "<group>"; };
-		426A44A62869CE76000E0F6B /* OpenSourceLicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSourceLicenseView.swift; sourceTree = "<group>"; };
 		426A44A8286A0DD4000E0F6B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4287D006285B8FC7004486AC /* createPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = createPinLottie.json; sourceTree = "<group>"; };
 		4287D009285B98F5004486AC /* selectPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = selectPinLottie.json; sourceTree = "<group>"; };
@@ -437,7 +435,6 @@
 				D98C3CD92858653F0081C153 /* OnboardingView */,
 				F56D83D7285E04E600BF6907 /* FeedbackView */,
 				F57666EE285EA04E00C2EF48 /* SplashView.swift */,
-				426A44A62869CE76000E0F6B /* OpenSourceLicenseView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -671,7 +668,6 @@
 				55113C10285325B300B2AE5D /* ReqApp.swift in Sources */,
 				F5117C2B28585FE100FA29C3 /* FeedbackCameraView.swift in Sources */,
 				F509D63B2858E59400D81AC3 /* FeedbackNameView.swift in Sources */,
-				426A44A72869CE76000E0F6B /* OpenSourceLicenseView.swift in Sources */,
 				55113C562855CBCE00B2AE5D /* EditFeedbackBottomView.swift in Sources */,
 				55113C522855B19700B2AE5D /* FeedbackTitleTextField.swift in Sources */,
 			);
