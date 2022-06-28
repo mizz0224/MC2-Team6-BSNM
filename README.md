@@ -32,7 +32,7 @@
 ![img18](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_presentation/REQ_presentation.018.jpeg)
 ![img19](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_presentation/REQ_presentation.019.jpeg)
 ![img20](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_presentation/REQ_presentation.020.jpeg)
-![img21]https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_presentation/REQ_presentation.021.jpeg)
+![img21](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/REQ_presentation/REQ_presentation.021.jpeg)
 
 ## Framework
 |Sketch|Lottie|
