@@ -5,7 +5,7 @@
 ### 팀명 : 부드러운 산들바람을 느끼기엔 우리의 목표는 아직 남았다
 
 ## 기획의도
-스스로 패션에 대해 주기적으로 사진을 찍어 객관성을 만들어주자  
+본 프로젝트는 옷을 잘 입고 싶지만 어려움을 느끼는 패션입문자들을 위해 기획되었습니다. 리서치 결과 패션입문자들에게 가장 큰 어려운 점은 자신이 선호하는 패션과 객관적인 시선의 차이였음을 확인하였습니다. 이 문제점을 해결하기 위해 '스스로 옷 핏에 대해 주기적으로 사진을 찍어 객관성을 만들어주자'라는 콘셉트로 진행하게 되었고, 따라서 이 프로젝트의 결과물 'Req'가 탄생하게 되었습니다. 
 
 |![toby](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/emoji/toby.png)|![curry](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/emoji/curry.png)|![sasha](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/emoji/sasha.png)|![san](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/emoji/san.png)|![mizz](https://github.com/DeveloperAcademy-POSTECH/MC2-Team6-BSNM/blob/main/REQ_Reedme_Img/emoji/mizz.png)|
 |-|-|-|-|-|
