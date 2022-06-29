@@ -9,10 +9,12 @@ import SwiftUI
 
 struct GradientStyle: View {
     let textString : String
+    var systemInfo = utsname()
+    
     var body: some View {
         VStack{
             Text(textString)
-                .font(.system(size: 60, weight: .bold))
+                .font(.system(size: fontDeviceSize, weight: .bold))
                 .overlay{
                     LinearGradient(
                         colors: [Color.DarkGrey, Color.ReqBlack],
@@ -21,18 +23,19 @@ struct GradientStyle: View {
                     )
                     .mask(
                         Text(textString)
-                            .font(.system(size: 60, weight: .bold))
+                            .font(.system(size: fontDeviceSize, weight: .bold))
                     )
                 }
         }
     }
     
 }
+
 struct GradientStyle2: View {
     let textString : String
     var body: some View{
         Text(textString)
-            .font(.system(size: 60, weight: .bold))
+            .font(.system(size: fontDeviceSize, weight: .bold))
             .overlay{
                 LinearGradient(
                     colors: [Color.ReqGradientBlue, Color.ReqPurple],
@@ -41,7 +44,7 @@ struct GradientStyle2: View {
                 )
                 .mask(
                     Text(textString)
-                        .font(.system(size: 60, weight: .bold))
+                        .font(.system(size: fontDeviceSize, weight: .bold))
                 )
             }
     }
@@ -51,7 +54,7 @@ struct GradientStyle3: View {
     let textString : String
     var body: some View{
         Text(textString)
-            .font(.system(size: 76, weight: .bold))
+            .font(.system(size: fontShadowSize, weight: .bold))
             .overlay{
                 LinearGradient(
                     colors: [Color.ReqPurple.opacity(0.1), Color.ReqPurple.opacity(0)],
@@ -60,7 +63,7 @@ struct GradientStyle3: View {
                 )
                 .mask(
                     Text(textString)
-                        .font(.system(size: 76, weight: .bold))
+                        .font(.system(size: fontShadowSize, weight: .bold))
                 )
             }
     }

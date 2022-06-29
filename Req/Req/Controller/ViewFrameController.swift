@@ -67,3 +67,7 @@ extension View {
     }
 }
 
+
+
+let fontDeviceSize = CGFloat(UIScreen.main.bounds.height != CGFloat(667.0) ? 60 : 52)
+let fontShadowSize = CGFloat(UIScreen.main.bounds.height != CGFloat(667.0) ? 76 : 66)

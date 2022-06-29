@@ -13,20 +13,19 @@ struct EmptyHomeView: View {
     //    let text: String
     // merge 이후에 색 지정하면 색깔 바꿔주기
     var body: some View {
-        VStack {
-            ZStack(alignment: .center) {
+        VStack(alignment: .leading) {
+            ZStack(alignment: .leading) {
                 Rectangle()
                     .foregroundColor(.black)
                     .ignoresSafeArea()
                 
-                HStack {
+                VStack(alignment: .leading) {
+                    Spacer()
                     Image("ReqLogo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frameRatio(width: 72, height: 32)
                         .padding()
-                    
-                    Spacer()
                 }
             }
             .frameRatio(width: 390, height: 100)
@@ -43,7 +42,7 @@ struct EmptyHomeView: View {
                         Spacer()
                             .frameRatio(width: 32)
                         ZStack(alignment: .leading) {
-                            VStack(alignment: .leading, spacing: UIScreen.main.bounds.height * 4 / 844) {
+                            VStack(alignment: .leading) {
                                 GradientStyle3(textString: "Take")
                                 GradientStyle3(textString: "A")
                                 GradientStyle3(textString: "Picture")
@@ -58,7 +57,6 @@ struct EmptyHomeView: View {
                                 GradientStyle(textString: "And")
                                 GradientStyle(textString: "Get")
                                 GradientStyle2(textString: "Feedback")
-
                             }
                         }
                         Spacer()
