@@ -802,8 +802,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Req/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용합니다.";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "사진 사용합니다.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "사진 촬영을 하고 패션 피드백을 받아보세요!";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "촬영한 사진을 저장하기 위해 사진앱에 접근을 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -836,8 +836,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Req/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용합니다.";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "사진 사용합니다.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "사진 촬영을 하고 패션 피드백을 받아보세요!";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "촬영한 사진을 저장하기 위해 사진앱에 접근을 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
