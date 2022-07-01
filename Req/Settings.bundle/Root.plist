@@ -10,7 +10,7 @@
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 			<key>Title</key>
-			<string>오픈 라이선스</string>
+			<string>오픈소스 라이선스</string>
 			<key>File</key>
 			<string>LottieLicense</string>
 		</dict>
