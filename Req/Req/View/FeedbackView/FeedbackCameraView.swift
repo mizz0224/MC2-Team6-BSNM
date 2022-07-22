@@ -29,8 +29,10 @@ struct FeedbackCameraView: View {
                             .foregroundColor(.white)
                             .paddingRatio(.leading, 16.5)
                             .paddingRatio(.bottom, 20)
+                            .paddingRatio(.top, 45)
                     }
                 }
+                .frameRatio(height: 87.5)
 
                 if self.image == nil {
                     ZStack {
