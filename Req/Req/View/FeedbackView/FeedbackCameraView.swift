@@ -22,7 +22,6 @@ struct FeedbackCameraView: View {
                         .foregroundColor(.black)
                         .ignoresSafeArea()
                     Button(action: {
-                        print("tapped FeedbackCameratView X Button")
                         self.showCameraView.toggle()
                     }) {
                         Image("x_button")
