@@ -21,7 +21,10 @@ struct FeedbackCameraView: View {
                     Rectangle()
                         .foregroundColor(.black)
                         .ignoresSafeArea()
-                    Button(action: { self.showCameraView.toggle() }) {
+                    Button(action: {
+                        print("tapped FeedbackCameratView X Button")
+                        self.showCameraView.toggle()
+                    }) {
                         Image("x_button")
                             .foregroundColor(.white)
                             .paddingRatio(.leading, 16.5)
@@ -50,11 +53,11 @@ struct FeedbackCameraView: View {
 
                 FeedbackCameraBottomView(image: self.$image, name: self.$name, showCameraView: self.$showCameraView, didTapCapture: self.$didTapCapture)
             }
+            .navigationBarHidden(true)
         }// NavigationView
         .ignoresSafeArea()
-            .navigationBarBackButtonHidden(true)
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 
