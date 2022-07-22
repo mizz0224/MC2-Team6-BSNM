@@ -21,13 +21,17 @@ struct FeedbackCameraView: View {
                     Rectangle()
                         .foregroundColor(.black)
                         .ignoresSafeArea()
-                    Button(action: { self.showCameraView.toggle() }) {
+                    Button(action: {
+                        self.showCameraView.toggle()
+                    }) {
                         Image("x_button")
                             .foregroundColor(.white)
                             .paddingRatio(.leading, 16.5)
                             .paddingRatio(.bottom, 20)
+                            .paddingRatio(.top, 45)
                     }
                 }
+                .frameRatio(height: 87.5)
 
                 if self.image == nil {
                     ZStack {
@@ -50,11 +54,11 @@ struct FeedbackCameraView: View {
 
                 FeedbackCameraBottomView(image: self.$image, name: self.$name, showCameraView: self.$showCameraView, didTapCapture: self.$didTapCapture)
             }
+            .navigationBarHidden(true)
         }// NavigationView
         .ignoresSafeArea()
-            .navigationBarBackButtonHidden(true)
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 
