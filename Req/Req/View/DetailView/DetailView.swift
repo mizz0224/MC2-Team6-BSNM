@@ -36,6 +36,7 @@ struct DetailView: View {
                 .frameRatio(height: 100)//상단 공백
             
             TopMenuView(idToDelete: getFeedback.id, feedback: getFeedback)//뒤로가기, 삭제 버튼 있는 뷰
+            Text(String(getFeedback.feedbackPointAvg))
             ImageView(getFeedback: getFeedback)//이미지 뷰, 하단 설명뷰는 이미지 뷰에서 구현
         }
             .frameRatio(height: totalFrameHeight)

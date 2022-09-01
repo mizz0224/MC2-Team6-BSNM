@@ -23,17 +23,28 @@ struct PostView: View {
     @Binding var loadSearch: Bool
 
     @Binding var isDark: Bool//다크모드를 제어할 변수
+    
+    @Binding var isRanking: Bool
 
     var body: some View {
         VStack {
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.LightGrey)
                 .frameRatio(width: 330, height: 1)
-            Text("\(releaseDate, formatter: Self.kDateFormat)")
-                .paddingRatio(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 245))
-                .foregroundColor(.gray)
+            if isRanking {
+                HStack{
+                    Text("Ranking System")
+                        .paddingRatio(EdgeInsets(top: 0, leading: 32, bottom: 0, trailing: 0))
+                        .foregroundColor(.gray)
+                    Spacer()
+                }
+            } else {
+                Text("\(releaseDate, formatter: Self.kDateFormat)")
+                    .paddingRatio(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 245))
+                    .foregroundColor(.gray)
+            }
 
-            PostGridView(searchText: $searchText, data: userData.FeedbackArray, isDark: $isDark)
+            PostGridView(searchText: $searchText, data: userData.FeedbackArray,rankingdata: userData.FeedbackArray.sorted(by: {$0.feedbackPointAvg > $1.feedbackPointAvg}), isDark: $isDark, isRanking: $isRanking)
         }
             .onAppear(perform: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {

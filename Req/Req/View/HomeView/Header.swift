@@ -10,6 +10,7 @@ import SwiftUI
 struct Header: View {
     @Binding var getisSearch: Bool//받아온 isSearch가 담길 변수
     @Binding var showCameraView: Bool
+    @Binding var isRanking: Bool
 
     let menuFont: Font = Font.system(size: 20).bold()//메뉴 폰트 설정 SF Display Font Pro Bold, 20사이즈
     let iconColor: Color = Color.ReqWhite //아이콘컬러
@@ -29,7 +30,23 @@ struct Header: View {
             }
 
             Spacer()
-
+            VStack(spacing: 0) {
+                Spacer()
+                Button(action: { isRanking.toggle() }) {
+                    if isRanking {
+                        Image(systemName: "crown.fill")
+                            .font(menuFont)
+                            .foregroundColor(iconColor)
+                    } else {
+                        Image(systemName: "crown")
+                            .font(menuFont)
+                            .foregroundColor(iconColor)
+                    }
+                }
+                Spacer()
+                    .frameRatio(height: 18)
+            }//랭킹
+            Spacer().frameRatio(width: 20)
             VStack(spacing: 0) {
                 Spacer()
                 Button(action: { self.getisSearch = true }) {

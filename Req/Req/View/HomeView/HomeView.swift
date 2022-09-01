@@ -17,6 +17,7 @@ struct HomeView: View {
     }
     @State var searchText = ""
     @State var isSearching = false
+    @State var isRanking = false
     @State var showResults = false
     @State var loadSearch = false
     @State private var showCameraView: Bool = false
@@ -24,12 +25,12 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                TopMenu(searchText: $searchText, isSearching: $isSearching, showResults: $showResults, loadSearch: $loadSearch, showCameraView: $showCameraView)
+                TopMenu(searchText: $searchText, isSearching: $isSearching, showResults: $showResults, loadSearch: $loadSearch, showCameraView: $showCameraView,isRanking: $isRanking)
                 ScrollView {
                     VStack(alignment: .leading) {
                         Slogan()
                             .paddingRatio(.init(top: 20, leading: 30, bottom: 16, trailing: 0))
-                        PostView(searchText: $searchText, loadSearch: $loadSearch, isDark: $isDark)
+                        PostView(searchText: $searchText, loadSearch: $loadSearch, isDark: $isDark,isRanking: $isRanking)
                     }
                 }.background(.white)
             }

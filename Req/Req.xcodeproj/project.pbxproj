@@ -23,6 +23,7 @@
 		4241F84828548802001E11DF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4241F84728548802001E11DF /* DetailView.swift */; };
 		4249EE8A285513B300F63F11 /* TopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249EE89285513B300F63F11 /* TopMenuView.swift */; };
 		4249EE8C285515C600F63F11 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249EE8B285515C600F63F11 /* ImageView.swift */; };
+		424E260B28BF4AE30077FBAC /* fashionFeedbackEvalute.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 424E260A28BF4AE30077FBAC /* fashionFeedbackEvalute.mlmodel */; };
 		42695E1328574490005D18A8 /* DetailViewPinImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42695E1228574490005D18A8 /* DetailViewPinImage.swift */; };
 		426A44A9286A0DD4000E0F6B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 426A44A8286A0DD4000E0F6B /* Settings.bundle */; };
 		4287D007285B8FC7004486AC /* createPinLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4287D006285B8FC7004486AC /* createPinLottie.json */; };
@@ -116,6 +117,7 @@
 		4241F84728548802001E11DF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4249EE89285513B300F63F11 /* TopMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuView.swift; sourceTree = "<group>"; };
 		4249EE8B285515C600F63F11 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		424E260A28BF4AE30077FBAC /* fashionFeedbackEvalute.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = fashionFeedbackEvalute.mlmodel; sourceTree = "<group>"; };
 		42695E1228574490005D18A8 /* DetailViewPinImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPinImage.swift; sourceTree = "<group>"; };
 		426A44A8286A0DD4000E0F6B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4287D006285B8FC7004486AC /* createPinLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = createPinLottie.json; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 			children = (
 				42ED1F89285AFC330016F86E /* Info.plist */,
 				55113C0F285325B300B2AE5D /* ReqApp.swift */,
+				424E260A28BF4AE30077FBAC /* fashionFeedbackEvalute.mlmodel */,
 				F56D83DB285E060900BF6907 /* Controller */,
 				F56D83DA285E060400BF6907 /* CoreData */,
 				F509D6392858E58400D81AC3 /* View */,
@@ -646,6 +649,7 @@
 				36DFB0B1285A3C3400D919FE /* PostView.swift in Sources */,
 				55113C4B285501E600B2AE5D /* DivisionLine.swift in Sources */,
 				55113C982858611A00B2AE5D /* AdjustFeedbackNavigationCancelButton.swift in Sources */,
+				424E260B28BF4AE30077FBAC /* fashionFeedbackEvalute.mlmodel in Sources */,
 				55113C3728538E2B00B2AE5D /* Entity.swift in Sources */,
 				55113C5D2857268A00B2AE5D /* WriteFeedbackNavigationItem.swift in Sources */,
 				55113C9C2858630C00B2AE5D /* AdjustFeedbackNavigationDeleteButton.swift in Sources */,

@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import CoreML
+import NaturalLanguage
 struct AddFeedbackNavigationSaveButton: View {
     @EnvironmentObject var userData: UserDataManager
     
@@ -65,9 +66,28 @@ extension AddFeedbackNavigationSaveButton {
     }
     
     func saveData() {
-        let Feedback = Feedback(id: UUID() ,name: reviewerName, date: Date(), image: image.jpegData(compressionQuality: 1) ?? Data(), pins: pins)
+        var avgPinFeedbackPoint: Double = 0.0
+        for pin in pins {
+            avgPinFeedbackPoint += evalute(pinDescription: pin.description!)
+        }
+        avgPinFeedbackPoint = avgPinFeedbackPoint / Double(pins.count)
+        let Feedback = Feedback(id: UUID() ,name: reviewerName, date: Date(), image: image.jpegData(compressionQuality: 1) ?? Data(), pins: pins,feedbackPointAvg: avgPinFeedbackPoint)
         
         userData.addFeedbackArray(addedFeedback: Feedback)
     }
-    
+    func evalute(pinDescription:String) -> Double{
+        var totalPoint: Double = 0.0
+        do{
+            let model = try fashionFeedbackEvalute(configuration: MLModelConfiguration()).model
+            let nlModel = try NLModel(mlModel: model)
+            let pointSet = nlModel.predictedLabelHypotheses(for: pinDescription, maximumCount: 5)
+            for i in 1..<6{
+                totalPoint = totalPoint + Double(i) * (pointSet[String(i)] ?? 1.0)
+            }
+            return totalPoint
+        } catch {
+            return 5.0
+        }
+        
+    }
 }
